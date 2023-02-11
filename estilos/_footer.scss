@@ -1,0 +1,93 @@
+.footerContainer {
+  @include mainContainer();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 6.4rem;
+
+  .logoFooter {
+    width: 20rem;
+
+    @media (max-width: 64.12em) {
+      width: 15rem;
+    }
+
+    @media (max-width: 48.12em) {
+      width: 12rem;
+    }
+
+    @media (max-width: 30.12em) {
+      width: 10rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .contact ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2.6rem;
+    list-style: none;
+    justify-content: center;
+
+    a:link,
+    a:visited {
+      font-size: 2rem;
+      text-decoration: none;
+      color: $primary-color;
+
+      @media (max-width: 64.12em) {
+        font-size: 1.6rem;
+      }
+
+      @media (max-width: 48.12em) {
+        font-size: 1.4rem;
+      }
+
+      @media (max-width: 30.12em) {
+        font-size: 1.2rem;
+      }
+    }
+
+    a:hover,
+    a:active {
+      color: $color3;
+      text-decoration: underline;
+    }
+
+    .footer-icon {
+      font-size: 2rem;
+      color: $primary-color;
+
+      @media (max-width: 64.12em) {
+        font-size: 1.6rem;
+      }
+
+      @media (max-width: 48.12em) {
+        font-size: 1.4rem;
+      }
+
+      @media (max-width: 30.12em) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .copyRicardo {
+    @media (max-width: 64.12em) {
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: 48.12em) {
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: 30.12em) {
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+$primary-color: #008037;
+$color2: #b3d9c3;
+$color3: #2c2b3d;
+$color4: #3f3d56;
+$color5: #b7b7bf;
+$color6: #fff;
+$color7: #000;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: $color3;
+}
+
+@mixin mainContainer($isCont: true) {
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+@mixin shadowLogos {
+  height: 0.3rem;
+  width: 8rem;
+  background-color: $color5;
+  opacity: 0.4;
+  margin-top: 1rem;
+}
+
+@mixin flex-colunm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primaryTitle {
+  font-size: 2rem;
+  color: $primary-color;
+  text-align: center;
+
+  @media (max-width: 48.12em) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 30.12em) {
+    font-size: 1.6rem;
+  }
+}
+
+.line {
+  border: 0.3px solid $color5;
+  margin-bottom: 6.2rem;
+}
+
+.copyRicardo {
+  margin-top: 2rem;
+  color: $color3;
+  font-size: 1.8rem;
+}
+
+/* 
+TINTS AND SHADES
+#fefcdd
+
+- FONT SIZES (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */

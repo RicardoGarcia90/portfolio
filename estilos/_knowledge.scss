@@ -1,0 +1,84 @@
+.knowledgeContainer {
+  background-color: $color4;
+  height: 40rem;
+  margin-bottom: 9.6rem;
+  padding-top: 3.2rem;
+  margin-top: 20rem;
+
+  @media (max-width: 90.06em) {
+    width: auto;
+    height: 35rem;
+  }
+
+  @media (max-width: 64.12em) {
+    height: 30rem;
+  }
+
+  @media (max-width: 48.12em) {
+    height: 40rem;
+  }
+
+  .titleKnowledge {
+    text-align: center;
+    margin-bottom: 6.4rem;
+    color: $color6;
+  }
+
+  .knowledge__logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+
+    @media (max-width: 90.06em) {
+      gap: 6rem;
+    }
+
+    @media (max-width: 64.12em) {
+      gap: 4rem;
+    }
+
+    @media (max-width: 48.12em) {
+      flex-wrap: wrap;
+    }
+
+    .html-constainerLogo,
+    .css_sass-constainerLogo,
+    .javascript-constainerLogo,
+    .typescript-constainerLogo,
+    .react-constainerLogo,
+    .git-constainerLogo {
+      @include flex-colunm;
+
+      .knowledgeLogo {
+        height: 15rem;
+        width: 15rem;
+        border-radius: 1rem;
+        margin-bottom: 1.2rem;
+
+        @media (max-width: 90.06em) {
+          height: 11rem;
+          width: 11rem;
+        }
+
+        @media (max-width: 64.12em) {
+          height: 7rem;
+          width: 7rem;
+          gap: 3rem;
+        }
+      }
+
+      .nameHability {
+        font-size: 2rem;
+        color: $color6;
+
+        @media (max-width: 64.12em) {
+          font-size: 1.6rem;
+        }
+
+        @media (max-width: 48.12em) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

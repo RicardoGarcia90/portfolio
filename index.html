@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="estilos/main.css" />
+    <script defer src="script.js"></script>
+    <title>Ricardo Garcia</title>
+  </head>
+  <body>
+    <!-- HEADER-1 -->
+    <header id="inicio" class="header">
+      <!-- MENU -->
+      <div class="menuContainer">
+        <nav class="menu__nav">
+          <ul class="menu__nav--list">
+            <li class="menu__nav--link"><a href="#inicio">Inicio</a></li>
+            <li class="menu__nav--link"><a href="#sobre">Sobre</a></li>
+            <li class="menu__nav--link"><a href="#hab">Habilidades</a></li>
+            <li class="menu__nav--link"><a href="#proj">Projetos</a></li>
+            <li class="menu__nav--link"><a href="#cont">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- REDES SOCIAIS -->
+      <div class="redesSociaisContainer">
+        <nav class="redeSociais__nav">
+          <ul class="redeSociais__nav-list">
+            <li class="redeSociais__nav--link">
+              <a
+                href="https://www.linkedin.com/in/ricardo-nunes-garcia-dev/"
+                target="_blank"
+                ><ion-icon
+                  class="redeSociais__nav-icon logo-linkedin"
+                  name="logo-linkedin"
+                ></ion-icon
+              ></a>
+            </li>
+            <li class="redeSociais__nav--link">
+              <a href="https://github.com/RicardoGarcia90" target="_blank"
+                ><ion-icon
+                  class="redeSociais__nav-icon logo-github"
+                  name="logo-github"
+                ></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <div class="heroContainer">
+        <div class="logo">
+          <img src="img/logoRicardoGarcia.png" alt="logo" />
+        </div>
+        <div class="textHero">
+          <h1 class="titleHero">Olá! Seja bem vindo ao meu portfólio!</h1>
+          <br />
+          <p class="paragrafoHero">
+            Me chamo <strong>Ricardo</strong> e criei esse portfólio para que
+            você possa acompanhar não só os meus projetos mas também minha
+            evolução como desenvolvedor.
+          </p>
+        </div>
+      </div>
+
+      <!-- SOBRE -->
+      <div id="sobre" class="aboutMeContainer">
+        <h1 class="primaryTitle titleAboutMe">Sobre</h1>
+        <div class="aboutMe-flex">
+          <div class="photo"></div>
+          <div class="text-Img_Container">
+            <div class="textAboutMe">
+              <h2>
+                Sou apaixonado por tecnologia e a oportunidade que a tecnologia
+                nos dá para criar e inovar.
+              </h2>
+              <p>
+                Costumo dizer que me encontrei como profissional na área de
+                desenvolvimento, construindo sites e aplicações utilizando
+                Javascript, React.js, HTML e CSS/Sass.<br />
+                Hoje meu tempo é dedicado a aperfeiçoar meu conhecimento sobre
+                desenvolvimento, colocando em prática e me desafiando através de
+                novos projetos. Nas horas vagas, você me encontrará tocando
+                guitarra, brincando com meu cachorro e andando no parque com
+                minha família.
+              </p>
+            </div>
+            <div class="img-about">
+              <img
+                src="img/undraw_programming_verde.svg"
+                alt="garoto na frente de um computador programando"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HABILIDADES -->
+      <div id="hab" class="knowledgeContainer">
+        <h1 class="primaryTitle titleKnowledge">Habilidades</h1>
+
+        <div class="knowledge__logos-container">
+          <!-- HTML -->
+          <div class="html-constainerLogo">
+            <img
+              class="knowledgeLogo"
+              src="img/html-5-logo-svgrepo-com.svg"
+              alt="logo html"
+            />
+            <div><p class="nameHability">HTML5</p></div>
+          </div>
+
+          <!-- CSS/SASS -->
+          <div class="css_sass-constainerLogo">
+            <img
+              class="knowledgeLogo"
+              src="img/sass-svgrepo-com.svg"
+              alt="logo sass"
+            />
+            <div><p class="nameHability">CSS/Sass</p></div>
+          </div>
+
+          <!-- JAVASCRIPT -->
+          <div class="javascript-constainerLogo">
+            <img
+              class="knowledgeLogo"
+              src="img/javascript-logo-svgrepo-com.svg"
+              alt="logo javascript"
+            />
+            <div><p class="nameHability">Javascript</p></div>
+          </div>
+
+          <!-- REACT -->
+          <div class="react-constainerLogo">
+            <img
+              class="knowledgeLogo"
+              src="img/react-logo-svgrepo-com.svg"
+              alt="logo react"
+            />
+            <div><p class="nameHability">React</p></div>
+          </div>
+
+          <!-- NODE -->
+          <div class="typescript-constainerLogo">
+            <img
+              class="knowledgeLogo"
+              src="img/nodejs-1-logo-svgrepo-com.svg"
+              alt="logo node"
+            />
+            <div><p class="nameHability">Node.js</p></div>
+          </div>
+
+          <!-- GIT -->
+          <div class="git-constainerLogo">
+            <img class="knowledgeLogo" src="img/Git_icon.svg" alt="logo git" />
+            <div><p class="nameHability">Git</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJETOS -->
+      <div id="proj" class="projectsContainer">
+        <h2 class="primaryTitle">Projetos</h2>
+
+        <div class="cardsContainer">
+          <!-- CARD-1 -->
+          <div class="card">
+            <div class="img">
+              <img src="img/tela-forkify.png" alt="Tela inicial site Forkify" />
+            </div>
+            <div class="links-text_container">
+              <h3>Forkify</h3>
+              <div class="linksContainer">
+                <ion-icon
+                  class="icon visit-site_icon"
+                  name="desktop-outline"
+                ></ion-icon>
+                <a
+                  class="link-visit_site"
+                  target="_blank"
+                  href="https://forkify-ricardogarcia.netlify.app/"
+                >
+                  Visitar Site</a
+                >
+                <ion-icon
+                  class="icon ver-codigo_icon"
+                  name="code-slash-outline"
+                ></ion-icon>
+                <a
+                  class="link-ver_codigo"
+                  target="_blank"
+                  href="https://github.com/RicardoGarcia90/forkify.git"
+                  >Ver Código</a
+                >
+              </div>
+              <div class="textSite">
+                <p>
+                  App para pesquisar receitas, nesse app criado como projeto
+                  final do curso de JavaScript é possível pesquisar novas
+                  receitas, além de adicionar e editar as suas próprias.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD-2 -->
+          <div class="card">
+            <div class="img">
+              <img src="img/tela-mapty.png" alt="Tela inicial do app Mapty" />
+            </div>
+            <div class="links-text_container">
+              <h3>Mapty</h3>
+              <div class="linksContainer">
+                <ion-icon
+                  class="icon visit-site_icon"
+                  name="desktop-outline"
+                ></ion-icon>
+                <a
+                  class="link-visit_site"
+                  target="_blank"
+                  href="https://ricardogarcia90.github.io/Mapty/"
+                  >Visitar Site</a
+                >
+                <ion-icon
+                  class="icon ver-codigo_icon"
+                  name="code-slash-outline"
+                ></ion-icon>
+                <a
+                  class="link-ver_codigo"
+                  target="_blank"
+                  href="https://github.com/RicardoGarcia90/Mapty.git"
+                  >Ver Código</a
+                >
+              </div>
+              <div class="textSite">
+                <p>
+                  App de registro de atividade física, nesse projeto é possível
+                  adicionar distância percorrida, tempo e tipo de atividade.
+                  Esse projeto foi realizado durante curso de JavaScript já
+                  concluído.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD-3 -->
+          <div class="card">
+            <div class="img">
+              <img src="img/tela-bankist.png" alt="Imagens do site Bankist" />
+            </div>
+            <div class="links-text_container">
+              <h3>Bankist</h3>
+              <div class="linksContainer">
+                <ion-icon
+                  class="icon visit-site_icon"
+                  name="desktop-outline"
+                ></ion-icon>
+                <a
+                  class="link-visit_site"
+                  target="_blank"
+                  href="https://ricardogarcia90.github.io/bankist/"
+                  >Visitar Site</a
+                >
+                <ion-icon
+                  class="icon ver-codigo_icon"
+                  name="code-slash-outline"
+                ></ion-icon>
+                <a
+                  class="link-ver_codigo"
+                  target="_blank"
+                  href="https://github.com/RicardoGarcia90/bankist.git"
+                  >Ver Código</a
+                >
+              </div>
+              <div class="textSite">
+                <p>
+                  Projeto criado durante curso de JavaScript, este projeto
+                  simula um banco digital, nele é possível simular
+                  transferências e empréstimos. Para realizar login no site veja
+                  o README no GitHub.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD-4 -->
+          <div class="card">
+            <div class="img">
+              <img src="img/tela-jodoDado.png" alt="Tela jodo do dado" />
+            </div>
+            <div class="links-text_container">
+              <h3>Jogo do Dado</h3>
+              <div class="linksContainer">
+                <ion-icon
+                  class="icon visit-site_icon"
+                  name="desktop-outline"
+                ></ion-icon>
+                <a
+                  class="link-visit_site"
+                  target="_blank"
+                  href="https://ricardogarcia90.github.io/Pig-Game-JogoDoDado/"
+                  >Visitar Site</a
+                >
+                <ion-icon
+                  class="icon ver-codigo_icon"
+                  name="code-slash-outline"
+                ></ion-icon>
+                <a
+                  class="link-ver_codigo"
+                  target="_blank"
+                  href="https://github.com/RicardoGarcia90/Pig-Game-JogoDoDado.git"
+                  >Ver Código</a
+                >
+              </div>
+              <div class="textSite">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque assumenda, facere non temporibus dolore beatae
+                  magnam voluptatem, dolorum hic ut ipsum dolor recusandae harum
+                  iusto neque vel, dolores architecto! Consequatur?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD-5 -->
+          <div class="card">
+            <div class="img">
+              <img
+                src="img/tela-adivinhe-o-numero.png"
+                alt="Imagem site jogo adivinhar numero"
+              />
+            </div>
+            <div class="links-text_container">
+              <h3>Jogo de adivinhação</h3>
+              <div class="linksContainer">
+                <ion-icon
+                  class="icon visit-site_icon"
+                  name="desktop-outline"
+                ></ion-icon>
+                <a
+                  class="link-visit_site"
+                  target="_blank"
+                  href="https://ricardogarcia90.github.io/jogoAdivinharNumero/"
+                  >Visitar Site</a
+                >
+                <ion-icon
+                  class="icon ver-codigo_icon"
+                  name="code-slash-outline"
+                ></ion-icon>
+                <a
+                  class="link-ver_codigo"
+                  target="_blank"
+                  href="https://github.com/RicardoGarcia90/jogoAdivinharNumero.git"
+                  >Ver Código</a
+                >
+              </div>
+              <div class="textSite">
+                <p>
+                  Jogo simples de adivinhação de números. É gerado um número
+                  aleatório entre 1 e 20, o usuário digita qual o número ele
+                  acha que foi gerado, a cada erro os pontos vão diminuindo até
+                  que o chute seja correto.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD-6 -->
+          <div class="card">
+            <div class="img">
+              <img src="img/tela-omnifood.png" alt="imagem do site omnifood" />
+            </div>
+            <div class="links-text_container">
+              <h3>Omnifood</h3>
+              <div class="linksContainer">
+                <ion-icon
+                  class="icon visit-site_icon"
+                  name="desktop-outline"
+                ></ion-icon>
+                <a
+                  class="link-visit_site"
+                  target="_blank"
+                  href="https://omnifood-ricardogarcia.netlify.app/"
+                  >Visitar Site</a
+                >
+                <ion-icon
+                  class="icon ver-codigo_icon"
+                  name="code-slash-outline"
+                ></ion-icon>
+                <a
+                  class="link-ver_codigo"
+                  target="_blank"
+                  href="https://github.com/RicardoGarcia90/omnifood.git"
+                  >Ver Código</a
+                >
+              </div>
+              <div class="textSite">
+                <p>
+                  Projeto criado simulando uma empresa de Delivery que vende
+                  planos de refeiçoes saudáveis. Nesse projeto o principal
+                  objetivo foi a prática de técnicas e ferramentas utilizadas
+                  durante o curso realizado, como: HTML, CSS e JavaScript.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD-7 -->
+          <div class="card">
+            <div class="img">
+              <img
+                src="img/tela-projeto-android.png"
+                alt="imagem do site projeto android"
+              />
+            </div>
+            <div class="links-text_container">
+              <h3>Projeto Android</h3>
+              <div class="linksContainer">
+                <ion-icon
+                  class="icon visit-site_icon"
+                  name="desktop-outline"
+                ></ion-icon>
+                <a
+                  class="link-visit_site"
+                  target="_blank"
+                  href="https://ricardogarcia90.github.io/projeto-android/"
+                  >Visitar Site</a
+                >
+                <ion-icon
+                  class="icon ver-codigo_icon"
+                  name="code-slash-outline"
+                ></ion-icon>
+                <a
+                  class="link-ver_codigo"
+                  target="_blank"
+                  href="https://github.com/RicardoGarcia90/projeto-android"
+                  >Ver Código</a
+                >
+              </div>
+              <div class="textSite">
+                <p>
+                  Landing page criada como projeto final do primeiro curso
+                  realizado de HTML e CSS. Nesse projeto foram utilizados os
+                  primeiros aprendizados das ferrmantas de desenvolvimento
+                  Front-End.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTATO -->
+      <div id="cont" class="ctaContainer">
+        <div class="cta-box">
+          <h3>Entre em contato</h3>
+          <form
+            class="cta-form"
+            action="https://formsubmit.co/ricardonunesgarcia@outlook.com"
+            method="post"
+          >
+            <label for="full-name">Nome</label>
+            <input
+              id="nome"
+              type="text"
+              placeholder="Seu nome"
+              name="full-name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="me@example.com"
+              name="email"
+              required
+            />
+
+            <label for="select-where">Deixe sua mensagem!</label>
+            <textarea
+              name="mensagem"
+              id="caixaTexto"
+              cols="30"
+              rows="17"
+            ></textarea>
+            >
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/thanks.html"
+            />
+            <button class="btn btn--form">Enviar</button>
+          </form>
+        </div>
+        <div class="cta-img-box"></div>
+      </div>
+
+      <div class="line"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <div class="footerContainer">
+      <div class="logoFooter"><img src="img/logoDev30.png" alt="" /></div>
+      <div class="contact">
+        <ul>
+          <li>
+            <ion-icon
+              class="footer-icon footer-icon_logo-linkedin"
+              name="logo-linkedin"
+            ></ion-icon>
+            <a
+              href="https://www.linkedin.com/in/ricardo-nunes-garcia-dev/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/RicardoGarcia90"
+              class="linkFooter"
+              target="_blank"
+              ><ion-icon
+                class="footer-icon footer-icon_logo-github"
+                name="logo-github"
+              ></ion-icon
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p class="copyRicardo">Copyright &copy; by Ricardo Garcia.</p>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
