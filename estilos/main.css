@@ -12,12 +12,12 @@ body {
   font-family: "Nunito", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #2c2b3d;
+  color: #4c1d00;
 }
 
 .primaryTitle {
   font-size: 2rem;
-  color: #008037;
+  color: #ff6100;
   text-align: center;
 }
 @media (max-width: 48.12em) {
@@ -33,13 +33,16 @@ body {
 
 .line {
   border: 0.3px solid #b7b7bf;
-  margin-bottom: 6.2rem;
 }
 
 .copyRicardo {
   margin-top: 2rem;
-  color: #2c2b3d;
+  color: #4c1d00;
   font-size: 1.8rem;
+}
+
+.colorSpan {
+  color: #ff6100;
 }
 
 /* 
@@ -97,8 +100,8 @@ TINTS AND SHADES
 .header .menuContainer .menu__nav--link a:link,
 .header .menuContainer .menu__nav--link a:visited {
   text-decoration: none;
-  font-size: 2.4rem;
-  color: #008037;
+  font-size: 2rem;
+  color: #ff6100;
 }
 @media (max-width: 90.06em) {
   .header .menuContainer .menu__nav--link a:link,
@@ -132,7 +135,7 @@ TINTS AND SHADES
 }
 .header .menuContainer .menu__nav--link a:hover,
 .header .menuContainer .menu__nav--link a:active {
-  color: #3f3d56;
+  color: #803100;
   text-decoration: underline;
 }
 .header .redesSociaisContainer {
@@ -160,7 +163,7 @@ TINTS AND SHADES
 }
 .header .redeSociais__nav--link a:link,
 .header .redeSociais__nav--link a:visited {
-  color: #008037;
+  color: #ff6100;
   font-size: 2rem;
 }
 @media (max-width: 48.12em) {
@@ -178,7 +181,7 @@ TINTS AND SHADES
 }
 .header .redeSociais__nav--link a:hover,
 .header .redeSociais__nav--link a:active {
-  color: #3f3d56;
+  color: #803100;
 }
 
 .ativo {
@@ -200,6 +203,9 @@ TINTS AND SHADES
   .heroContainer {
     flex-direction: column;
   }
+}
+.heroContainer .logo img {
+  height: 50rem;
 }
 @media (max-width: 90.06em) {
   .heroContainer .logo img {
@@ -224,7 +230,7 @@ TINTS AND SHADES
   }
 }
 .heroContainer .textHero {
-  width: 40%;
+  width: 55%;
 }
 @media (max-width: 48.12em) {
   .heroContainer .textHero {
@@ -232,8 +238,8 @@ TINTS AND SHADES
   }
 }
 .heroContainer .textHero .titleHero {
-  font-size: 5.2rem;
-  margin-bottom: 1.2rem;
+  font-size: 5.5rem;
+  margin-bottom: 1.6rem;
   text-align: center;
 }
 @media (max-width: 90.06em) {
@@ -257,8 +263,8 @@ TINTS AND SHADES
   }
 }
 .heroContainer .textHero .paragrafoHero {
-  font-size: 2rem;
-  line-height: 2.4rem;
+  font-size: 2.3rem;
+  line-height: 2.6rem;
   text-align: justify;
 }
 @media (max-width: 90.06em) {
@@ -282,7 +288,7 @@ TINTS AND SHADES
   padding: 0 3.2rem;
   margin: 0 auto;
   margin-bottom: 9.6rem;
-  background-color: #b3d9c3;
+  background-color: #ffa066;
   padding: 2.4rem;
   border-radius: 2rem;
 }
@@ -315,7 +321,7 @@ TINTS AND SHADES
 }
 .aboutMeContainer .titleAboutMe {
   margin-bottom: 2rem;
-  color: white;
+  color: #4c1d00;
 }
 .aboutMeContainer .aboutMe-flex {
   display: flex;
@@ -489,7 +495,7 @@ TINTS AND SHADES
   }
 }
 .cardsContainer .card {
-  background-color: #b3d9c3;
+  background-color: #ffa066;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -517,7 +523,7 @@ TINTS AND SHADES
   }
 }
 .cardsContainer .card .img {
-  border: 1px solid #b3d9c3;
+  border: 1px solid #ffa066;
   border-radius: 2rem 2rem 0 0;
   overflow: hidden;
 }
@@ -528,7 +534,7 @@ TINTS AND SHADES
 .cardsContainer .card .links-text_container {
   display: flex;
   flex-direction: column;
-  background-color: #b3d9c3;
+  background-color: #ffa066;
   border-radius: 0 0 2rem 2rem;
 }
 .cardsContainer .card .links-text_container h3 {
@@ -603,7 +609,7 @@ TINTS AND SHADES
 .cardsContainer .card .links-text_container .linksContainer .link-visit_site:active,
 .cardsContainer .card .links-text_container .linksContainer .link-ver_codigo:hover,
 .cardsContainer .card .links-text_container .linksContainer .link-ver_codigo:active {
-  color: #008037;
+  color: #ff6100;
   font-weight: 700;
   font-size: 1.8rem;
   text-decoration: underline;
@@ -634,7 +640,7 @@ TINTS AND SHADES
   background: #fff;
 }
 .cardsContainer .card .links-text_container .textSite::-webkit-scrollbar-thumb {
-  background-color: #008037;
+  background-color: #ff6100;
   border-radius: 20px;
 }
 .cardsContainer .card:hover {
@@ -644,7 +650,7 @@ TINTS AND SHADES
 }
 
 .knowledgeContainer {
-  background-color: #3f3d56;
+  background-color: #000;
   height: 40rem;
   margin-bottom: 9.6rem;
   padding-top: 3.2rem;
@@ -743,7 +749,7 @@ TINTS AND SHADES
 .knowledgeContainer .knowledge__logos-container .react-constainerLogo .nameHability,
 .knowledgeContainer .knowledge__logos-container .git-constainerLogo .nameHability {
   font-size: 2rem;
-  color: #fff;
+  color: #ff6100;
 }
 @media (max-width: 64.12em) {
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .nameHability,
@@ -807,7 +813,7 @@ TINTS AND SHADES
   }
 }
 .cardsContainer .card {
-  background-color: #b3d9c3;
+  background-color: #ffa066;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -835,7 +841,7 @@ TINTS AND SHADES
   }
 }
 .cardsContainer .card .img {
-  border: 1px solid #b3d9c3;
+  border: 1px solid #ffa066;
   border-radius: 2rem 2rem 0 0;
   overflow: hidden;
 }
@@ -846,7 +852,7 @@ TINTS AND SHADES
 .cardsContainer .card .links-text_container {
   display: flex;
   flex-direction: column;
-  background-color: #b3d9c3;
+  background-color: #ffa066;
   border-radius: 0 0 2rem 2rem;
 }
 .cardsContainer .card .links-text_container h3 {
@@ -921,7 +927,7 @@ TINTS AND SHADES
 .cardsContainer .card .links-text_container .linksContainer .link-visit_site:active,
 .cardsContainer .card .links-text_container .linksContainer .link-ver_codigo:hover,
 .cardsContainer .card .links-text_container .linksContainer .link-ver_codigo:active {
-  color: #008037;
+  color: #ff6100;
   font-weight: 700;
   font-size: 1.8rem;
   text-decoration: underline;
@@ -952,7 +958,7 @@ TINTS AND SHADES
   background: #fff;
 }
 .cardsContainer .card .links-text_container .textSite::-webkit-scrollbar-thumb {
-  background-color: #008037;
+  background-color: #ff6100;
   border-radius: 20px;
 }
 .cardsContainer .card:hover {
@@ -965,7 +971,7 @@ TINTS AND SHADES
   max-width: 130rem;
   padding: 0 3.2rem;
   margin: 0 auto;
-  background-color: #3f3d56;
+  background-color: #803100;
   border-radius: 2rem;
   height: 60rem;
   margin-bottom: 9.6rem;
@@ -1101,7 +1107,7 @@ TINTS AND SHADES
   width: 10rem;
   padding: 1rem;
   border: none;
-  background-color: #008037;
+  background-color: #ff6100;
   border-radius: 1rem;
   font-size: 1.6rem;
   color: white;
@@ -1138,7 +1144,7 @@ TINTS AND SHADES
   margin-bottom: 6.4rem;
 }
 .footerContainer .logoFooter {
-  width: 20rem;
+  width: 30rem;
 }
 @media (max-width: 64.12em) {
   .footerContainer .logoFooter {
@@ -1164,12 +1170,13 @@ TINTS AND SHADES
   gap: 2.6rem;
   list-style: none;
   justify-content: center;
+  margin-top: -55px;
 }
 .footerContainer .contact ul a:link,
 .footerContainer .contact ul a:visited {
   font-size: 2rem;
   text-decoration: none;
-  color: #008037;
+  color: #ff6100;
 }
 @media (max-width: 64.12em) {
   .footerContainer .contact ul a:link,
@@ -1191,12 +1198,12 @@ TINTS AND SHADES
 }
 .footerContainer .contact ul a:hover,
 .footerContainer .contact ul a:active {
-  color: #2c2b3d;
+  color: #4c1d00;
   text-decoration: underline;
 }
 .footerContainer .contact ul .footer-icon {
   font-size: 2rem;
-  color: #008037;
+  color: #ff6100;
 }
 @media (max-width: 64.12em) {
   .footerContainer .contact ul .footer-icon {
@@ -1212,6 +1219,9 @@ TINTS AND SHADES
   .footerContainer .contact ul .footer-icon {
     font-size: 1.2rem;
   }
+}
+.footerContainer .copyRicardo {
+  margin-top: -25px;
 }
 @media (max-width: 64.12em) {
   .footerContainer .copyRicardo {

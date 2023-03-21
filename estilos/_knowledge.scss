@@ -1,5 +1,5 @@
 .knowledgeContainer {
-  background-color: $color4;
+  background-color: $color7;
   height: 40rem;
   margin-bottom: 9.6rem;
   padding-top: 3.2rem;
@@ -69,7 +69,7 @@
 
       .nameHability {
         font-size: 2rem;
-        color: $color6;
+        color: $primary-color;
 
         @media (max-width: 64.12em) {
           font-size: 1.6rem;

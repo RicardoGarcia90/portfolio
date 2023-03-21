@@ -1,7 +1,7 @@
-$primary-color: #008037;
-$color2: #b3d9c3;
-$color3: #2c2b3d;
-$color4: #3f3d56;
+$primary-color: #ff6100;
+$color2: #ffa066;
+$color3: #4c1d00;
+$color4: #803100;
 $color5: #b7b7bf;
 $color6: #fff;
 $color7: #000;
@@ -60,13 +60,16 @@ body {
 
 .line {
   border: 0.3px solid $color5;
-  margin-bottom: 6.2rem;
 }
 
 .copyRicardo {
   margin-top: 2rem;
   color: $color3;
   font-size: 1.8rem;
+}
+
+.colorSpan {
+  color: $primary-color;
 }
 
 /* 

@@ -12,6 +12,8 @@
   }
 
   .logo img {
+    height: 50rem;
+
     @media (max-width: 90.06em) {
       width: 40rem;
     }
@@ -32,15 +34,15 @@
   }
 
   .textHero {
-    width: 40%;
+    width: 55%;
 
     @media (max-width: 48.12em) {
       width: 90%;
     }
 
     .titleHero {
-      font-size: 5.2rem;
-      margin-bottom: 1.2rem;
+      font-size: 5.5rem;
+      margin-bottom: 1.6rem;
       text-align: center;
 
       @media (max-width: 90.06em) {
@@ -61,8 +63,8 @@
     }
 
     .paragrafoHero {
-      font-size: 2rem;
-      line-height: 2.4rem;
+      font-size: 2.3rem;
+      line-height: 2.6rem;
       text-align: justify;
 
       @media (max-width: 90.06em) {
