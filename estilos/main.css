@@ -67,7 +67,7 @@ TINTS AND SHADES
   left: 0;
   background-color: white;
 }
-@media (max-width: 48.12em) {
+@media (max-width: 770px) {
   .header {
     flex-direction: column-reverse;
   }
@@ -77,9 +77,10 @@ TINTS AND SHADES
   margin-left: 4.8rem;
   align-self: center;
 }
-@media (max-width: 48.12em) {
+@media (max-width: 770em) {
   .header .menuContainer {
     margin-left: 0;
+    margin-top: 2rem;
   }
 }
 .header .menuContainer .menu__nav--list {
@@ -127,33 +128,53 @@ TINTS AND SHADES
     font-size: 1.4rem;
   }
 }
-@media (max-width: 30.12em) {
-  .header .menuContainer .menu__nav--link a:link,
-  .header .menuContainer .menu__nav--link a:visited {
-    font-size: 1.2rem;
-  }
-}
 .header .menuContainer .menu__nav--link a:hover,
 .header .menuContainer .menu__nav--link a:active {
   color: #803100;
   text-decoration: underline;
+}
+.header .language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+@media (max-width: 770px) {
+  .header .language {
+    margin-top: 1.2rem;
+    margin-left: 18rem;
+    gap: 1.2rem;
+  }
+}
+.header .language a {
+  text-decoration: none;
+  color: #000;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+@media (max-width: 770px) {
+  .header .language a {
+    font-size: 1rem;
+  }
+  .header .language a img {
+    width: 1.1rem;
+  }
+}
+.header .language a:hover {
+  text-decoration: underline;
+  color: #ff6100;
 }
 .header .redesSociaisContainer {
   width: 7rem;
   margin-right: 4.8rem;
   align-self: center;
 }
-@media (max-width: 48.12em) {
+@media (max-width: 770px) {
   .header .redesSociaisContainer {
-    width: 5rem;
+    width: 3.5rem;
     margin-right: 3.8rem;
     align-self: end;
-    margin-bottom: 1.2rem;
-  }
-}
-@media (max-width: 30.12em) {
-  .header .redesSociaisContainer {
-    width: 3rem;
+    margin-bottom: -2.7rem;
   }
 }
 .header .redeSociais__nav-list {
@@ -166,17 +187,10 @@ TINTS AND SHADES
   color: #ff6100;
   font-size: 2rem;
 }
-@media (max-width: 48.12em) {
+@media (max-width: 770em) {
   .header .redeSociais__nav--link a:link,
   .header .redeSociais__nav--link a:visited {
-    font-size: 1.3rem;
-    width: 3rem;
-  }
-}
-@media (max-width: 30.12em) {
-  .header .redeSociais__nav--link a:link,
-  .header .redeSociais__nav--link a:visited {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 .header .redeSociais__nav--link a:hover,
@@ -219,14 +233,9 @@ TINTS AND SHADES
 }
 @media (max-width: 48.12em) {
   .heroContainer .logo img {
-    width: 20rem;
+    height: 30rem;
+    width: 30rem;
     justify-content: space-evenly;
-  }
-}
-@media (max-width: 30.12em) {
-  .heroContainer .logo img {
-    width: 17rem;
-    justify-content: space-between;
   }
 }
 .heroContainer .textHero {
@@ -477,10 +486,22 @@ TINTS AND SHADES
   cursor: pointer;
   transition: all 0.3s;
 }
+@media (max-width: 770px) {
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+    margin-bottom: 1rem;
+  }
+}
 
 .operations__tab-container {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 770px) {
+  .operations__tab-container {
+    margin-left: 1.2rem;
+  }
 }
 
 .operations__tab {
@@ -842,10 +863,22 @@ TINTS AND SHADES
   cursor: pointer;
   transition: all 0.3s;
 }
+@media (max-width: 770px) {
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+    margin-bottom: 1rem;
+  }
+}
 
 .operations__tab-container {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 770px) {
+  .operations__tab-container {
+    margin-left: 1.2rem;
+  }
 }
 
 .operations__tab {
@@ -1211,6 +1244,10 @@ TINTS AND SHADES
     margin-bottom: 1.2rem;
   }
 }
+.ctaContainer .cta-box .cta-form .btn:hover {
+  background-color: #ffa066;
+  color: #000;
+}
 .ctaContainer .cta-img-box {
   height: 100%;
   background-image: url("../img/notebook-img-unsplash.jpg");
@@ -1266,6 +1303,11 @@ TINTS AND SHADES
   justify-content: center;
   margin-top: -55px;
 }
+@media (max-width: 770px) {
+  .footerContainer .contact ul {
+    margin-top: -35px;
+  }
+}
 .footerContainer .contact ul a:link,
 .footerContainer .contact ul a:visited {
   font-size: 2rem;
@@ -1317,19 +1359,9 @@ TINTS AND SHADES
 .footerContainer .copyRicardo {
   margin-top: -25px;
 }
-@media (max-width: 64.12em) {
-  .footerContainer .copyRicardo {
-    font-size: 1.6rem;
-  }
-}
-@media (max-width: 48.12em) {
+@media (max-width: 770px) {
   .footerContainer .copyRicardo {
     font-size: 1.4rem;
-  }
-}
-@media (max-width: 30.12em) {
-  .footerContainer .copyRicardo {
-    font-size: 1.2rem;
   }
 }
 

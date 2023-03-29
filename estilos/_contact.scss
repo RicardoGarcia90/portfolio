@@ -136,6 +136,11 @@
           margin-bottom: 1.2rem;
         }
       }
+
+      .btn:hover {
+        background-color: $color2;
+        color: $color7;
+      }
     }
   }
 
