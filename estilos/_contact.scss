@@ -12,25 +12,16 @@
   grid-template-columns: 3fr 2fr;
   column-gap: 2.6rem;
 
-  @media (max-width: 90.06em) {
-    width: 96rem;
+  @media (max-width: 1401px) {
+    width: 120rem;
   }
 
-  @media (max-width: 64.12em) {
-    width: 70rem;
+  @media (max-width: 1301px) {
+    width: 110rem;
   }
 
-  @media (max-width: 48.12em) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 3fr;
-    width: 43rem;
-    height: 90rem;
-    padding-left: 0;
-  }
-
-  @media (max-width: 30.12em) {
-    width: 28rem;
-    height: 85rem;
+  @media (max-width: 1201px) {
+    width: 100rem;
   }
 
   .cta-box {
@@ -42,40 +33,16 @@
       font-size: 3rem;
       padding: 2rem;
       text-align: center;
-
-      @media (max-width: 64.12em) {
-        font-size: 2.4rem;
-      }
-
-      @media (max-width: 30.12em) {
-        font-size: 2rem;
-      }
     }
 
     .cta-form {
       display: flex;
       flex-direction: column;
 
-      @media (max-width: 48.12em) {
-        padding-left: 2.4rem;
-      }
-
-      @media (max-width: 30.12em) {
-        padding-left: 1.2rem;
-      }
-
       label {
         color: white;
         font-size: 2rem;
         margin-bottom: 1rem;
-
-        @media (max-width: 64.12em) {
-          font-size: 1.8rem;
-        }
-
-        @media (max-width: 30.12em) {
-          font-size: 1.4rem;
-        }
       }
 
       input {
@@ -86,18 +53,6 @@
         padding: 1rem;
         font-size: 1.6rem;
         border: none;
-
-        @media (max-width: 64.12em) {
-          font-size: 1.4rem;
-        }
-
-        @media (max-width: 48.12em) {
-          width: 30rem;
-        }
-
-        @media (max-width: 30.12em) {
-          width: 25rem;
-        }
       }
 
       #email,
@@ -112,14 +67,6 @@
         font-size: 1.8rem;
         font-family: inherit;
         border-radius: 2rem;
-
-        @media (max-width: 48.12em) {
-          width: 38rem;
-        }
-
-        @media (max-width: 30.12em) {
-          width: 25rem;
-        }
       }
 
       .btn {
@@ -131,10 +78,6 @@
 
         font-size: 1.6rem;
         color: white;
-
-        @media (max-width: 48.12em) {
-          margin-bottom: 1.2rem;
-        }
       }
 
       .btn:hover {
@@ -149,13 +92,5 @@
     background-image: url('../img/notebook-img-unsplash.jpg');
     background-size: cover;
     background-position: center;
-
-    @media (max-width: 48.12em) {
-      grid-row: 1;
-      background-size: cover;
-      background-position: center;
-
-      width: 100%;
-    }
   }
 }

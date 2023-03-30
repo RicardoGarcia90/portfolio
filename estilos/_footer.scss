@@ -10,18 +10,6 @@
   .logoFooter {
     width: 30rem;
 
-    @media (max-width: 64.12em) {
-      width: 15rem;
-    }
-
-    @media (max-width: 48.12em) {
-      width: 12rem;
-    }
-
-    @media (max-width: 30.12em) {
-      width: 10rem;
-    }
-
     img {
       width: 100%;
     }
@@ -35,27 +23,11 @@
     justify-content: center;
     margin-top: -55px;
 
-    @media (max-width: 770px) {
-      margin-top: -35px;
-    }
-
     a:link,
     a:visited {
       font-size: 2rem;
       text-decoration: none;
       color: $primary-color;
-
-      @media (max-width: 64.12em) {
-        font-size: 1.6rem;
-      }
-
-      @media (max-width: 48.12em) {
-        font-size: 1.4rem;
-      }
-
-      @media (max-width: 30.12em) {
-        font-size: 1.2rem;
-      }
     }
 
     a:hover,
@@ -67,26 +39,10 @@
     .footer-icon {
       font-size: 2rem;
       color: $primary-color;
-
-      @media (max-width: 64.12em) {
-        font-size: 1.6rem;
-      }
-
-      @media (max-width: 48.12em) {
-        font-size: 1.4rem;
-      }
-
-      @media (max-width: 30.12em) {
-        font-size: 1.2rem;
-      }
     }
   }
 
   .copyRicardo {
     margin-top: -25px;
-
-    @media (max-width: 770px) {
-      font-size: 1.4rem;
-    }
   }
 }

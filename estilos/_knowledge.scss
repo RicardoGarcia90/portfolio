@@ -5,17 +5,8 @@
   padding-top: 3.2rem;
   margin-top: 20rem;
 
-  @media (max-width: 90.06em) {
-    width: auto;
+  @media (max-width: 1201px) {
     height: 35rem;
-  }
-
-  @media (max-width: 64.12em) {
-    height: 30rem;
-  }
-
-  @media (max-width: 48.12em) {
-    height: 40rem;
   }
 
   .titleKnowledge {
@@ -29,16 +20,8 @@
     justify-content: center;
     gap: 8rem;
 
-    @media (max-width: 90.06em) {
+    @media (max-width: 1201px) {
       gap: 6rem;
-    }
-
-    @media (max-width: 64.12em) {
-      gap: 4rem;
-    }
-
-    @media (max-width: 48.12em) {
-      flex-wrap: wrap;
     }
 
     .html-constainerLogo,
@@ -55,15 +38,14 @@
         border-radius: 1rem;
         margin-bottom: 1.2rem;
 
-        @media (max-width: 90.06em) {
-          height: 11rem;
-          width: 11rem;
+        @media (max-width: 1401px) {
+          height: 13rem;
+          width: 13rem;
         }
 
-        @media (max-width: 64.12em) {
-          height: 7rem;
-          width: 7rem;
-          gap: 3rem;
+        @media (max-width: 1301px) {
+          height: 11rem;
+          width: 11rem;
         }
       }
 
@@ -71,12 +53,8 @@
         font-size: 2rem;
         color: $primary-color;
 
-        @media (max-width: 64.12em) {
-          font-size: 1.6rem;
-        }
-
-        @media (max-width: 48.12em) {
-          font-size: 1.4rem;
+        @media (max-width: 1201px) {
+          font-size: 1.8rem;
         }
       }
     }

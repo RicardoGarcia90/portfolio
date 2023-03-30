@@ -18,21 +18,11 @@
   border-radius: 10rem;
   cursor: pointer;
   transition: all 0.3s;
-
-  @media (max-width: 770px) {
-    font-size: 1.2rem;
-    padding: 0.2rem 1rem;
-    margin-bottom: 1rem;
-  }
 }
 
 .operations__tab-container {
   display: flex;
   justify-content: center;
-
-  @media (max-width: 770px) {
-    margin-left: 1.2rem;
-  }
 }
 
 .operations__tab {
@@ -67,25 +57,14 @@
 
 .operations__content--active {
   // border: 1px solid black;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  row-gap: 3rem;
-  column-gap: 2rem;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
 
-  @media (max-width: 90.06em) {
-    row-gap: 2.5rem;
-    column-gap: 1.5rem;
-  }
-
-  @media (max-width: 90.06em) {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-  }
-
-  @media (max-width: 48.12em) {
-    grid-template-columns: 1fr;
+  @media (max-width: 1201px) {
+    gap: 2.5rem;
   }
 
   .card {
@@ -93,28 +72,23 @@
 
     display: flex;
     flex-direction: column;
+    margin-bottom: 1.4rem;
+    padding-bottom: 1.2rem;
 
     position: relative;
     top: 0;
-
-    align-self: center;
-    justify-self: center;
 
     width: 40rem;
     height: 45rem;
     border-radius: 2rem;
     box-shadow: 10px 10px 37px -15px rgba(0, 0, 0, 0.8);
 
-    @media (max-width: 90.06em) {
+    @media (max-width: 1401px) {
       width: 35rem;
     }
 
-    @media (max-width: 64.12em) {
-      width: 33rem;
-    }
-
-    @media (max-width: 30.12em) {
-      width: 28rem;
+    @media (max-width: 1201px) {
+      width: 30rem;
     }
 
     .img {
@@ -140,10 +114,6 @@
         text-align: center;
         margin-top: 2rem;
         margin-bottom: 2rem;
-
-        @media (max-width: 30.12em) {
-          font-size: 2rem;
-        }
       }
 
       .linksContainer {
@@ -158,27 +128,15 @@
         grid-template-rows: 1fr 1fr;
         row-gap: 0.5rem;
 
-        @media (max-width: 30.12em) {
-          width: 20rem;
-        }
-
         .icon {
           justify-self: center;
           font-size: 2rem;
           color: black;
-
-          @media (max-width: 30.12em) {
-            font-size: 1.6rem;
-          }
         }
 
         .ver-codigo_icon {
           font-size: 2.2rem;
           --ionicon-stroke-width: 40px;
-
-          @media (max-width: 30.12em) {
-            font-size: 1.6rem;
-          }
         }
 
         .link-visit_site {
@@ -194,10 +152,6 @@
           text-decoration: none;
           font-size: 1.6rem;
           color: black;
-
-          @media (max-width: 30.12em) {
-            font-size: 1.4rem;
-          }
         }
 
         .link-visit_site:hover,
@@ -219,14 +173,6 @@
         line-height: 1.2;
         height: 15rem;
         overflow-y: auto;
-
-        @media (max-width: 90.06em) {
-          font-size: 1.6rem;
-        }
-
-        @media (max-width: 30.12em) {
-          font-size: 1.4rem;
-        }
       }
 
       .textSite::-webkit-scrollbar {

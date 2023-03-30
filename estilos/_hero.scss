@@ -7,33 +7,20 @@
   margin-top: 4rem;
   margin-bottom: 9.6rem;
 
-  @media (max-width: 48.12em) {
-    flex-direction: column;
-  }
-
   .logo img {
     height: 50rem;
 
-    @media (max-width: 90.06em) {
-      width: 40rem;
-    }
-
-    @media (max-width: 64.12em) {
-      width: 25rem;
-    }
-
-    @media (max-width: 48.12em) {
-      height: 30rem;
-      width: 30rem;
-      justify-content: space-evenly;
+    @media (max-width: 1301px) {
+      height: 45rem;
     }
   }
 
   .textHero {
     width: 55%;
 
-    @media (max-width: 48.12em) {
-      width: 90%;
+    @media (max-width: 1201px) {
+      width: 50%;
+      margin-right: 2.5rem;
     }
 
     .titleHero {
@@ -41,20 +28,8 @@
       margin-bottom: 1.6rem;
       text-align: center;
 
-      @media (max-width: 90.06em) {
-        font-size: 4rem;
-      }
-
-      @media (max-width: 64.12em) {
-        font-size: 3rem;
-      }
-
-      @media (max-width: 48.12em) {
-        font-size: 2.4rem;
-      }
-
-      @media (max-width: 30.12em) {
-        font-size: 2.2rem;
+      @media (max-width: 1301px) {
+        font-size: 4.5rem;
       }
     }
 
@@ -63,16 +38,8 @@
       line-height: 2.6rem;
       text-align: justify;
 
-      @media (max-width: 90.06em) {
-        font-size: 1.8rem;
-      }
-
-      @media (max-width: 64.12em) {
-        font-size: 1.6rem;
-      }
-
-      @media (max-width: 30.12em) {
-        font-size: 1.4rem;
+      @media (max-width: 1301px) {
+        font-size: 2rem;
       }
     }
   }

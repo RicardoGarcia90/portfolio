@@ -12,33 +12,16 @@
   left: 0;
   background-color: white;
 
-  @media (max-width: 770px) {
-    flex-direction: column-reverse;
-  }
-
   // MENU
   .menuContainer {
     width: 40%;
     margin-left: 4.8rem;
     align-self: center;
 
-    @media (max-width: 770em) {
-      margin-left: 0;
-      margin-top: 2rem;
-    }
-
     .menu__nav--list {
       display: flex;
       justify-content: space-between;
       list-style: none;
-
-      @media (max-width: 64.12em) {
-        gap: 2rem;
-      }
-
-      @media (max-width: 48.12em) {
-        justify-content: center;
-      }
     }
 
     .menu__nav--link a:link,
@@ -47,20 +30,8 @@
       font-size: 2rem;
       color: $primary-color;
 
-      @media (max-width: 90.06em) {
-        font-size: 2.2rem;
-      }
-
-      @media (max-width: 75.06em) {
-        font-size: 2rem;
-      }
-
-      @media (max-width: 64.12em) {
-        font-size: 1.6rem;
-      }
-
-      @media (max-width: 48.12em) {
-        font-size: 1.4rem;
+      @media (max-width: 1201px) {
+        font-size: 1.8rem;
       }
     }
 
@@ -74,27 +45,17 @@
   .language {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 3rem;
-
-    @media (max-width: 770px) {
-      margin-top: 1.2rem;
-      margin-left: 18rem;
-      gap: 1.2rem;
-    }
 
     a {
       text-decoration: none;
       color: $color7;
       font-family: inherit;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
 
-      @media (max-width: 770px) {
-        font-size: 1rem;
-
-        img {
-          width: 1.1rem;
-        }
+      @media (max-width: 1201px) {
+        font-size: 1.2rem;
       }
     }
 
@@ -109,13 +70,6 @@
     width: 7rem;
     margin-right: 4.8rem;
     align-self: center;
-
-    @media (max-width: 770px) {
-      width: 3.5rem;
-      margin-right: 3.8rem;
-      align-self: end;
-      margin-bottom: -2.7rem;
-    }
   }
 
   .redeSociais__nav-list {
@@ -128,10 +82,6 @@
   .redeSociais__nav--link a:visited {
     color: $primary-color;
     font-size: 2rem;
-
-    @media (max-width: 770em) {
-      font-size: 1.4rem;
-    }
   }
 
   .redeSociais__nav--link a:hover,
