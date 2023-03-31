@@ -32,7 +32,7 @@ body {
 }
 
 .line {
-  border: 0.3px solid #b7b7bf;
+  border: 0.3px solid rgba(250, 235, 215, 0.197);
 }
 
 .copyRicardo {
@@ -102,7 +102,7 @@ TINTS AND SHADES
 }
 .header .language a {
   text-decoration: none;
-  color: #000;
+  color: #3f3d56;
   font-family: inherit;
   font-size: 1.4rem;
 }
@@ -293,6 +293,8 @@ TINTS AND SHADES
   margin: 0 auto;
   margin-bottom: 9.6rem;
   padding: 2rem;
+  background-color: rgba(250, 235, 215, 0.197);
+  border-radius: 2rem;
 }
 
 .primaryTitle {
@@ -301,19 +303,19 @@ TINTS AND SHADES
 
 .btn {
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: inherit;
-  font-weight: 500;
   border: none;
-  padding: 1.25rem 4.5rem;
-  border-radius: 10rem;
   cursor: pointer;
   transition: all 0.3s;
+  background-color: rgba(250, 235, 215, 0.197);
 }
 
 .operations__tab-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
 }
 
 .operations__tab {
@@ -321,23 +323,14 @@ TINTS AND SHADES
   transform: translateY(-50%);
 }
 
-.operations__tab--1,
-.operations__tab--2,
-.operations__tab--3,
-.operations__tab--4 {
-  background-color: #ff6100;
-}
-
 .operations__tab--1:hover,
 .operations__tab--2:hover,
 .operations__tab--3:hover,
 .operations__tab--4:hover {
-  background-color: #ffa066;
+  color: #ffa066;
 }
 
 .operations__tab--active {
-  transform: translateY(-66%);
-  background-color: #000;
   color: #ff6100;
   font-weight: bold;
 }
@@ -359,7 +352,7 @@ TINTS AND SHADES
   }
 }
 .operations__content--active .card {
-  background-color: #ffa066;
+  background-color: rgba(250, 235, 215, 0.197);
   display: flex;
   flex-direction: column;
   margin-bottom: 1.4rem;
@@ -393,7 +386,7 @@ TINTS AND SHADES
 .operations__content--active .card .links-text_container {
   display: flex;
   flex-direction: column;
-  background-color: #ffa066;
+  background-color: white;
   border-radius: 0 0 2rem 2rem;
 }
 .operations__content--active .card .links-text_container h3 {
@@ -471,7 +464,7 @@ TINTS AND SHADES
 }
 
 .knowledgeContainer {
-  background-color: #000;
+  background-color: #3f3d56;
   height: 40rem;
   margin-bottom: 9.6rem;
   padding-top: 3.2rem;
@@ -567,6 +560,8 @@ TINTS AND SHADES
   margin: 0 auto;
   margin-bottom: 9.6rem;
   padding: 2rem;
+  background-color: rgba(250, 235, 215, 0.197);
+  border-radius: 2rem;
 }
 
 .primaryTitle {
@@ -575,19 +570,19 @@ TINTS AND SHADES
 
 .btn {
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: inherit;
-  font-weight: 500;
   border: none;
-  padding: 1.25rem 4.5rem;
-  border-radius: 10rem;
   cursor: pointer;
   transition: all 0.3s;
+  background-color: rgba(250, 235, 215, 0.197);
 }
 
 .operations__tab-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
 }
 
 .operations__tab {
@@ -595,23 +590,14 @@ TINTS AND SHADES
   transform: translateY(-50%);
 }
 
-.operations__tab--1,
-.operations__tab--2,
-.operations__tab--3,
-.operations__tab--4 {
-  background-color: #ff6100;
-}
-
 .operations__tab--1:hover,
 .operations__tab--2:hover,
 .operations__tab--3:hover,
 .operations__tab--4:hover {
-  background-color: #ffa066;
+  color: #ffa066;
 }
 
 .operations__tab--active {
-  transform: translateY(-66%);
-  background-color: #000;
   color: #ff6100;
   font-weight: bold;
 }
@@ -633,7 +619,7 @@ TINTS AND SHADES
   }
 }
 .operations__content--active .card {
-  background-color: #ffa066;
+  background-color: rgba(250, 235, 215, 0.197);
   display: flex;
   flex-direction: column;
   margin-bottom: 1.4rem;
@@ -667,7 +653,7 @@ TINTS AND SHADES
 .operations__content--active .card .links-text_container {
   display: flex;
   flex-direction: column;
-  background-color: #ffa066;
+  background-color: white;
   border-radius: 0 0 2rem 2rem;
 }
 .operations__content--active .card .links-text_container h3 {
@@ -826,7 +812,7 @@ TINTS AND SHADES
 }
 .ctaContainer .cta-box .cta-form .btn:hover {
   background-color: #ffa066;
-  color: #000;
+  color: #3f3d56;
 }
 .ctaContainer .cta-img-box {
   height: 100%;

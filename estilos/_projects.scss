@@ -2,6 +2,8 @@
   @include mainContainer();
   margin-bottom: 9.6rem;
   padding: 2rem;
+  background-color: $color5;
+  border-radius: 2rem;
 }
 
 .primaryTitle {
@@ -10,19 +12,19 @@
 
 .btn {
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: inherit;
-  font-weight: 500;
   border: none;
-  padding: 1.25rem 4.5rem;
-  border-radius: 10rem;
   cursor: pointer;
   transition: all 0.3s;
+  background-color: $color5;
 }
 
 .operations__tab-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
 }
 
 .operations__tab {
@@ -30,23 +32,14 @@
   transform: translateY(-50%);
 }
 
-.operations__tab--1,
-.operations__tab--2,
-.operations__tab--3,
-.operations__tab--4 {
-  background-color: $primary-color;
-}
-
 .operations__tab--1:hover,
 .operations__tab--2:hover,
 .operations__tab--3:hover,
 .operations__tab--4:hover {
-  background-color: $color2;
+  color: $color2;
 }
 
 .operations__tab--active {
-  transform: translateY(-66%);
-  background-color: $color7;
   color: $primary-color;
   font-weight: bold;
 }
@@ -68,7 +61,7 @@
   }
 
   .card {
-    background-color: $color2;
+    background-color: $color5;
 
     display: flex;
     flex-direction: column;
@@ -105,7 +98,7 @@
     .links-text_container {
       display: flex;
       flex-direction: column;
-      background-color: $color2;
+      background-color: white;
       border-radius: 0 0 2rem 2rem;
 
       h3 {
