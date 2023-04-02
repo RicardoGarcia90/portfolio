@@ -2,8 +2,6 @@
   @include mainContainer();
   margin-bottom: 9.6rem;
   padding: 2rem;
-  background-color: $color5;
-  border-radius: 2rem;
 }
 
 .primaryTitle {
@@ -17,7 +15,7 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s;
-  background-color: $color5;
+  background-color: $color6;
 }
 
 .operations__tab-container {
@@ -61,8 +59,6 @@
   }
 
   .card {
-    background-color: $color5;
-
     display: flex;
     flex-direction: column;
     margin-bottom: 1.4rem;
@@ -71,10 +67,10 @@
     position: relative;
     top: 0;
 
-    width: 40rem;
-    height: 45rem;
+    width: 30rem;
+
     border-radius: 2rem;
-    box-shadow: 10px 10px 37px -15px rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 7px -1px rgba(0, 0, 0, 0.251);
 
     @media (max-width: 1401px) {
       width: 35rem;
@@ -85,13 +81,12 @@
     }
 
     .img {
-      border: 1px solid $color2;
       border-radius: 2rem 2rem 0 0;
       overflow: hidden;
 
       img {
         max-width: 100%;
-        height: 20rem;
+        height: 15rem;
       }
     }
 
@@ -102,39 +97,36 @@
       border-radius: 0 0 2rem 2rem;
 
       h3 {
-        color: black;
-        font-size: 2.4rem;
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        color: $color8;
+        font-size: 2rem;
+        text-align: start;
+        margin: 2rem 0 1.2rem 1.2rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        margin: 0 1rem 1.6rem 1.2rem;
+        color: $color9;
       }
 
       .linksContainer {
-        align-self: center;
-        justify-self: center;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
         width: 30rem;
         height: 3rem;
         margin-bottom: 1.8rem;
 
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        row-gap: 0.5rem;
+        .icon-text-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
 
         .icon {
-          justify-self: center;
-          font-size: 2rem;
+          font-size: 1.6rem;
           color: black;
-        }
-
-        .ver-codigo_icon {
-          font-size: 2.2rem;
-          --ionicon-stroke-width: 40px;
-        }
-
-        .link-visit_site {
-          grid-column: 1/2;
-          grid-row: 2/3;
         }
 
         .link-visit_site:link,
@@ -143,7 +135,7 @@
         .link-ver_codigo:visited {
           justify-self: center;
           text-decoration: none;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           color: black;
         }
 
@@ -153,7 +145,6 @@
         .link-ver_codigo:active {
           color: $primary-color;
           font-weight: 700;
-          font-size: 1.8rem;
           text-decoration: underline;
           transition: all 0.1s;
         }
@@ -181,11 +172,5 @@
         border-radius: 20px;
       }
     }
-  }
-
-  .card:hover {
-    top: -7px;
-    box-shadow: 10px 10px 37px -15px rgba(0, 0, 0, 0.7);
-    transition: all 0.2s ease-in-out;
   }
 }

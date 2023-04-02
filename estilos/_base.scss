@@ -5,7 +5,8 @@ $color4: #803100;
 $color5: rgba(250, 235, 215, 0.197);
 $color6: #fff;
 $color7: #3f3d56;
-
+$color8: #222;
+$color9: #222222bf;
 * {
   padding: 0;
   margin: 0;
@@ -45,7 +46,7 @@ body {
 }
 
 .primaryTitle {
-  font-size: 2rem;
+  font-size: 2.6rem;
   color: $primary-color;
   text-align: center;
 

@@ -27,7 +27,7 @@
     .menu__nav--link a:link,
     .menu__nav--link a:visited {
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: $primary-color;
 
       @media (max-width: 1201px) {
@@ -42,54 +42,57 @@
     }
   }
 
-  .language {
+  // REDES SOCIAIS
+  .language-redesSociaisContainer {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 3rem;
+    margin-right: 8rem;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 15rem;
 
-    a {
-      text-decoration: none;
-      color: $color7;
-      font-family: inherit;
-      font-size: 1.4rem;
+    .language {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
 
-      @media (max-width: 1201px) {
-        font-size: 1.2rem;
+      a {
+        text-decoration: none;
+        color: $color7;
+        font-family: inherit;
+        font-size: 1.4rem;
+
+        @media (max-width: 1201px) {
+          font-size: 1.2rem;
+        }
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: $primary-color;
       }
     }
 
-    a:hover {
-      text-decoration: underline;
+    .redeSociais__nav-list {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      gap: 1rem;
+    }
+
+    .redeSociais__nav--link a:link,
+    .redeSociais__nav--link a:visited {
       color: $primary-color;
+      font-size: 2rem;
+    }
+
+    .redeSociais__nav--link a:hover,
+    .redeSociais__nav--link a:active {
+      color: $color4;
     }
   }
 
-  // REDES SOCIAIS
-  .redesSociaisContainer {
-    width: 7rem;
-    margin-right: 4.8rem;
-    align-self: center;
+  .ativo {
+    box-shadow: 0px 10px 9px -11px rgba(183, 183, 191, 1);
   }
-
-  .redeSociais__nav-list {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-  }
-
-  .redeSociais__nav--link a:link,
-  .redeSociais__nav--link a:visited {
-    color: $primary-color;
-    font-size: 2rem;
-  }
-
-  .redeSociais__nav--link a:hover,
-  .redeSociais__nav--link a:active {
-    color: $color4;
-  }
-}
-
-.ativo {
-  box-shadow: 0px 10px 9px -11px rgba(183, 183, 191, 1);
 }

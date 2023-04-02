@@ -10,7 +10,6 @@
   }
 
   .titleKnowledge {
-    text-align: center;
     margin-bottom: 6.4rem;
     color: $color6;
   }
@@ -51,7 +50,7 @@
 
       .nameHability {
         font-size: 2rem;
-        color: $primary-color;
+        color: $color6;
 
         @media (max-width: 1201px) {
           font-size: 1.8rem;

@@ -16,7 +16,7 @@ body {
 }
 
 .primaryTitle {
-  font-size: 2rem;
+  font-size: 2.6rem;
   color: #ff6100;
   text-align: center;
 }
@@ -80,7 +80,7 @@ TINTS AND SHADES
 .header .menuContainer .menu__nav--link a:link,
 .header .menuContainer .menu__nav--link a:visited {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #ff6100;
 }
 @media (max-width: 1201px) {
@@ -94,48 +94,50 @@ TINTS AND SHADES
   color: #803100;
   text-decoration: underline;
 }
-.header .language {
+.header .language-redesSociaisContainer {
+  display: flex;
+  margin-right: 8rem;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 15rem;
+}
+.header .language-redesSociaisContainer .language {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 3rem;
+  justify-content: space-between;
+  gap: 2rem;
 }
-.header .language a {
+.header .language-redesSociaisContainer .language a {
   text-decoration: none;
   color: #3f3d56;
   font-family: inherit;
   font-size: 1.4rem;
 }
 @media (max-width: 1201px) {
-  .header .language a {
+  .header .language-redesSociaisContainer .language a {
     font-size: 1.2rem;
   }
 }
-.header .language a:hover {
+.header .language-redesSociaisContainer .language a:hover {
   text-decoration: underline;
   color: #ff6100;
 }
-.header .redesSociaisContainer {
-  width: 7rem;
-  margin-right: 4.8rem;
-  align-self: center;
-}
-.header .redeSociais__nav-list {
+.header .language-redesSociaisContainer .redeSociais__nav-list {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  gap: 1rem;
 }
-.header .redeSociais__nav--link a:link,
-.header .redeSociais__nav--link a:visited {
+.header .language-redesSociaisContainer .redeSociais__nav--link a:link,
+.header .language-redesSociaisContainer .redeSociais__nav--link a:visited {
   color: #ff6100;
   font-size: 2rem;
 }
-.header .redeSociais__nav--link a:hover,
-.header .redeSociais__nav--link a:active {
+.header .language-redesSociaisContainer .redeSociais__nav--link a:hover,
+.header .language-redesSociaisContainer .redeSociais__nav--link a:active {
   color: #803100;
 }
-
-.ativo {
+.header .ativo {
   box-shadow: 0px 10px 9px -11px rgb(183, 183, 191);
 }
 
@@ -171,6 +173,7 @@ TINTS AND SHADES
   font-size: 5.5rem;
   margin-bottom: 1.6rem;
   text-align: center;
+  color: #222;
 }
 @media (max-width: 1301px) {
   .heroContainer .textHero .titleHero {
@@ -214,7 +217,7 @@ TINTS AND SHADES
 }
 .aboutMeContainer .titleAboutMe {
   margin-bottom: 2rem;
-  color: #4c1d00;
+  color: #222;
 }
 .aboutMeContainer .aboutMe-flex {
   display: flex;
@@ -243,6 +246,7 @@ TINTS AND SHADES
 .aboutMeContainer .aboutMe-flex .text-Img_Container .textAboutMe h2 {
   font-size: 3rem;
   margin-bottom: 1.2rem;
+  color: #222;
 }
 @media (max-width: 1201px) {
   .aboutMeContainer .aboutMe-flex .text-Img_Container .textAboutMe h2 {
@@ -255,6 +259,7 @@ TINTS AND SHADES
   font-weight: 600;
   line-height: 1.2;
   justify-self: center;
+  color: #222;
 }
 @media (max-width: 1201px) {
   .aboutMeContainer .aboutMe-flex .text-Img_Container .textAboutMe {
@@ -293,8 +298,6 @@ TINTS AND SHADES
   margin: 0 auto;
   margin-bottom: 9.6rem;
   padding: 2rem;
-  background-color: rgba(250, 235, 215, 0.197);
-  border-radius: 2rem;
 }
 
 .primaryTitle {
@@ -308,7 +311,7 @@ TINTS AND SHADES
   border: none;
   cursor: pointer;
   transition: all 0.3s;
-  background-color: rgba(250, 235, 215, 0.197);
+  background-color: #fff;
 }
 
 .operations__tab-container {
@@ -352,17 +355,15 @@ TINTS AND SHADES
   }
 }
 .operations__content--active .card {
-  background-color: rgba(250, 235, 215, 0.197);
   display: flex;
   flex-direction: column;
   margin-bottom: 1.4rem;
   padding-bottom: 1.2rem;
   position: relative;
   top: 0;
-  width: 40rem;
-  height: 45rem;
+  width: 30rem;
   border-radius: 2rem;
-  box-shadow: 10px 10px 37px -15px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 2px 7px -1px rgba(0, 0, 0, 0.251);
 }
 @media (max-width: 1401px) {
   .operations__content--active .card {
@@ -375,13 +376,12 @@ TINTS AND SHADES
   }
 }
 .operations__content--active .card .img {
-  border: 1px solid #ffa066;
   border-radius: 2rem 2rem 0 0;
   overflow: hidden;
 }
 .operations__content--active .card .img img {
   max-width: 100%;
-  height: 20rem;
+  height: 15rem;
 }
 .operations__content--active .card .links-text_container {
   display: flex;
@@ -390,35 +390,33 @@ TINTS AND SHADES
   border-radius: 0 0 2rem 2rem;
 }
 .operations__content--active .card .links-text_container h3 {
-  color: black;
-  font-size: 2.4rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  color: #222;
+  font-size: 2rem;
+  text-align: start;
+  margin: 2rem 0 1.2rem 1.2rem;
+}
+.operations__content--active .card .links-text_container p {
+  font-size: 1.6rem;
+  margin: 0 1rem 1.6rem 1.2rem;
+  color: rgba(34, 34, 34, 0.7490196078);
 }
 .operations__content--active .card .links-text_container .linksContainer {
-  align-self: center;
-  justify-self: center;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
   width: 30rem;
   height: 3rem;
   margin-bottom: 1.8rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 0.5rem;
+}
+.operations__content--active .card .links-text_container .linksContainer .icon-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .operations__content--active .card .links-text_container .linksContainer .icon {
-  justify-self: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: black;
-}
-.operations__content--active .card .links-text_container .linksContainer .ver-codigo_icon {
-  font-size: 2.2rem;
-  --ionicon-stroke-width: 40px;
-}
-.operations__content--active .card .links-text_container .linksContainer .link-visit_site {
-  grid-column: 1/2;
-  grid-row: 2/3;
 }
 .operations__content--active .card .links-text_container .linksContainer .link-visit_site:link,
 .operations__content--active .card .links-text_container .linksContainer .link-visit_site:visited,
@@ -426,7 +424,7 @@ TINTS AND SHADES
 .operations__content--active .card .links-text_container .linksContainer .link-ver_codigo:visited {
   justify-self: center;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: black;
 }
 .operations__content--active .card .links-text_container .linksContainer .link-visit_site:hover,
@@ -435,7 +433,6 @@ TINTS AND SHADES
 .operations__content--active .card .links-text_container .linksContainer .link-ver_codigo:active {
   color: #ff6100;
   font-weight: 700;
-  font-size: 1.8rem;
   text-decoration: underline;
   transition: all 0.1s;
 }
@@ -457,11 +454,6 @@ TINTS AND SHADES
   background-color: #ff6100;
   border-radius: 20px;
 }
-.operations__content--active .card:hover {
-  top: -7px;
-  box-shadow: 10px 10px 37px -15px rgba(0, 0, 0, 0.7);
-  transition: all 0.2s ease-in-out;
-}
 
 .knowledgeContainer {
   background-color: #3f3d56;
@@ -476,7 +468,6 @@ TINTS AND SHADES
   }
 }
 .knowledgeContainer .titleKnowledge {
-  text-align: center;
   margin-bottom: 6.4rem;
   color: #fff;
 }
@@ -541,7 +532,7 @@ TINTS AND SHADES
 .knowledgeContainer .knowledge__logos-container .react-constainerLogo .nameHability,
 .knowledgeContainer .knowledge__logos-container .git-constainerLogo .nameHability {
   font-size: 2rem;
-  color: #ff6100;
+  color: #fff;
 }
 @media (max-width: 1201px) {
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .nameHability,
@@ -560,8 +551,6 @@ TINTS AND SHADES
   margin: 0 auto;
   margin-bottom: 9.6rem;
   padding: 2rem;
-  background-color: rgba(250, 235, 215, 0.197);
-  border-radius: 2rem;
 }
 
 .primaryTitle {
@@ -575,7 +564,7 @@ TINTS AND SHADES
   border: none;
   cursor: pointer;
   transition: all 0.3s;
-  background-color: rgba(250, 235, 215, 0.197);
+  background-color: #fff;
 }
 
 .operations__tab-container {
@@ -619,17 +608,15 @@ TINTS AND SHADES
   }
 }
 .operations__content--active .card {
-  background-color: rgba(250, 235, 215, 0.197);
   display: flex;
   flex-direction: column;
   margin-bottom: 1.4rem;
   padding-bottom: 1.2rem;
   position: relative;
   top: 0;
-  width: 40rem;
-  height: 45rem;
+  width: 30rem;
   border-radius: 2rem;
-  box-shadow: 10px 10px 37px -15px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 2px 7px -1px rgba(0, 0, 0, 0.251);
 }
 @media (max-width: 1401px) {
   .operations__content--active .card {
@@ -642,13 +629,12 @@ TINTS AND SHADES
   }
 }
 .operations__content--active .card .img {
-  border: 1px solid #ffa066;
   border-radius: 2rem 2rem 0 0;
   overflow: hidden;
 }
 .operations__content--active .card .img img {
   max-width: 100%;
-  height: 20rem;
+  height: 15rem;
 }
 .operations__content--active .card .links-text_container {
   display: flex;
@@ -657,35 +643,33 @@ TINTS AND SHADES
   border-radius: 0 0 2rem 2rem;
 }
 .operations__content--active .card .links-text_container h3 {
-  color: black;
-  font-size: 2.4rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  color: #222;
+  font-size: 2rem;
+  text-align: start;
+  margin: 2rem 0 1.2rem 1.2rem;
+}
+.operations__content--active .card .links-text_container p {
+  font-size: 1.6rem;
+  margin: 0 1rem 1.6rem 1.2rem;
+  color: rgba(34, 34, 34, 0.7490196078);
 }
 .operations__content--active .card .links-text_container .linksContainer {
-  align-self: center;
-  justify-self: center;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
   width: 30rem;
   height: 3rem;
   margin-bottom: 1.8rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 0.5rem;
+}
+.operations__content--active .card .links-text_container .linksContainer .icon-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .operations__content--active .card .links-text_container .linksContainer .icon {
-  justify-self: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: black;
-}
-.operations__content--active .card .links-text_container .linksContainer .ver-codigo_icon {
-  font-size: 2.2rem;
-  --ionicon-stroke-width: 40px;
-}
-.operations__content--active .card .links-text_container .linksContainer .link-visit_site {
-  grid-column: 1/2;
-  grid-row: 2/3;
 }
 .operations__content--active .card .links-text_container .linksContainer .link-visit_site:link,
 .operations__content--active .card .links-text_container .linksContainer .link-visit_site:visited,
@@ -693,7 +677,7 @@ TINTS AND SHADES
 .operations__content--active .card .links-text_container .linksContainer .link-ver_codigo:visited {
   justify-self: center;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: black;
 }
 .operations__content--active .card .links-text_container .linksContainer .link-visit_site:hover,
@@ -702,7 +686,6 @@ TINTS AND SHADES
 .operations__content--active .card .links-text_container .linksContainer .link-ver_codigo:active {
   color: #ff6100;
   font-weight: 700;
-  font-size: 1.8rem;
   text-decoration: underline;
   transition: all 0.1s;
 }
@@ -723,11 +706,6 @@ TINTS AND SHADES
 .operations__content--active .card .links-text_container .textSite::-webkit-scrollbar-thumb {
   background-color: #ff6100;
   border-radius: 20px;
-}
-.operations__content--active .card:hover {
-  top: -7px;
-  box-shadow: 10px 10px 37px -15px rgba(0, 0, 0, 0.7);
-  transition: all 0.2s ease-in-out;
 }
 
 .ctaContainer {
@@ -879,22 +857,22 @@ body {
   font-family: "Nunito", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #2c2b3d;
+  color: #4c1d00;
 }
 
 .thanksContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15rem;
+  margin-top: 2rem;
 }
 .thanksContainer img {
-  width: 25rem;
-  margin-bottom: 2rem;
+  width: 45rem;
 }
 .thanksContainer h1 {
   font-size: 4.6rem;
   margin-bottom: 1.2rem;
+  margin-top: -10rem;
 }
 .thanksContainer p {
   font-size: 2.6rem;
@@ -905,12 +883,12 @@ body {
 .thanksContainer a:visited {
   text-decoration: none;
   font-size: 2rem;
-  color: #008037;
+  color: #ff6100;
   text-decoration: underline;
 }
 .thanksContainer a:hover,
 .thanksContainer a:active {
-  color: #b7b7bf;
+  color: rgba(250, 235, 215, 0.197);
   font-size: 2.2rem;
   transition: all 0.2s;
 }/*# sourceMappingURL=main.css.map */
