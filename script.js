@@ -165,3 +165,46 @@ document.addEventListener('keydown', function (e) {
     }
   }
 });
+
+////////////////////////////////////////////////////////
+// LANGUAGE
+
+const languageUSA = {
+  inicio: 'Start',
+  sobre: 'About',
+  ferramentas: 'Tools',
+  projetos: 'Projects',
+  contato: 'Contact',
+};
+
+const languageBR = {
+  start: 'Início',
+  about: 'Sobre',
+  tools: 'Ferramentas',
+  projects: 'Projetos',
+  contact: 'Contato',
+};
+const iconUSA = document.querySelector('.usaFlag');
+const iconBR = document.querySelector('.brFlag');
+
+const inicioLink = document.getElementById('inicioPT');
+const sobreLink = document.getElementById('sobrePT');
+const ferramentasLink = document.getElementById('ferramentasPT');
+const projetosLink = document.getElementById('projetosPT');
+const contatoLink = document.getElementById('contatoPT');
+
+iconUSA.addEventListener('click', function () {
+  inicioLink.textContent = languageUSA.inicio;
+  sobreLink.textContent = languageUSA.sobre;
+  ferramentasLink.textContent = languageUSA.ferramentas;
+  projetosLink.textContent = languageUSA.projetos;
+  contatoLink.textContent = languageUSA.contato;
+});
+
+iconBR.addEventListener('click', function () {
+  inicioLink.textContent = languageBR.start;
+  sobreLink.textContent = languageBR.about;
+  ferramentasLink.textContent = languageBR.tools;
+  projetosLink.textContent = languageBR.projects;
+  contatoLink.textContent = languageBR.contact;
+});
