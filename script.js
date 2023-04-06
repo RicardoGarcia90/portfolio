@@ -175,6 +175,8 @@ const languageUSA = {
   ferramentas: 'Tools',
   projetos: 'Projects',
   contato: 'Contact',
+
+  heroSpan: 'Welcome',
 };
 
 const languageBR = {
@@ -187,11 +189,15 @@ const languageBR = {
 const iconUSA = document.querySelector('.usaFlag');
 const iconBR = document.querySelector('.brFlag');
 
+// NAV
 const inicioLink = document.getElementById('inicioPT');
 const sobreLink = document.getElementById('sobrePT');
 const ferramentasLink = document.getElementById('ferramentasPT');
 const projetosLink = document.getElementById('projetosPT');
 const contatoLink = document.getElementById('contatoPT');
+
+// HERO
+const textHero = document.querySelector('.textHero');
 
 iconUSA.addEventListener('click', function () {
   inicioLink.textContent = languageUSA.inicio;
@@ -199,6 +205,14 @@ iconUSA.addEventListener('click', function () {
   ferramentasLink.textContent = languageUSA.ferramentas;
   projetosLink.textContent = languageUSA.projetos;
   contatoLink.textContent = languageUSA.contato;
+
+  textHero.innerHTML = `<h1 id="titleHeroPT_h1" class="titleHero">
+  Customized <span id="titleHeroPT_span" class="colorSpan">digital solutions</span> for your <span id="titleHeroPT_span" class="colorSpan">business!</span>
+  </h1>
+  <br />
+  <p class="paragrafoHero">
+  Development of <span class="colorSpan">high quality</span> digital products that help you achieve your <span class="colorSpan">business goals</span> and stand out in a highly competitive environment.
+</p>`;
 });
 
 iconBR.addEventListener('click', function () {
@@ -207,4 +221,12 @@ iconBR.addEventListener('click', function () {
   ferramentasLink.textContent = languageBR.tools;
   projetosLink.textContent = languageBR.projects;
   contatoLink.textContent = languageBR.contact;
+
+  textHero.innerHTML = `<h1 id="titleHeroPT_h1" class="titleHero">
+  <span id="titleHeroPT_span" class="colorSpan">Soluções digitais</span> personalizadas para o seu <negócio! id="titleHeroPT_span" class="colorSpan">negócio!</span>
+  </h1>
+  <br />
+  <p class="paragrafoHero">
+  Desenvolvimento de produtos digitais de <span class="colorSpan">alta qualidade</span> que ajudam a alcançar seus <span class="colorSpan">objetivos</span> de negócios e a se <span class="colorSpan">destacar</span> em um ambiente altamente competitivo. 
+</p>`;
 });
