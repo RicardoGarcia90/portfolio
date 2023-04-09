@@ -138,8 +138,9 @@ TINTS AND SHADES
 .header .language-redesSociaisContainer .redeSociais__nav--link a:active {
   color: #803100;
 }
-.header .ativo {
-  box-shadow: 0px 10px 9px -11px rgb(183, 183, 191);
+
+.ativo {
+  box-shadow: 0px 1px 5px -1px rgba(255, 97, 0, 0.29);
 }
 
 .heroContainer {
