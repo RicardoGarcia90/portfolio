@@ -169,17 +169,15 @@ document.addEventListener('keydown', function (e) {
 ////////////////////////////////////////////////////////
 // LANGUAGE
 
-const languageUSA = {
+const languageEN = {
   inicio: 'Start',
   sobre: 'About',
   ferramentas: 'Tools',
   projetos: 'Projects',
   contato: 'Contact',
-
-  heroSpan: 'Welcome',
 };
 
-const languageBR = {
+const languagePT = {
   start: 'Início',
   about: 'Sobre',
   tools: 'Ferramentas',
@@ -189,44 +187,134 @@ const languageBR = {
 const iconUSA = document.querySelector('.usaFlag');
 const iconBR = document.querySelector('.brFlag');
 
-// NAV
+// NAV elements
 const inicioLink = document.getElementById('inicioPT');
 const sobreLink = document.getElementById('sobrePT');
 const ferramentasLink = document.getElementById('ferramentasPT');
 const projetosLink = document.getElementById('projetosPT');
 const contatoLink = document.getElementById('contatoPT');
 
-// HERO
+// HERO elements
 const textHero = document.querySelector('.textHero');
 
-iconUSA.addEventListener('click', function () {
-  inicioLink.textContent = languageUSA.inicio;
-  sobreLink.textContent = languageUSA.sobre;
-  ferramentasLink.textContent = languageUSA.ferramentas;
-  projetosLink.textContent = languageUSA.projetos;
-  contatoLink.textContent = languageUSA.contato;
+// ABOUT ME elements
+const titleSectionAboutMe = document.querySelector('.titleAboutMe');
+const titleTextAboutMe = document.querySelector('.titleTextAboutMe');
+const textAboutMe = document.querySelector('.textAboutMe_paragraphy');
 
-  textHero.innerHTML = `<h1 id="titleHeroPT_h1" class="titleHero">
-  Customized <span id="titleHeroPT_span" class="colorSpan">digital solutions</span> for your <span id="titleHeroPT_span" class="colorSpan">business!</span>
+// TOOLS elements
+const titleTools = document.querySelector('.tools');
+
+// PROJECTS elements
+const titleProjects = document.querySelector('.projectsTitle');
+const appDesktop = document.getElementById('appWeb');
+const sites = document.getElementById('sites');
+const mobileApps = document.getElementById('mobileApp');
+const games = document.getElementById('games');
+
+const forkifySubtitle = document.getElementById('forkify-p');
+const maptySubtitle = document.getElementById('mapty_p');
+const bankistSubtitle = document.getElementById('bankist_p');
+const omnifoodSubtitle = document.getElementById('omnifood_p');
+
+const visitarSite = document.querySelectorAll('.visitarSite');
+const verCodigo = document.querySelectorAll('.verCodigo');
+const saberMais = document.querySelectorAll('.saberMais');
+
+console.log(visitarSite);
+
+// --- ENGLISH --- //
+iconUSA.addEventListener('click', function () {
+  // NAV change language for EN
+  inicioLink.textContent = languageEN.inicio;
+  sobreLink.textContent = languageEN.sobre;
+  ferramentasLink.textContent = languageEN.ferramentas;
+  projetosLink.textContent = languageEN.projetos;
+  contatoLink.textContent = languageEN.contato;
+  titleTools.textContent = languageEN.ferramentas;
+  titleProjects.textContent = languageEN.projetos;
+
+  // HERO change language for EN
+  textHero.innerHTML = `
+  <h1 id="titleHeroPT_h1" class="titleHero">Hello!<span id="titleHeroPT_span" class="colorSpan"> Welcome</span> to my portfolio!
   </h1>
   <br />
   <p class="paragrafoHero">
-  Development of <span class="colorSpan">high quality</span> digital products that help you achieve your <span class="colorSpan">business goals</span> and stand out in a highly competitive environment.
-</p>`;
+  My name is Ricardo and here you will find not only my projects, but also my journey of growth as a developer. Feel free to explore and get to know a little more about me and my skills. Thanks for the visit!
+  </p>`;
+
+  // ABOUT ME change language for EN
+  titleSectionAboutMe.textContent = languageEN.sobre;
+  titleTextAboutMe.textContent =
+    'I am passionate about technology and the ability it offers us to create and innovate.';
+  textAboutMe.textContent =
+    'Although I have worked in other areas, it was in technology that I found my true professional passion, building websites and applications using technologies such as Javascript, React.js, HTML and CSS/Sass. Currently, I dedicate my time to improving my knowledge in development, putting them into practice and challenging myself in new projects. In my spare time I like to play the guitar, play with my dog and walk in the park with my family.';
+
+  // PROJECTS change language for EN
+  appDesktop.textContent = 'Web Apps';
+  sites.textContent = 'Websites';
+  mobileApps.textContent = 'Mobile Apps';
+  games.textContent = 'Games';
+
+  forkifySubtitle.textContent = 'Recipe search app';
+  maptySubtitle.textContent = 'App for recording physical activity';
+  bankistSubtitle.textContent = 'App that simulates a digital bank';
+  omnifoodSubtitle.textContent =
+    'Landing page simulating a healthy food company';
+
+  visitarSite.forEach(text => (text.textContent = 'Visit Website'));
+  verCodigo.forEach(text => (text.textContent = 'View Code'));
+  saberMais.forEach(text => (text.textContent = 'Read More'));
 });
 
+// ------------------ //
+// --- PORTUGUESE --- //
 iconBR.addEventListener('click', function () {
-  inicioLink.textContent = languageBR.start;
-  sobreLink.textContent = languageBR.about;
-  ferramentasLink.textContent = languageBR.tools;
-  projetosLink.textContent = languageBR.projects;
-  contatoLink.textContent = languageBR.contact;
+  // NAV change language for PT
+  inicioLink.textContent = languagePT.start;
+  sobreLink.textContent = languagePT.about;
+  ferramentasLink.textContent = languagePT.tools;
+  projetosLink.textContent = languagePT.projects;
+  contatoLink.textContent = languagePT.contact;
+  titleTools.textContent = languagePT.tools;
+  titleProjects.textContent = languagePT.projects;
 
-  textHero.innerHTML = `<h1 id="titleHeroPT_h1" class="titleHero">
-  <span id="titleHeroPT_span" class="colorSpan">Soluções digitais</span> personalizadas para o seu <negócio! id="titleHeroPT_span" class="colorSpan">negócio!</span>
+  // HERO change language for PT
+  textHero.innerHTML = `
+  <h1 id="titleHeroPT_h1" class="titleHero">
+  <span id="titleHeroPT_span" class="colorSpan">Olá!</span>
+  seja muito
+  <span id="titleHeroPT_span" class="colorSpan">bem vindo</span>
+  ao meu portifólio!
   </h1>
   <br />
   <p class="paragrafoHero">
-  Desenvolvimento de produtos digitais de <span class="colorSpan">alta qualidade</span> que ajudam a alcançar seus <span class="colorSpan">objetivos</span> de negócios e a se <span class="colorSpan">destacar</span> em um ambiente altamente competitivo. 
-</p>`;
+  Meu nome é Ricardo e aqui você encontrará não apenas os meus
+  projetos, mas também a minha jornada de crescimento como
+  desenvolvedor. Sinta-se à vontade para explorar e conhecer um pouco
+  mais sobre mim e minhas habilidades. Obrigado pela visita!
+  </p>`;
+
+  // ABOUT ME change language for PT
+  titleSectionAboutMe.textContent = languagePT.about;
+  titleTextAboutMe.textContent =
+    'Sou apaixonado por tecnologia e pela capacidade que ela nos oferece de criar e inovar.';
+  textAboutMe.textContent =
+    'Embora tenha trabalhado em outras áreas, foi na tecnologia que encontrei minha verdadeira paixão profissional, construindo sites e aplicações utilizando tecnologias como Javascript, React.js, HTML e CSS/Sass. Atualmente, dedico meu tempo a aprimorar meus conhecimentos em desenvolvimento, colocando-os em prática e me desafiando em novos projetos. Nas horas vagas, gosto de tocar guitarra, brincar com meu cachorro e caminhar no parque com minha família.';
+
+  // PROJECTS change language for PT
+  appDesktop.textContent = 'Aplicativos Web';
+  sites.textContent = 'Sites';
+  mobileApps.textContent = 'Aplicativos Mobile';
+  games.textContent = 'Jogos';
+
+  forkifySubtitle.textContent = 'App para busca de receitas';
+  maptySubtitle.textContent = 'App para registro de atividade física';
+  bankistSubtitle.textContent = 'App que simula um banco digital';
+  omnifoodSubtitle.textContent =
+    'Landing page simulando uma empresa de comidas saudáveis';
+
+  visitarSite.forEach(text => (text.textContent = 'Visitar Site'));
+  verCodigo.forEach(text => (text.textContent = 'Ver Código'));
+  saberMais.forEach(text => (text.textContent = 'Saber Mais'));
 });
