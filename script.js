@@ -216,6 +216,14 @@ const forkifySubtitle = document.getElementById('forkify-p');
 const maptySubtitle = document.getElementById('mapty_p');
 const bankistSubtitle = document.getElementById('bankist_p');
 const omnifoodSubtitle = document.getElementById('omnifood_p');
+const androidTitle = document.getElementById('android_h3');
+const androidSubtitle = document.getElementById('android_p');
+const emBreveTitle = document.getElementById('emBreve_h3');
+const emBreveSubtitle = document.getElementById('emBreve_p');
+const jogoDadoTitle = document.getElementById('jogoDado_h3');
+const jogoDadoSubtitle = document.getElementById('jogoDado_p');
+const adivNumeroTitle = document.getElementById('adivNumero_h3');
+const adivNumeroSubtitle = document.getElementById('adivNumero_p');
 
 const visitarSite = document.querySelectorAll('.visitarSite');
 const verCodigo = document.querySelectorAll('.verCodigo');
@@ -261,10 +269,90 @@ iconUSA.addEventListener('click', function () {
   bankistSubtitle.textContent = 'App that simulates a digital bank';
   omnifoodSubtitle.textContent =
     'Landing page simulating a healthy food company';
+  androidTitle.textContent = 'Android Project';
+  androidSubtitle.textContent =
+    'Landing page about that tells the story of Android';
+  emBreveTitle.textContent = 'Coming soon';
+  emBreveSubtitle.textContent = 'Soon a new project will be added';
+  jogoDadoTitle.textContent = 'Pig (dice game)';
+  jogoDadoSubtitle.textContent =
+    'Throw the dice and collect points to be a winner';
+  adivNumeroTitle.textContent = 'Guessing game';
+  adivNumeroSubtitle.textContent = 'Guess which number was drawn';
 
   visitarSite.forEach(text => (text.textContent = 'Visit Website'));
   verCodigo.forEach(text => (text.textContent = 'View Code'));
   saberMais.forEach(text => (text.textContent = 'Read More'));
+
+  // FORKIFY MODAL ENGLISH
+  linkMaisForkify.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Forkify';
+    descriptionModal.textContent =
+      'An app to search for recipes. This app was created as a final project for the JavaScript course. It allows you to search for new recipes and also to add and edit your own recipes.';
+  });
+
+  // MAPTY
+  linkMaisMapty.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Mapty';
+    descriptionModal.textContent =
+      'An app for recording physical activity. In this project, it is possible to add the distance covered, time, and type of activity. This project was completed during a JavaScript course.';
+  });
+
+  // BANKIST
+  linkMaisBankist.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Bankist';
+    descriptionModal.textContent =
+      'A project created during a JavaScript course. This project simulates a digital bank where it is possible to simulate transfers and loans. To log in to the site, please see the README on GitHub by clicking on "View Code".';
+  });
+
+  // OMNIFOOD
+  linkMaisOmnifood.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Omnifood';
+    descriptionModal.textContent =
+      'A project was created to simulate a delivery company that sells healthy meal plans. The main objective of this project was to practice the techniques and tools used during the course, such as HTML, CSS, and JavaScript.';
+  });
+
+  // ANDROID
+  linkMaisAndroid.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Android Project';
+    descriptionModal.textContent =
+      'A landing page was created as a final project for the first HTML and CSS course. This project utilized the initial learnings of Front-End development tools.';
+  });
+
+  // JOGO DO DADO
+  linkMaisJogoDado.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Pig (dice game)';
+    descriptionModal.textContent =
+      'A game where the first person to reach the highest score wins. This game was developed during a JavaScript course. The game is very simple: each player rolls the dice, and if the value is different from 1, the player accumulates points. If the value is 1, the turn goes to the next player, and the accumulated points are lost. For more details, please read the README on GitHub by clicking on "View Code".';
+  });
+
+  // JOGO ADIVINHAR NUMERO
+  linkMaisAdivinharNumero.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Guessing game';
+    descriptionModal.textContent =
+      'A simple number guessing game is played by generating a random number between 1 and 20. The user types in a number they think was generated, and with each incorrect guess, the points decrease until the correct answer is given.';
+  });
 });
 
 // ------------------ //
@@ -313,8 +401,87 @@ iconBR.addEventListener('click', function () {
   bankistSubtitle.textContent = 'App que simula um banco digital';
   omnifoodSubtitle.textContent =
     'Landing page simulando uma empresa de comidas saudáveis';
+  androidSubtitle.textContent =
+    'Landing page sobre que conta a história do Android';
+  emBreveTitle.textContent = 'Em breve';
+  emBreveSubtitle.textContent = 'Em breve um novo projeto será adicionado';
+  jogoDadoTitle.textContent = 'Jogo do Dado';
+  jogoDadoSubtitle.textContent =
+    'Jogue os dados e acumule pontos para ser um vencedor';
+  adivNumeroTitle.textContent = 'Jogo de adivinhação';
+  adivNumeroSubtitle.textContent = 'Adivinhe qual número foi sorteado';
 
   visitarSite.forEach(text => (text.textContent = 'Visitar Site'));
   verCodigo.forEach(text => (text.textContent = 'Ver Código'));
   saberMais.forEach(text => (text.textContent = 'Saber Mais'));
+
+  // FORKIFY MODAL PORTUGUESE
+  linkMaisForkify.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Forkify';
+    descriptionModal.textContent =
+      'App para pesquisar receitas, nesse app criado como projeto final do curso de JavaScript é possível pesquisar novas receitas, além de adicionar e editar as suas próprias.';
+  });
+
+  // MAPTY MODAL PORTUGUESE
+  linkMaisMapty.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Mapty';
+    descriptionModal.textContent =
+      'App de registro de atividade física, nesse projeto é possível adicionar distância percorrida, tempo e tipo de atividade. Esse projeto foi realizado durante curso de JavaScript já concluído.';
+  });
+
+  // BANKIST MODAL PORTUGUESE
+  linkMaisBankist.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Bankist';
+    descriptionModal.textContent =
+      'Projeto criado durante curso de JavaScript, este projeto simula um banco digital, nele é possível simular transferências e empréstimos. Para realizar login no site veja o README no GitHub clicando em "Ver Código".';
+  });
+
+  // OMNIFOOD MODAL PORTUGUESE
+  linkMaisOmnifood.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Omnifood';
+    descriptionModal.textContent =
+      'Projeto criado simulando uma empresa de Delivery que vende planos de refeiçoes saudáveis. Nesse projeto o principal objetivo foi a prática de técnicas e ferramentas utilizadas durante o curso realizado, como: HTML, CSS e JavaScript.';
+  });
+
+  // ANDROID MODAL PORTUGUESE
+  linkMaisAndroid.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Projeto Android';
+    descriptionModal.textContent =
+      'Landing page criada como projeto final do primeiro curso realizado de HTML e CSS. Nesse projeto foram utilizados os primeiros aprendizados das ferrmantas de desenvolvimento Front-End.';
+  });
+
+  // JOGO DO DADO MODAL PORTUGUESE
+  linkMaisJogoDado.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Jogo do Dado';
+    descriptionModal.textContent =
+      'Jogo onde quem alcançar a maior pontuação primeiro vence. Esse jogo foi desenvolvido durante curso realizado de JavaScript, o jogo é bem simples, cada jogador rola o dado, sendo o valor diferente de 1 o jogador acumula os pontos, se o valor for 1 a jogada passa para o próximo jogador e você perde os pontos acumulados. Para saber mais detalhes leia o README no GitHub clicando em "Ver Código".';
+  });
+
+  // JOGO ADIVINHAR NUMERO MODAL PORTUGUESE
+  linkMaisAdivinharNumero.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Jogo de Adivinhar o númrero sorteado';
+    descriptionModal.textContent =
+      'Jogo simples de adivinhação de números. É gerado um número aleatório entre 1 e 20, o usuário digita qual o número ele acha que foi gerado, a cada erro os pontos vão diminuindo até que o chute seja correto.';
+  });
 });
