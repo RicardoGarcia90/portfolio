@@ -30,8 +30,8 @@
       font-size: 1.8rem;
       color: $primary-color;
 
-      @media (max-width: 1201px) {
-        font-size: 1.8rem;
+      @media (max-width: 1200px) {
+        font-size: 1.6rem;
       }
     }
 
@@ -56,20 +56,13 @@
       justify-content: space-between;
       gap: 2rem;
 
-      a {
-        text-decoration: none;
-        color: $color7;
-        font-family: inherit;
-        font-size: 1.4rem;
+      .usaFlag img,
+      .brFlag img {
+        width: 2rem;
 
-        @media (max-width: 1201px) {
-          font-size: 1.2rem;
+        @media (max-width: 1200px) {
+          width: 1.8rem;
         }
-      }
-
-      a:hover {
-        text-decoration: underline;
-        color: $primary-color;
       }
     }
 
@@ -84,6 +77,10 @@
     .redeSociais__nav--link a:visited {
       color: $primary-color;
       font-size: 2rem;
+
+      @media (max-width: 1200px) {
+        font-size: 1.8rem;
+      }
     }
 
     .redeSociais__nav--link a:hover,

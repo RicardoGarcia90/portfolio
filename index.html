@@ -123,16 +123,10 @@
       <div class="language-redesSociaisContainer">
         <div class="language">
           <a class="usaFlag" href="javascript:void(0)">
-            <img
-              width="20rem"
-              src="img/icon -flag-estados-unidos.png"
-              alt="bandeira USA"
+            <img src="img/icon -flag-estados-unidos.png" alt="bandeira USA"
           /></a>
           <a class="brFlag" href="javascript:void(0)">
-            <img
-              width="20rem"
-              src="img/icon-flag-bandeira-do-brasil.png"
-              alt="bandeira USA"
+            <img src="img/icon-flag-bandeira-do-brasil.png" alt="bandeira USA"
           /></a>
         </div>
         <nav class="redeSociais__nav">
@@ -164,7 +158,7 @@
       <!-- HERO -->
       <div class="heroContainer">
         <div class="logo">
-          <img src="img/logoRicardoGarcia.png" alt="logo" />
+          <img src="img/logoRicardoGarcia.png" alt="logoRicardoGarcia" />
         </div>
         <div class="textHero">
           <h1 id="titleHeroPT_h1" class="titleHero">
@@ -695,22 +689,16 @@
       <!-- CONTATO -->
       <div id="cont" class="ctaContainer">
         <div class="cta-box">
-          <h3>Entre em contato</h3>
+          <h3 id="ctaTitle_h3">Entre em contato</h3>
           <form
             class="cta-form"
             action="https://formsubmit.co/ricardonunesgarcia@outlook.com"
             method="post"
           >
-            <label for="full-name">Nome</label>
-            <input
-              id="nome"
-              type="text"
-              placeholder="Seu nome"
-              name="full-name"
-              required
-            />
+            <label for="full-name" id="labelNome">Nome</label>
+            <input id="nome" type="text" name="full-name" required />
 
-            <label for="email">Email</label>
+            <label for="email" id="labelEmail">Email</label>
             <input
               id="email"
               type="email"
@@ -719,7 +707,9 @@
               required
             />
 
-            <label for="select-where">Deixe sua mensagem!</label>
+            <label for="select-where" id="labelMensagem"
+              >Deixe sua mensagem!</label
+            >
             <textarea
               name="mensagem"
               id="caixaTexto"
@@ -732,7 +722,7 @@
               name="_next"
               value="http://127.0.0.1:5500/thanks.html"
             />
-            <button class="btn btn--form">Enviar</button>
+            <button class="btn btn--form" id="ctaButtonEnviar">Enviar</button>
           </form>
         </div>
         <div class="cta-img-box"></div>

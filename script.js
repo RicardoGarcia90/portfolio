@@ -229,7 +229,12 @@ const visitarSite = document.querySelectorAll('.visitarSite');
 const verCodigo = document.querySelectorAll('.verCodigo');
 const saberMais = document.querySelectorAll('.saberMais');
 
-console.log(visitarSite);
+// CTA elements
+const ctaTitle = document.getElementById('ctaTitle_h3');
+const ctaLabelNome = document.getElementById('labelNome');
+
+const ctaLabelMensagem = document.getElementById('labelMensagem');
+const ctaButtonEnviar = document.getElementById('ctaButtonEnviar');
 
 // --- ENGLISH --- //
 iconUSA.addEventListener('click', function () {
@@ -353,6 +358,12 @@ iconUSA.addEventListener('click', function () {
     descriptionModal.textContent =
       'A simple number guessing game is played by generating a random number between 1 and 20. The user types in a number they think was generated, and with each incorrect guess, the points decrease until the correct answer is given.';
   });
+
+  // CTA change language for EN
+  ctaTitle.textContent = 'Contact';
+  ctaLabelNome.textContent = 'Name';
+  ctaLabelMensagem.textContent = 'Write your message!';
+  ctaButtonEnviar.textContent = 'Send';
 });
 
 // ------------------ //
@@ -484,4 +495,10 @@ iconBR.addEventListener('click', function () {
     descriptionModal.textContent =
       'Jogo simples de adivinhação de números. É gerado um número aleatório entre 1 e 20, o usuário digita qual o número ele acha que foi gerado, a cada erro os pontos vão diminuindo até que o chute seja correto.';
   });
+
+  // CTA change language for PT
+  ctaTitle.textContent = 'ConEntre em contatotact';
+  ctaLabelNome.textContent = 'Nome';
+  ctaLabelMensagem.textContent = 'Deixe sua mensagem!';
+  ctaButtonEnviar.textContent = 'Enviar';
 });

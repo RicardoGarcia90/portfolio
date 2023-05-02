@@ -5,8 +5,8 @@
   padding-top: 3.2rem;
   margin-top: 20rem;
 
-  @media (max-width: 1201px) {
-    height: 35rem;
+  @media (max-width: 1400px) {
+    height: 350px;
   }
 
   .titleKnowledge {
@@ -19,7 +19,7 @@
     justify-content: center;
     gap: 8rem;
 
-    @media (max-width: 1201px) {
+    @media (max-width: 1200px) {
       gap: 6rem;
     }
 
@@ -37,12 +37,17 @@
         border-radius: 1rem;
         margin-bottom: 1.2rem;
 
-        @media (max-width: 1401px) {
+        @media (max-width: 1400px) {
           height: 13rem;
           width: 13rem;
         }
 
-        @media (max-width: 1301px) {
+        @media (max-width: 1250px) {
+          height: 12rem;
+          width: 12rem;
+        }
+
+        @media (max-width: 1200px) {
           height: 11rem;
           width: 11rem;
         }
@@ -51,10 +56,6 @@
       .nameHability {
         font-size: 2rem;
         color: $color6;
-
-        @media (max-width: 1201px) {
-          font-size: 1.8rem;
-        }
       }
     }
   }

@@ -5,16 +5,16 @@
   padding: 2.4rem;
   border-radius: 2rem;
 
-  @media (max-width: 1401px) {
+  @media (max-width: 1300px) {
     width: 120rem;
   }
 
-  @media (max-width: 1301px) {
-    width: 110rem;
+  @media (max-width: 1250px) {
+    width: 115rem;
   }
 
-  @media (max-width: 1201px) {
-    width: 100rem;
+  @media (max-width: 1050px) {
+    width: 90rem;
   }
 
   .titleAboutMe {
@@ -58,7 +58,7 @@
       }
 
       .textAboutMe {
-        width: 76%;
+        width: 75%;
         font-size: 2rem;
         font-weight: 600;
         line-height: 1.2;
@@ -73,23 +73,37 @@
       .img-about img {
         width: 35%;
         position: absolute;
-        left: 67rem;
+        left: 75rem;
         top: 15rem;
 
-        @media (max-width: 1401px) {
+        @media (max-width: 1400px) {
           width: 25%;
-          left: 67rem;
-          top: 20rem;
+          left: 77rem;
+          top: 8rem;
         }
 
-        @media (max-width: 1301px) {
-          left: 60rem;
-          top: 20rem;
+        @media (max-width: 1350px) {
+          width: 25%;
+          left: 77rem;
+          top: 8rem;
         }
 
-        @media (max-width: 1201px) {
-          left: 55rem;
-          top: 17rem;
+        @media (max-width: 1300px) {
+          width: 25%;
+          left: 71rem;
+          top: 10rem;
+        }
+
+        @media (max-width: 1250px) {
+          width: 25%;
+          left: 68rem;
+          top: 10rem;
+        }
+
+        @media (max-width: 1200px) {
+          width: 25%;
+          left: 68rem;
+          top: 6rem;
         }
       }
     }

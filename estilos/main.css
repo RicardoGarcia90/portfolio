@@ -84,10 +84,10 @@ TINTS AND SHADES
   font-size: 1.8rem;
   color: #ff6100;
 }
-@media (max-width: 1201px) {
+@media (max-width: 1200px) {
   .header .menuContainer .menu__nav--link a:link,
   .header .menuContainer .menu__nav--link a:visited {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 .header .menuContainer .menu__nav--link a:hover,
@@ -108,20 +108,15 @@ TINTS AND SHADES
   justify-content: space-between;
   gap: 2rem;
 }
-.header .language-redesSociaisContainer .language a {
-  text-decoration: none;
-  color: #3f3d56;
-  font-family: inherit;
-  font-size: 1.4rem;
+.header .language-redesSociaisContainer .language .usaFlag img,
+.header .language-redesSociaisContainer .language .brFlag img {
+  width: 2rem;
 }
-@media (max-width: 1201px) {
-  .header .language-redesSociaisContainer .language a {
-    font-size: 1.2rem;
+@media (max-width: 1200px) {
+  .header .language-redesSociaisContainer .language .usaFlag img,
+  .header .language-redesSociaisContainer .language .brFlag img {
+    width: 1.8rem;
   }
-}
-.header .language-redesSociaisContainer .language a:hover {
-  text-decoration: underline;
-  color: #ff6100;
 }
 .header .language-redesSociaisContainer .redeSociais__nav-list {
   display: flex;
@@ -133,6 +128,12 @@ TINTS AND SHADES
 .header .language-redesSociaisContainer .redeSociais__nav--link a:visited {
   color: #ff6100;
   font-size: 2rem;
+}
+@media (max-width: 1200px) {
+  .header .language-redesSociaisContainer .redeSociais__nav--link a:link,
+  .header .language-redesSociaisContainer .redeSociais__nav--link a:visited {
+    font-size: 1.8rem;
+  }
 }
 .header .language-redesSociaisContainer .redeSociais__nav--link a:hover,
 .header .language-redesSociaisContainer .redeSociais__nav--link a:active {
@@ -158,18 +159,18 @@ TINTS AND SHADES
   height: 50rem;
   margin-right: 2rem;
 }
-@media (max-width: 1301px) {
+@media (max-width: 1200px) {
   .heroContainer .logo img {
-    height: 45rem;
+    height: 43rem;
   }
 }
 .heroContainer .textHero {
   width: 75%;
 }
-@media (max-width: 1201px) {
+@media (max-width: 1350px) {
   .heroContainer .textHero {
-    width: 50%;
-    margin-right: 2.5rem;
+    width: 70%;
+    margin-right: 30px;
   }
 }
 .heroContainer .textHero .titleHero {
@@ -178,9 +179,9 @@ TINTS AND SHADES
   text-align: center;
   color: #222;
 }
-@media (max-width: 1301px) {
+@media (max-width: 1200px) {
   .heroContainer .textHero .titleHero {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
 .heroContainer .textHero .paragrafoHero {
@@ -188,7 +189,7 @@ TINTS AND SHADES
   line-height: 2.6rem;
   text-align: justify;
 }
-@media (max-width: 1301px) {
+@media (max-width: 1200px) {
   .heroContainer .textHero .paragrafoHero {
     font-size: 2rem;
   }
@@ -203,19 +204,19 @@ TINTS AND SHADES
   padding: 2.4rem;
   border-radius: 2rem;
 }
-@media (max-width: 1401px) {
+@media (max-width: 1300px) {
   .aboutMeContainer {
     width: 120rem;
   }
 }
-@media (max-width: 1301px) {
+@media (max-width: 1250px) {
   .aboutMeContainer {
-    width: 110rem;
+    width: 115rem;
   }
 }
-@media (max-width: 1201px) {
+@media (max-width: 1050px) {
   .aboutMeContainer {
-    width: 100rem;
+    width: 90rem;
   }
 }
 .aboutMeContainer .titleAboutMe {
@@ -257,7 +258,7 @@ TINTS AND SHADES
   }
 }
 .aboutMeContainer .aboutMe-flex .text-Img_Container .textAboutMe {
-  width: 76%;
+  width: 75%;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.2;
@@ -272,26 +273,42 @@ TINTS AND SHADES
 .aboutMeContainer .aboutMe-flex .text-Img_Container .img-about img {
   width: 35%;
   position: absolute;
-  left: 67rem;
+  left: 75rem;
   top: 15rem;
 }
-@media (max-width: 1401px) {
+@media (max-width: 1400px) {
   .aboutMeContainer .aboutMe-flex .text-Img_Container .img-about img {
     width: 25%;
-    left: 67rem;
-    top: 20rem;
+    left: 77rem;
+    top: 8rem;
   }
 }
-@media (max-width: 1301px) {
+@media (max-width: 1350px) {
   .aboutMeContainer .aboutMe-flex .text-Img_Container .img-about img {
-    left: 60rem;
-    top: 20rem;
+    width: 25%;
+    left: 77rem;
+    top: 8rem;
   }
 }
-@media (max-width: 1201px) {
+@media (max-width: 1300px) {
   .aboutMeContainer .aboutMe-flex .text-Img_Container .img-about img {
-    left: 55rem;
-    top: 17rem;
+    width: 25%;
+    left: 71rem;
+    top: 10rem;
+  }
+}
+@media (max-width: 1250px) {
+  .aboutMeContainer .aboutMe-flex .text-Img_Container .img-about img {
+    width: 25%;
+    left: 68rem;
+    top: 10rem;
+  }
+}
+@media (max-width: 1200px) {
+  .aboutMeContainer .aboutMe-flex .text-Img_Container .img-about img {
+    width: 25%;
+    left: 68rem;
+    top: 6rem;
   }
 }
 
@@ -534,9 +551,9 @@ TINTS AND SHADES
   padding-top: 3.2rem;
   margin-top: 20rem;
 }
-@media (max-width: 1201px) {
+@media (max-width: 1400px) {
   .knowledgeContainer {
-    height: 35rem;
+    height: 350px;
   }
 }
 .knowledgeContainer .titleKnowledge {
@@ -548,7 +565,7 @@ TINTS AND SHADES
   justify-content: center;
   gap: 8rem;
 }
-@media (max-width: 1201px) {
+@media (max-width: 1200px) {
   .knowledgeContainer .knowledge__logos-container {
     gap: 6rem;
   }
@@ -575,7 +592,7 @@ TINTS AND SHADES
   border-radius: 1rem;
   margin-bottom: 1.2rem;
 }
-@media (max-width: 1401px) {
+@media (max-width: 1400px) {
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
@@ -586,7 +603,18 @@ TINTS AND SHADES
     width: 13rem;
   }
 }
-@media (max-width: 1301px) {
+@media (max-width: 1250px) {
+  .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .typescript-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .react-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .git-constainerLogo .knowledgeLogo {
+    height: 12rem;
+    width: 12rem;
+  }
+}
+@media (max-width: 1200px) {
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
@@ -605,16 +633,6 @@ TINTS AND SHADES
 .knowledgeContainer .knowledge__logos-container .git-constainerLogo .nameHability {
   font-size: 2rem;
   color: #fff;
-}
-@media (max-width: 1201px) {
-  .knowledgeContainer .knowledge__logos-container .html-constainerLogo .nameHability,
-  .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .nameHability,
-  .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .nameHability,
-  .knowledgeContainer .knowledge__logos-container .typescript-constainerLogo .nameHability,
-  .knowledgeContainer .knowledge__logos-container .react-constainerLogo .nameHability,
-  .knowledgeContainer .knowledge__logos-container .git-constainerLogo .nameHability {
-    font-size: 1.8rem;
-  }
 }
 
 .projectsContainer {
@@ -1009,6 +1027,7 @@ body {
 }
 .thanksContainer img {
   width: 45rem;
+  margin-bottom: 5rem;
 }
 .thanksContainer h1 {
   font-size: 4.6rem;

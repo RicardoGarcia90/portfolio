@@ -11,17 +11,17 @@
     height: 50rem;
     margin-right: 2rem;
 
-    @media (max-width: 1301px) {
-      height: 45rem;
+    @media (max-width: 1200px) {
+      height: 43rem;
     }
   }
 
   .textHero {
     width: 75%;
 
-    @media (max-width: 1201px) {
-      width: 50%;
-      margin-right: 2.5rem;
+    @media (max-width: 1350px) {
+      width: 70%;
+      margin-right: 30px;
     }
 
     .titleHero {
@@ -30,8 +30,8 @@
       text-align: center;
       color: $color8;
 
-      @media (max-width: 1301px) {
-        font-size: 4.5rem;
+      @media (max-width: 1200px) {
+        font-size: 4rem;
       }
     }
 
@@ -40,7 +40,7 @@
       line-height: 2.6rem;
       text-align: justify;
 
-      @media (max-width: 1301px) {
+      @media (max-width: 1200px) {
         font-size: 2rem;
       }
     }
