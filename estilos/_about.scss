@@ -13,8 +13,24 @@
     width: 115rem;
   }
 
+  @media (max-width: 1200px) {
+    width: 110rem;
+  }
+
+  @media (max-width: 1150px) {
+    width: 100rem;
+  }
+
   @media (max-width: 1050px) {
     width: 90rem;
+  }
+
+  @media (max-width: 950px) {
+    width: 80rem;
+  }
+
+  @media (max-width: 850px) {
+    width: 70rem;
   }
 
   .titleAboutMe {
@@ -35,8 +51,12 @@
       background-size: cover;
       background-position: center;
 
-      @media (max-width: 1201px) {
-        width: 75rem;
+      @media (max-width: 1050px) {
+        width: 120rem;
+      }
+
+      @media (max-width: 850px) {
+        width: 100rem;
         height: 20rem;
       }
     }
@@ -52,8 +72,12 @@
         margin-bottom: 1.2rem;
         color: $color8;
 
-        @media (max-width: 1201px) {
-          font-size: 2.6rem;
+        @media (max-width: 1050px) {
+          font-size: 2.4rem;
+        }
+
+        @media (max-width: 950px) {
+          font-size: 2rem;
         }
       }
 
@@ -65,8 +89,13 @@
         justify-self: center;
         color: $color8;
 
-        @media (max-width: 1201px) {
+        @media (max-width: 1050px) {
           font-size: 1.8rem;
+          width: 80%;
+        }
+
+        @media (max-width: 950px) {
+          font-size: 1.7rem;
         }
       }
 
@@ -101,9 +130,33 @@
         }
 
         @media (max-width: 1200px) {
-          width: 25%;
-          left: 68rem;
-          top: 6rem;
+          width: 22%;
+          left: 66rem;
+          top: 11rem;
+        }
+
+        @media (max-width: 1150px) {
+          width: 22%;
+          left: 60rem;
+          top: 17rem;
+        }
+
+        @media (max-width: 1050px) {
+          width: 20%;
+          left: 50rem;
+          top: 22rem;
+        }
+
+        @media (max-width: 950px) {
+          width: 20%;
+          left: 44rem;
+          top: 20rem;
+        }
+
+        @media (max-width: 850px) {
+          width: 20%;
+          left: 40rem;
+          top: 25rem;
         }
       }
     }

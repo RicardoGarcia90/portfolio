@@ -9,6 +9,14 @@
     height: 350px;
   }
 
+  @media (max-width: 1200px) {
+    height: 330px;
+  }
+
+  @media (max-width: 950px) {
+    height: 300px;
+  }
+
   .titleKnowledge {
     margin-bottom: 6.4rem;
     color: $color6;
@@ -21,6 +29,14 @@
 
     @media (max-width: 1200px) {
       gap: 6rem;
+    }
+
+    @media (max-width: 1050px) {
+      gap: 5rem;
+    }
+
+    @media (max-width: 850px) {
+      gap: 4rem;
     }
 
     .html-constainerLogo,
@@ -51,11 +67,20 @@
           height: 11rem;
           width: 11rem;
         }
+
+        @media (max-width: 950px) {
+          height: 9rem;
+          width: 9rem;
+        }
       }
 
       .nameHability {
         font-size: 2rem;
         color: $color6;
+
+        @media (max-width: 950px) {
+          font-size: 1.8rem;
+        }
       }
     }
   }

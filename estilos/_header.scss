@@ -33,6 +33,10 @@
       @media (max-width: 1200px) {
         font-size: 1.6rem;
       }
+
+      @media (max-width: 950px) {
+        font-size: 1.4rem;
+      }
     }
 
     .menu__nav--link a:hover,
@@ -63,6 +67,10 @@
         @media (max-width: 1200px) {
           width: 1.8rem;
         }
+
+        @media (max-width: 950px) {
+          width: 1.6rem;
+        }
       }
     }
 
@@ -80,6 +88,10 @@
 
       @media (max-width: 1200px) {
         font-size: 1.8rem;
+      }
+
+      @media (max-width: 950px) {
+        width: 1.6rem;
       }
     }
 

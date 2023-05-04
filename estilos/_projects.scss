@@ -16,6 +16,10 @@
   cursor: pointer;
   transition: all 0.3s;
   background-color: $color6;
+
+  @media (max-width: 1000px) {
+    font-size: 1.8rem;
+  }
 }
 
 .operations__tab-container {
@@ -54,7 +58,7 @@
   flex-wrap: wrap;
   gap: 3rem;
 
-  @media (max-width: 1201px) {
+  @media (max-width: 1200px) {
     gap: 2.5rem;
   }
 
@@ -72,11 +76,11 @@
     border-radius: 2rem;
     box-shadow: 2px 2px 7px -1px rgba(0, 0, 0, 0.251);
 
-    @media (max-width: 1401px) {
+    @media (max-width: 1400px) {
       width: 35rem;
     }
 
-    @media (max-width: 1201px) {
+    @media (max-width: 1200px) {
       width: 30rem;
     }
 

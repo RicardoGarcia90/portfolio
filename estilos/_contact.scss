@@ -12,16 +12,28 @@
   grid-template-columns: 3fr 2fr;
   column-gap: 2.6rem;
 
-  @media (max-width: 1401px) {
+  @media (max-width: 1350px) {
     width: 120rem;
   }
 
-  @media (max-width: 1301px) {
+  @media (max-width: 1250px) {
     width: 110rem;
   }
 
-  @media (max-width: 1201px) {
+  @media (max-width: 1150px) {
     width: 100rem;
+  }
+
+  @media (max-width: 1050px) {
+    width: 90rem;
+  }
+
+  @media (max-width: 950px) {
+    width: 80rem;
+  }
+
+  @media (max-width: 850px) {
+    width: 70rem;
   }
 
   .cta-box {
@@ -33,6 +45,10 @@
       font-size: 3rem;
       padding: 2rem;
       text-align: center;
+
+      @media (max-width: 950px) {
+        font-size: 2.6rem;
+      }
     }
 
     .cta-form {
@@ -43,6 +59,10 @@
         color: white;
         font-size: 2rem;
         margin-bottom: 1rem;
+
+        @media (max-width: 950px) {
+          font-size: 1.8rem;
+        }
       }
 
       input {
