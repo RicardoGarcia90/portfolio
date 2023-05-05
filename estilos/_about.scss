@@ -33,6 +33,10 @@
     width: 70rem;
   }
 
+  @media (max-width: 750px) {
+    width: 60rem;
+  }
+
   .titleAboutMe {
     margin-bottom: 2rem;
     color: $color8;
@@ -41,6 +45,11 @@
   .aboutMe-flex {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 750px) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .photo {
       width: 80rem;
@@ -59,6 +68,12 @@
         width: 100rem;
         height: 20rem;
       }
+
+      @media (max-width: 750px) {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 2rem;
+      }
     }
 
     .text-Img_Container {
@@ -66,6 +81,13 @@
       display: flex;
       flex-direction: column;
       position: relative;
+
+      @media (max-width: 750px) {
+        align-items: center;
+        text-align: justify;
+
+        margin-left: 0;
+      }
 
       .textAboutMe h2 {
         font-size: 3rem;
@@ -156,6 +178,12 @@
         @media (max-width: 850px) {
           width: 20%;
           left: 40rem;
+          top: 25rem;
+        }
+
+        @media (max-width: 750px) {
+          width: 20%;
+          left: 45rem;
           top: 25rem;
         }
       }

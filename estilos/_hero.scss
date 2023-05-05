@@ -7,6 +7,10 @@
   margin-top: 4rem;
   margin-bottom: 9.6rem;
 
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
+
   .logo img {
     height: 50rem;
     margin-right: 2rem;
@@ -30,6 +34,10 @@
     @media (max-width: 1350px) {
       width: 70%;
       margin-right: 30px;
+    }
+
+    @media (max-width: 750px) {
+      margin-right: 0;
     }
 
     .titleHero {

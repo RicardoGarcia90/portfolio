@@ -17,9 +17,25 @@
     height: 300px;
   }
 
+  @media (max-width: 800px) {
+    height: 250px;
+  }
+
+  @media (max-width: 750px) {
+    height: 420px;
+  }
+
   .titleKnowledge {
     margin-bottom: 6.4rem;
     color: $color6;
+
+    @media (max-width: 800px) {
+      margin-bottom: 6rem;
+    }
+
+    @media (max-width: 750px) {
+      margin-bottom: 4rem;
+    }
   }
 
   .knowledge__logos-container {
@@ -37,6 +53,12 @@
 
     @media (max-width: 850px) {
       gap: 4rem;
+    }
+
+    @media (max-width: 750px) {
+      column-gap: 8rem;
+      row-gap: 4rem;
+      flex-wrap: wrap;
     }
 
     .html-constainerLogo,
@@ -72,6 +94,16 @@
           height: 9rem;
           width: 9rem;
         }
+
+        @media (max-width: 800px) {
+          height: 8rem;
+          width: 8rem;
+        }
+
+        @media (max-width: 750px) {
+          height: 9rem;
+          width: 9rem;
+        }
       }
 
       .nameHability {
@@ -80,6 +112,10 @@
 
         @media (max-width: 950px) {
           font-size: 1.8rem;
+        }
+
+        @media (max-width: 800px) {
+          font-size: 1.6rem;
         }
       }
     }

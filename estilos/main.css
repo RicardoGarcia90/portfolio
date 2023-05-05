@@ -78,6 +78,11 @@ TINTS AND SHADES
   margin-left: 4.8rem;
   align-self: center;
 }
+@media (max-width: 750px) {
+  .header .menuContainer {
+    width: 50%;
+  }
+}
 .header .menuContainer .menu__nav--list {
   display: flex;
   justify-content: space-between;
@@ -135,6 +140,12 @@ TINTS AND SHADES
     width: 1.6rem;
   }
 }
+@media (max-width: 750px) {
+  .header .language-redesSociaisContainer .language .usaFlag img,
+  .header .language-redesSociaisContainer .language .brFlag img {
+    width: 1.5rem;
+  }
+}
 .header .language-redesSociaisContainer .redeSociais__nav-list {
   display: flex;
   justify-content: space-between;
@@ -158,6 +169,12 @@ TINTS AND SHADES
     width: 1.6rem;
   }
 }
+@media (max-width: 750px) {
+  .header .language-redesSociaisContainer .redeSociais__nav--link a:link,
+  .header .language-redesSociaisContainer .redeSociais__nav--link a:visited {
+    width: 1.5rem;
+  }
+}
 .header .language-redesSociaisContainer .redeSociais__nav--link a:hover,
 .header .language-redesSociaisContainer .redeSociais__nav--link a:active {
   color: #803100;
@@ -177,6 +194,11 @@ TINTS AND SHADES
   height: 88vh;
   margin-top: 4rem;
   margin-bottom: 9.6rem;
+}
+@media (max-width: 750px) {
+  .heroContainer {
+    flex-direction: column;
+  }
 }
 .heroContainer .logo img {
   height: 50rem;
@@ -204,6 +226,11 @@ TINTS AND SHADES
   .heroContainer .textHero {
     width: 70%;
     margin-right: 30px;
+  }
+}
+@media (max-width: 750px) {
+  .heroContainer .textHero {
+    margin-right: 0;
   }
 }
 .heroContainer .textHero .titleHero {
@@ -292,6 +319,11 @@ TINTS AND SHADES
     width: 70rem;
   }
 }
+@media (max-width: 750px) {
+  .aboutMeContainer {
+    width: 60rem;
+  }
+}
 .aboutMeContainer .titleAboutMe {
   margin-bottom: 2rem;
   color: #222;
@@ -299,6 +331,12 @@ TINTS AND SHADES
 .aboutMeContainer .aboutMe-flex {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 750px) {
+  .aboutMeContainer .aboutMe-flex {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .aboutMeContainer .aboutMe-flex .photo {
   width: 80rem;
@@ -319,11 +357,25 @@ TINTS AND SHADES
     height: 20rem;
   }
 }
+@media (max-width: 750px) {
+  .aboutMeContainer .aboutMe-flex .photo {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+  }
+}
 .aboutMeContainer .aboutMe-flex .text-Img_Container {
   margin-left: 4rem;
   display: flex;
   flex-direction: column;
   position: relative;
+}
+@media (max-width: 750px) {
+  .aboutMeContainer .aboutMe-flex .text-Img_Container {
+    align-items: center;
+    text-align: justify;
+    margin-left: 0;
+  }
 }
 .aboutMeContainer .aboutMe-flex .text-Img_Container .textAboutMe h2 {
   font-size: 3rem;
@@ -428,6 +480,13 @@ TINTS AND SHADES
     top: 25rem;
   }
 }
+@media (max-width: 750px) {
+  .aboutMeContainer .aboutMe-flex .text-Img_Container .img-about img {
+    width: 20%;
+    left: 45rem;
+    top: 25rem;
+  }
+}
 
 .projectsContainer {
   max-width: 130rem;
@@ -462,6 +521,11 @@ TINTS AND SHADES
   margin-bottom: 2rem;
   gap: 2rem;
 }
+@media (max-width: 750px) {
+  .operations__tab-container {
+    gap: 1rem;
+  }
+}
 
 .operations__tab {
   margin-right: 2.5rem;
@@ -494,6 +558,11 @@ TINTS AND SHADES
 @media (max-width: 1200px) {
   .operations__content--active {
     gap: 2.5rem;
+  }
+}
+@media (max-width: 750px) {
+  .operations__content--active {
+    flex-direction: column;
   }
 }
 .operations__content--active .card {
@@ -688,9 +757,29 @@ TINTS AND SHADES
     height: 300px;
   }
 }
+@media (max-width: 800px) {
+  .knowledgeContainer {
+    height: 250px;
+  }
+}
+@media (max-width: 750px) {
+  .knowledgeContainer {
+    height: 420px;
+  }
+}
 .knowledgeContainer .titleKnowledge {
   margin-bottom: 6.4rem;
   color: #fff;
+}
+@media (max-width: 800px) {
+  .knowledgeContainer .titleKnowledge {
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width: 750px) {
+  .knowledgeContainer .titleKnowledge {
+    margin-bottom: 4rem;
+  }
 }
 .knowledgeContainer .knowledge__logos-container {
   display: flex;
@@ -710,6 +799,14 @@ TINTS AND SHADES
 @media (max-width: 850px) {
   .knowledgeContainer .knowledge__logos-container {
     gap: 4rem;
+  }
+}
+@media (max-width: 750px) {
+  .knowledgeContainer .knowledge__logos-container {
+    -moz-column-gap: 8rem;
+         column-gap: 8rem;
+    row-gap: 4rem;
+    flex-wrap: wrap;
   }
 }
 .knowledgeContainer .knowledge__logos-container .html-constainerLogo,
@@ -778,6 +875,28 @@ TINTS AND SHADES
     width: 9rem;
   }
 }
+@media (max-width: 800px) {
+  .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .typescript-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .react-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .git-constainerLogo .knowledgeLogo {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+@media (max-width: 750px) {
+  .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .typescript-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .react-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .git-constainerLogo .knowledgeLogo {
+    height: 9rem;
+    width: 9rem;
+  }
+}
 .knowledgeContainer .knowledge__logos-container .html-constainerLogo .nameHability,
 .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .nameHability,
 .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .nameHability,
@@ -795,6 +914,16 @@ TINTS AND SHADES
   .knowledgeContainer .knowledge__logos-container .react-constainerLogo .nameHability,
   .knowledgeContainer .knowledge__logos-container .git-constainerLogo .nameHability {
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 800px) {
+  .knowledgeContainer .knowledge__logos-container .html-constainerLogo .nameHability,
+  .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .nameHability,
+  .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .nameHability,
+  .knowledgeContainer .knowledge__logos-container .typescript-constainerLogo .nameHability,
+  .knowledgeContainer .knowledge__logos-container .react-constainerLogo .nameHability,
+  .knowledgeContainer .knowledge__logos-container .git-constainerLogo .nameHability {
+    font-size: 1.6rem;
   }
 }
 
@@ -831,6 +960,11 @@ TINTS AND SHADES
   margin-bottom: 2rem;
   gap: 2rem;
 }
+@media (max-width: 750px) {
+  .operations__tab-container {
+    gap: 1rem;
+  }
+}
 
 .operations__tab {
   margin-right: 2.5rem;
@@ -863,6 +997,11 @@ TINTS AND SHADES
 @media (max-width: 1200px) {
   .operations__content--active {
     gap: 2.5rem;
+  }
+}
+@media (max-width: 750px) {
+  .operations__content--active {
+    flex-direction: column;
   }
 }
 .operations__content--active .card {
