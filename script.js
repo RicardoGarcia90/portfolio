@@ -1,5 +1,14 @@
 'use strict';
 
+// Make mobile navigation work
+
+// const btnNavEl = document.querySelector('.btn-mobile-nav');
+// const menuContainerEl = document.querySelector('.menu__nav');
+
+// btnNavEl.addEventListener('click', function () {
+//   menuContainerEl.classList.toggle('nav-open');
+// });
+
 // SCROLL PARA AS SEÇÕES
 
 const menuItems = document.querySelectorAll('.menu__nav a');
