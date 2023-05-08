@@ -2,12 +2,17 @@
 
 // Make mobile navigation work
 
-// const btnNavEl = document.querySelector('.btn-mobile-nav');
-// const menuContainerEl = document.querySelector('.menu__nav');
+const btnMobileNav = document.querySelector('.btn-mobile-nav');
+const menuNave = document.querySelector('.menu__nav');
+const iconClose = document.querySelector('.icon-close');
+const iconOpen = document.querySelector('.icon-open');
 
-// btnNavEl.addEventListener('click', function () {
-//   menuContainerEl.classList.toggle('nav-open');
-// });
+btnMobileNav.addEventListener('click', function () {
+  console.log('clicado');
+  menuNave.classList.toggle('menuNav--visible');
+  iconClose.classList.toggle('iconClose--visible');
+  iconOpen.classList.toggle('iconOpen--hidden');
+});
 
 // SCROLL PARA AS SEÇÕES
 

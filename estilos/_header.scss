@@ -12,84 +12,30 @@
   left: 0;
   background-color: white;
 
-  // MOBILE
+  @media (max-width: 750px) {
+    gap: 1.6rem;
+  }
+
   .btn-mobile-nav {
-    border: none;
-    background-color: #ff6100;
-    cursor: pointer;
-    margin-left: 2rem;
-    border-radius: 4px;
-
     display: none;
   }
 
-  .icon-mobile-nav {
-    height: 4rem;
-    width: 4rem;
-    color: white;
-  }
-
-  .icon-mobile-nav[name='close-outline'] {
-    display: none;
-  }
-
-  // MOBILE WORKING
   @media (max-width: 750px) {
     .btn-mobile-nav {
       display: block;
-      z-index: 9999;
+      margin-left: 2rem;
+      background-color: $primary-color;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 2rem;
     }
 
-    .menuContainer {
-      background-color: rgba(255, 255, 255, 0.9);
-      -webkit-backdrop-filter: blur(5px);
-      backdrop-filter: blur(10px);
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      width: 100%;
-      height: 100vh;
-      transform: translateX(100%);
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.5s ease-in;
-
-      /* 1) Hide it visually */
-      opacity: 0;
-
-      /* 2) Make it unacessible to mouse and keyboard */
-      pointer-events: none;
-
-      /* 3) Hide it from screen readers */
-      // visibility: hidden;
+    .icon-mobile-nav {
+      font-size: 2.2rem;
     }
 
-    /* Para tornar visível */
-    // .nav-open .menuContainer {
-    //   opacity: 1;
-    //   pointer-events: auto;
-    //   visibility: visible;
-    //   transform: translateX(0);
-    // }
-
-    .nav-open .icon-mobile-nav[name='close-outline'] {
-      // display: block;
-    }
-
-    .nav-open .icon-mobile-nav[name='menu-outline'] {
-      // display: none;
-    }
-
-    .menu__nav--list {
-      flex-direction: column;
-      gap: 4.8rem;
-    }
-
-    .menu__nav--link a:link,
-    .menu__nav--link a:visited {
-      font-size: 3rem;
+    .icon-close {
+      display: none;
     }
   }
 
@@ -100,13 +46,45 @@
     align-self: center;
 
     @media (max-width: 750px) {
-      width: 50%;
+      margin-top: 12rem;
+      margin-left: -30rem;
+      background-color: $primary-color;
+      width: 12rem;
+      border-radius: 0.9rem;
+
+      .menu__nav {
+        display: none;
+      }
+    }
+
+    // MOSTRAR MENU
+    .menuNav--visible {
+      display: block;
+      padding: 1.4rem;
+
+      .menu__nav--link a:link,
+      .menu__nav--link a:visited {
+        color: white;
+      }
+    }
+
+    .iconClose--visible {
+      display: block;
+    }
+
+    .iconOpen--hidden {
+      display: none;
     }
 
     .menu__nav--list {
       display: flex;
       justify-content: space-between;
       list-style: none;
+
+      @media (max-width: 750px) {
+        flex-direction: column;
+        gap: 2rem;
+      }
     }
 
     .menu__nav--link a:link,
@@ -130,53 +108,28 @@
       text-decoration: underline;
     }
   }
+}
 
-  // REDES SOCIAIS
-  .language-redesSociaisContainer {
+// REDES SOCIAIS
+.language-redesSociaisContainer {
+  display: flex;
+  margin-right: 8rem;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 15rem;
+
+  .language {
     display: flex;
-    margin-right: 8rem;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
-    width: 15rem;
+    gap: 2rem;
 
-    .language {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2rem;
-
-      .usaFlag img,
-      .brFlag img {
-        width: 2rem;
-
-        @media (max-width: 1200px) {
-          width: 1.8rem;
-        }
-
-        @media (max-width: 950px) {
-          width: 1.6rem;
-        }
-
-        @media (max-width: 750px) {
-          width: 1.5rem;
-        }
-      }
-    }
-
-    .redeSociais__nav-list {
-      display: flex;
-      justify-content: space-between;
-      list-style: none;
-      gap: 1rem;
-    }
-
-    .redeSociais__nav--link a:link,
-    .redeSociais__nav--link a:visited {
-      color: $primary-color;
-      font-size: 2rem;
+    .usaFlag img,
+    .brFlag img {
+      width: 2rem;
 
       @media (max-width: 1200px) {
-        font-size: 1.8rem;
+        width: 1.8rem;
       }
 
       @media (max-width: 950px) {
@@ -187,11 +140,36 @@
         width: 1.5rem;
       }
     }
+  }
 
-    .redeSociais__nav--link a:hover,
-    .redeSociais__nav--link a:active {
-      color: $color4;
+  .redeSociais__nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  .redeSociais__nav--link a:link,
+  .redeSociais__nav--link a:visited {
+    color: $primary-color;
+    font-size: 2rem;
+
+    @media (max-width: 1200px) {
+      font-size: 1.8rem;
     }
+
+    @media (max-width: 950px) {
+      width: 1.6rem;
+    }
+
+    @media (max-width: 750px) {
+      width: 1.5rem;
+    }
+  }
+
+  .redeSociais__nav--link a:hover,
+  .redeSociais__nav--link a:active {
+    color: $color4;
   }
 }
 
