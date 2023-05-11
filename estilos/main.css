@@ -170,6 +170,12 @@ TINTS AND SHADES
   justify-content: space-between;
   width: 15rem;
 }
+@media (max-width: 750px) {
+  .language-redesSociaisContainer {
+    margin-right: 3rem;
+    padding-top: 2rem;
+  }
+}
 .language-redesSociaisContainer .language {
   display: flex;
   align-items: center;
@@ -1272,6 +1278,12 @@ TINTS AND SHADES
     width: 70rem;
   }
 }
+@media (max-width: 750px) {
+  .ctaContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 .ctaContainer .cta-box {
   display: flex;
   flex-direction: column;
@@ -1340,6 +1352,11 @@ TINTS AND SHADES
   background-image: url("../img/notebook-img-unsplash.jpg");
   background-size: cover;
   background-position: center;
+}
+@media (max-width: 750px) {
+  .ctaContainer .cta-img-box {
+    grid-row: 1;
+  }
 }
 
 .footerContainer {

@@ -36,6 +36,11 @@
     width: 70rem;
   }
 
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
   .cta-box {
     display: flex;
     flex-direction: column;
@@ -112,5 +117,9 @@
     background-image: url('../img/notebook-img-unsplash.jpg');
     background-size: cover;
     background-position: center;
+
+    @media (max-width: 750px) {
+      grid-row: 1;
+    }
   }
 }

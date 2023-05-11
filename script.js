@@ -4,14 +4,19 @@
 
 const btnMobileNav = document.querySelector('.btn-mobile-nav');
 const menuNave = document.querySelector('.menu__nav');
-const iconClose = document.querySelector('.icon-close');
-const iconOpen = document.querySelector('.icon-open');
 
-btnMobileNav.addEventListener('click', function () {
-  console.log('clicado');
-  menuNave.classList.toggle('menuNav--visible');
-  iconClose.classList.toggle('iconClose--visible');
-  iconOpen.classList.toggle('iconOpen--hidden');
+window.addEventListener('click', function (event) {
+  const clicadoNoBotao = event.target;
+  // console.log(clicadoNoBotao);
+  //
+
+  if (clicadoNoBotao.classList.contains('icon-mobile-nav')) {
+    console.log('clicou no botão');
+    menuNave.classList.toggle('menuNav--visible');
+  } else {
+    console.log('clicou fora do botão');
+    menuNave.classList.toggle('menuNav--visible');
+  }
 });
 
 // SCROLL PARA AS SEÇÕES
@@ -34,7 +39,6 @@ function scrolToIdOnClick(event) {
     behavior: 'smooth',
   });
 }
-
 ////////////////////////////////////////////////////////
 // SOMBRA NO HEADER QUANDO SCROLL
 

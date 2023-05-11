@@ -118,6 +118,11 @@
   justify-content: space-between;
   width: 15rem;
 
+  @media (max-width: 750px) {
+    margin-right: 3rem;
+    padding-top: 2rem;
+  }
+
   .language {
     display: flex;
     align-items: center;
