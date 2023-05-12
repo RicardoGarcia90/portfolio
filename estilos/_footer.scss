@@ -10,6 +10,10 @@
   .logoFooter {
     width: 30rem;
 
+    @media (max-width: 550px) {
+      width: 25rem;
+    }
+
     img {
       width: 100%;
     }
@@ -32,6 +36,10 @@
       @media (max-width: 950px) {
         font-size: 1.6rem;
       }
+
+      @media (max-width: 550px) {
+        font-size: 1.4rem;
+      }
     }
 
     a:hover,
@@ -47,6 +55,10 @@
       @media (max-width: 950px) {
         font-size: 1.6rem;
       }
+
+      @media (max-width: 550px) {
+        font-size: 1.4rem;
+      }
     }
   }
 
@@ -55,6 +67,10 @@
 
     @media (max-width: 950px) {
       font-size: 1.6rem;
+    }
+
+    @media (max-width: 550px) {
+      font-size: 1.4rem;
     }
   }
 }

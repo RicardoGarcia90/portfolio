@@ -37,6 +37,26 @@
     width: 60rem;
   }
 
+  @media (max-width: 650px) {
+    width: 50rem;
+  }
+
+  @media (max-width: 550px) {
+    width: 40rem;
+  }
+
+  @media (max-width: 450px) {
+    width: 35rem;
+  }
+
+  @media (max-width: 400px) {
+    width: 33rem;
+  }
+
+  @media (max-width: 350px) {
+    width: 29rem;
+  }
+
   .titleAboutMe {
     margin-bottom: 2rem;
     color: $color8;
@@ -74,6 +94,12 @@
         height: 20rem;
         margin-bottom: 2rem;
       }
+
+      @media (max-width: 550px) {
+        width: 18rem;
+        height: 18rem;
+        margin-bottom: 2rem;
+      }
     }
 
     .text-Img_Container {
@@ -101,6 +127,10 @@
         @media (max-width: 950px) {
           font-size: 2rem;
         }
+
+        @media (max-width: 550px) {
+          font-size: 1.8rem;
+        }
       }
 
       .textAboutMe {
@@ -118,6 +148,10 @@
 
         @media (max-width: 950px) {
           font-size: 1.7rem;
+        }
+
+        @media (max-width: 550px) {
+          font-size: 1.5rem;
         }
       }
 
@@ -185,6 +219,36 @@
           width: 20%;
           left: 45rem;
           top: 25rem;
+        }
+
+        @media (max-width: 650px) {
+          width: 20%;
+          left: 38rem;
+          top: 30rem;
+        }
+
+        @media (max-width: 550px) {
+          width: 18%;
+          left: 30rem;
+          top: 30rem;
+        }
+
+        @media (max-width: 450px) {
+          width: 18%;
+          left: 25rem;
+          top: 36rem;
+        }
+
+        @media (max-width: 400px) {
+          width: 18%;
+          left: 25rem;
+          top: 37rem;
+        }
+
+        @media (max-width: 350px) {
+          width: 18%;
+          left: 20rem;
+          top: 45rem;
         }
       }
     }

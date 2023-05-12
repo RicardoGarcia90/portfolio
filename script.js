@@ -15,7 +15,7 @@ window.addEventListener('click', function (event) {
     menuNave.classList.toggle('menuNav--visible');
   } else {
     console.log('clicou fora do botão');
-    menuNave.classList.toggle('menuNav--visible');
+    menuNave.classList.remove('menuNav--visible');
   }
 });
 
@@ -515,7 +515,7 @@ iconBR.addEventListener('click', function () {
   });
 
   // CTA change language for PT
-  ctaTitle.textContent = 'ConEntre em contatotact';
+  ctaTitle.textContent = 'Entre em contato';
   ctaLabelNome.textContent = 'Nome';
   ctaLabelMensagem.textContent = 'Deixe sua mensagem!';
   ctaButtonEnviar.textContent = 'Enviar';

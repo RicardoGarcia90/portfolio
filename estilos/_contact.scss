@@ -38,7 +38,27 @@
 
   @media (max-width: 750px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    width: 60rem;
+  }
+
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+    width: 50rem;
+  }
+
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
+    width: 40rem;
+  }
+
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr;
+    width: 30rem;
+  }
+
+  @media (max-width: 350px) {
+    grid-template-columns: 1fr;
+    width: 28rem;
   }
 
   .cta-box {
@@ -54,6 +74,16 @@
       @media (max-width: 950px) {
         font-size: 2.6rem;
       }
+
+      @media (max-width: 550px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 450px) {
+        font-size: 1.8rem;
+        text-align: left;
+        padding-left: 0;
+      }
     }
 
     .cta-form {
@@ -68,6 +98,14 @@
         @media (max-width: 950px) {
           font-size: 1.8rem;
         }
+
+        @media (max-width: 650px) {
+          font-size: 1.6rem;
+        }
+
+        @media (max-width: 550px) {
+          font-size: 1.5rem;
+        }
       }
 
       input {
@@ -78,6 +116,14 @@
         padding: 1rem;
         font-size: 1.6rem;
         border: none;
+
+        @media (max-width: 550px) {
+          width: 30rem;
+        }
+
+        @media (max-width: 450px) {
+          width: 22rem;
+        }
       }
 
       #email,
@@ -92,6 +138,21 @@
         font-size: 1.8rem;
         font-family: inherit;
         border-radius: 2rem;
+
+        @media (max-width: 750px) {
+          width: auto;
+          margin-right: 3rem;
+        }
+
+        @media (max-width: 450px) {
+          width: 24rem;
+          margin-right: 3rem;
+        }
+
+        @media (max-width: 350px) {
+          width: 22rem;
+          margin-right: 3rem;
+        }
       }
 
       .btn {
@@ -103,6 +164,11 @@
 
         font-size: 1.6rem;
         color: white;
+
+        @media (max-width: 650px) {
+          font-size: 1.4rem;
+          padding: 0.6rem;
+        }
       }
 
       .btn:hover {
@@ -119,7 +185,7 @@
     background-position: center;
 
     @media (max-width: 750px) {
-      grid-row: 1;
+      display: none;
     }
   }
 }

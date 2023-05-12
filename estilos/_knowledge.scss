@@ -25,6 +25,10 @@
     height: 420px;
   }
 
+  @media (max-width: 550px) {
+    height: 350px;
+  }
+
   .titleKnowledge {
     margin-bottom: 6.4rem;
     color: $color6;
@@ -57,6 +61,24 @@
 
     @media (max-width: 750px) {
       column-gap: 8rem;
+      row-gap: 4rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 650px) {
+      column-gap: 4rem;
+      row-gap: 4rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 450px) {
+      column-gap: 6rem;
+      row-gap: 4rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 400px) {
+      column-gap: 3rem;
       row-gap: 4rem;
       flex-wrap: wrap;
     }
@@ -104,6 +126,16 @@
           height: 9rem;
           width: 9rem;
         }
+
+        @media (max-width: 550px) {
+          height: 7rem;
+          width: 7rem;
+        }
+
+        @media (max-width: 350px) {
+          height: 6rem;
+          width: 6rem;
+        }
       }
 
       .nameHability {
@@ -116,6 +148,10 @@
 
         @media (max-width: 800px) {
           font-size: 1.6rem;
+        }
+
+        @media (max-width: 550px) {
+          font-size: 1.4rem;
         }
       }
     }
