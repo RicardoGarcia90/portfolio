@@ -79,6 +79,7 @@ tabsContainer.addEventListener('click', function (e) {
 ///////////////////////////////////////////////////////
 // MODAL
 
+const linkMaisLoteria = document.querySelector('.verMaisLoteria');
 const linkMaisForkify = document.querySelector('.verMaisForkify');
 const linkMaisMapty = document.querySelector('.verMaisMapty');
 const linkMaisBankist = document.querySelector('.verMaisBankist');
@@ -95,6 +96,16 @@ const titleModal = document.querySelector('.titleModal');
 const descriptionModal = document.querySelector('.descriptionModal');
 
 const btnCloseModal = document.querySelector('.close-modal');
+
+// LOTERIA
+linkMaisLoteria.addEventListener('click', function (e) {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+
+  titleModal.textContent = 'Loteria';
+  descriptionModal.textContent =
+    "App que gera números aleatórios para serem apostados na loteria, você encontrará 3 jogos nesse App: 'Mega-Sena', 'Lotofácil', 'Lotomania'";
+});
 
 // FORKIFY
 linkMaisForkify.addEventListener('click', function (e) {
@@ -230,6 +241,7 @@ const sites = document.getElementById('sites');
 const mobileApps = document.getElementById('mobileApp');
 const games = document.getElementById('games');
 
+const loteriaSubtitle = document.getElementById('loteria-p');
 const forkifySubtitle = document.getElementById('forkify-p');
 const maptySubtitle = document.getElementById('mapty_p');
 const bankistSubtitle = document.getElementById('bankist_p');
@@ -287,6 +299,8 @@ iconUSA.addEventListener('click', function () {
   mobileApps.textContent = 'Mobile Apps';
   games.textContent = 'Games';
 
+  loteriaSubtitle.textContent =
+    'App that generates random numbers for Lottery games.';
   forkifySubtitle.textContent = 'Recipe search app';
   maptySubtitle.textContent = 'App for recording physical activity';
   bankistSubtitle.textContent = 'App that simulates a digital bank';
@@ -306,6 +320,16 @@ iconUSA.addEventListener('click', function () {
   visitarSite.forEach(text => (text.textContent = 'Visit Website'));
   verCodigo.forEach(text => (text.textContent = 'View Code'));
   saberMais.forEach(text => (text.textContent = 'Read More'));
+
+  // LOTERIA MODAL ENGLISH
+  linkMaisLoteria.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Loteria';
+    descriptionModal.textContent =
+      "An app that generates random numbers to be bet on the lottery, you will find 3 games in this app: 'Mega-Sena', 'Lotofácil', 'Lotomania'.";
+  });
 
   // FORKIFY MODAL ENGLISH
   linkMaisForkify.addEventListener('click', function (e) {
@@ -425,6 +449,8 @@ iconBR.addEventListener('click', function () {
   mobileApps.textContent = 'Aplicativos Mobile';
   games.textContent = 'Jogos';
 
+  loteriaSubtitle.textContent =
+    'App que gera números aleatórios para jogos de Loteria';
   forkifySubtitle.textContent = 'App para busca de receitas';
   maptySubtitle.textContent = 'App para registro de atividade física';
   bankistSubtitle.textContent = 'App que simula um banco digital';
@@ -443,6 +469,16 @@ iconBR.addEventListener('click', function () {
   visitarSite.forEach(text => (text.textContent = 'Visitar Site'));
   verCodigo.forEach(text => (text.textContent = 'Ver Código'));
   saberMais.forEach(text => (text.textContent = 'Saber Mais'));
+
+  // LOTERIA MODAL PORTUGUESE
+  linkMaisLoteria.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Loteria';
+    descriptionModal.textContent =
+      "App que gera números aleatórios para serem apostados na loteria, você encontrará 3 jogos nesse App: 'Mega-Sena', 'Lotofácil', 'Lotomania'";
+  });
 
   // FORKIFY MODAL PORTUGUESE
   linkMaisForkify.addEventListener('click', function (e) {
