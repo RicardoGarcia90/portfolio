@@ -283,7 +283,7 @@ iconUSA.addEventListener('click', function () {
   </h1>
   <br />
   <p class="paragrafoHero">
-  My name is Ricardo and here you will find not only my projects, but also my journey of growth as a developer. Feel free to explore and get to know a little more about me and my skills. Thanks for the visit!
+  My name is Ricardo and here you will find not only my projects, but also my journey of growth as a developer.<br />Feel free to explore and get to know a little more about me and my skills. Thanks for the visit!
   </p>`;
 
   // ABOUT ME change language for EN
@@ -431,9 +431,9 @@ iconBR.addEventListener('click', function () {
   <br />
   <p class="paragrafoHero">
   Meu nome é Ricardo e aqui você encontrará não apenas os meus
-  projetos, mas também a minha jornada de crescimento como
-  desenvolvedor. Sinta-se à vontade para explorar e conhecer um pouco
-  mais sobre mim e minhas habilidades. Obrigado pela visita!
+            projetos, mas também a minha jornada de crescimento como
+            desenvolvedor.<br />Sinta-se à vontade para explorar e conhecer um
+            pouco mais sobre mim e minhas habilidades. Obrigado pela visita!
   </p>`;
 
   // ABOUT ME change language for PT
