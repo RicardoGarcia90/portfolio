@@ -238,7 +238,6 @@ const titleTools = document.querySelector('.tools');
 const titleProjects = document.querySelector('.projectsTitle');
 const appDesktop = document.getElementById('appWeb');
 const sites = document.getElementById('sites');
-const mobileApps = document.getElementById('mobileApp');
 const games = document.getElementById('games');
 
 const loteriaSubtitle = document.getElementById('loteria-p');
@@ -294,9 +293,8 @@ iconUSA.addEventListener('click', function () {
     'Although I have worked in other areas, it was in technology that I found my true professional passion, building websites and applications using technologies such as Javascript, React.js, HTML and CSS/Sass. Currently, I dedicate my time to improving my knowledge in development, putting them into practice and challenging myself in new projects. In my spare time I like to play the guitar, play with my dog and walk in the park with my family.';
 
   // PROJECTS change language for EN
-  appDesktop.textContent = 'Web Apps';
+  appDesktop.textContent = 'Web Applications';
   sites.textContent = 'Websites';
-  mobileApps.textContent = 'Mobile Apps';
   games.textContent = 'Games';
 
   loteriaSubtitle.textContent =
@@ -444,9 +442,8 @@ iconBR.addEventListener('click', function () {
     'Embora tenha trabalhado em outras áreas, foi na tecnologia que encontrei minha verdadeira paixão profissional, construindo sites e aplicações utilizando tecnologias como Javascript, React.js, HTML e CSS/Sass. Atualmente, dedico meu tempo a aprimorar meus conhecimentos em desenvolvimento, colocando-os em prática e me desafiando em novos projetos. Nas horas vagas, gosto de tocar guitarra, brincar com meu cachorro e caminhar no parque com minha família.';
 
   // PROJECTS change language for PT
-  appDesktop.textContent = 'Aplicativos Web';
+  appDesktop.textContent = 'Aplicações Web';
   sites.textContent = 'Sites';
-  mobileApps.textContent = 'Aplicativos Mobile';
   games.textContent = 'Jogos';
 
   loteriaSubtitle.textContent =

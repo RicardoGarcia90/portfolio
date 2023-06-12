@@ -919,7 +919,7 @@ TINTS AND SHADES
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 90%;
   background-color: white;
   padding: 6rem;
   border-radius: 5px;
@@ -967,29 +967,30 @@ TINTS AND SHADES
 
 .knowledgeContainer {
   background-color: #3f3d56;
-  height: 40rem;
+  height: auto;
   margin-bottom: 9.6rem;
   padding-top: 3.2rem;
+  padding-bottom: 3rem;
   margin-top: 20rem;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1401px) {
   .knowledgeContainer {
-    height: 350px;
+    height: 550px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1201px) {
   .knowledgeContainer {
-    height: 330px;
+    height: 510px;
   }
 }
 @media (max-width: 950px) {
   .knowledgeContainer {
-    height: 300px;
+    height: 450px;
   }
 }
 @media (max-width: 800px) {
   .knowledgeContainer {
-    height: 250px;
+    height: 430px;
   }
 }
 @media (max-width: 750px) {
@@ -997,9 +998,19 @@ TINTS AND SHADES
     height: 420px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 670px) {
   .knowledgeContainer {
     height: 350px;
+  }
+}
+@media (max-width: 550px) {
+  .knowledgeContainer {
+    height: 360px;
+  }
+}
+@media (max-width: 461px) {
+  .knowledgeContainer {
+    height: 450px;
   }
 }
 .knowledgeContainer .titleKnowledge {
@@ -1020,6 +1031,7 @@ TINTS AND SHADES
   display: flex;
   justify-content: center;
   gap: 8rem;
+  flex-wrap: wrap;
 }
 @media (max-width: 1200px) {
   .knowledgeContainer .knowledge__logos-container {
@@ -1068,6 +1080,9 @@ TINTS AND SHADES
     flex-wrap: wrap;
   }
 }
+.knowledgeContainer .knowledge__logos-container .mysql-constainerLogo,
+.knowledgeContainer .knowledge__logos-container .tailwindcss-constainerLogo,
+.knowledgeContainer .knowledge__logos-container .css-constainerLogo,
 .knowledgeContainer .knowledge__logos-container .html-constainerLogo,
 .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo,
 .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo,
@@ -1079,6 +1094,9 @@ TINTS AND SHADES
   justify-content: center;
   align-items: center;
 }
+.knowledgeContainer .knowledge__logos-container .mysql-constainerLogo .knowledgeLogo,
+.knowledgeContainer .knowledge__logos-container .tailwindcss-constainerLogo .knowledgeLogo,
+.knowledgeContainer .knowledge__logos-container .css-constainerLogo .knowledgeLogo,
 .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
 .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
 .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
@@ -1091,6 +1109,9 @@ TINTS AND SHADES
   margin-bottom: 1.2rem;
 }
 @media (max-width: 1400px) {
+  .knowledgeContainer .knowledge__logos-container .mysql-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .tailwindcss-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .css-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
@@ -1102,6 +1123,9 @@ TINTS AND SHADES
   }
 }
 @media (max-width: 1250px) {
+  .knowledgeContainer .knowledge__logos-container .mysql-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .tailwindcss-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .css-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
@@ -1113,6 +1137,9 @@ TINTS AND SHADES
   }
 }
 @media (max-width: 1200px) {
+  .knowledgeContainer .knowledge__logos-container .mysql-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .tailwindcss-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .css-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
@@ -1124,6 +1151,9 @@ TINTS AND SHADES
   }
 }
 @media (max-width: 950px) {
+  .knowledgeContainer .knowledge__logos-container .mysql-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .tailwindcss-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .css-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
@@ -1135,6 +1165,9 @@ TINTS AND SHADES
   }
 }
 @media (max-width: 800px) {
+  .knowledgeContainer .knowledge__logos-container .mysql-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .tailwindcss-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .css-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
@@ -1146,17 +1179,9 @@ TINTS AND SHADES
   }
 }
 @media (max-width: 750px) {
-  .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
-  .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
-  .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
-  .knowledgeContainer .knowledge__logos-container .typescript-constainerLogo .knowledgeLogo,
-  .knowledgeContainer .knowledge__logos-container .react-constainerLogo .knowledgeLogo,
-  .knowledgeContainer .knowledge__logos-container .git-constainerLogo .knowledgeLogo {
-    height: 9rem;
-    width: 9rem;
-  }
-}
-@media (max-width: 550px) {
+  .knowledgeContainer .knowledge__logos-container .mysql-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .tailwindcss-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .css-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
@@ -1167,7 +1192,10 @@ TINTS AND SHADES
     width: 7rem;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 670px) {
+  .knowledgeContainer .knowledge__logos-container .mysql-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .tailwindcss-constainerLogo .knowledgeLogo,
+  .knowledgeContainer .knowledge__logos-container .css-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .knowledgeLogo,
   .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .knowledgeLogo,
@@ -1178,6 +1206,9 @@ TINTS AND SHADES
     width: 6rem;
   }
 }
+.knowledgeContainer .knowledge__logos-container .mysql-constainerLogo .nameHability,
+.knowledgeContainer .knowledge__logos-container .tailwindcss-constainerLogo .nameHability,
+.knowledgeContainer .knowledge__logos-container .css-constainerLogo .nameHability,
 .knowledgeContainer .knowledge__logos-container .html-constainerLogo .nameHability,
 .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .nameHability,
 .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .nameHability,
@@ -1188,6 +1219,9 @@ TINTS AND SHADES
   color: #fff;
 }
 @media (max-width: 950px) {
+  .knowledgeContainer .knowledge__logos-container .mysql-constainerLogo .nameHability,
+  .knowledgeContainer .knowledge__logos-container .tailwindcss-constainerLogo .nameHability,
+  .knowledgeContainer .knowledge__logos-container .css-constainerLogo .nameHability,
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .nameHability,
   .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .nameHability,
   .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .nameHability,
@@ -1198,6 +1232,9 @@ TINTS AND SHADES
   }
 }
 @media (max-width: 800px) {
+  .knowledgeContainer .knowledge__logos-container .mysql-constainerLogo .nameHability,
+  .knowledgeContainer .knowledge__logos-container .tailwindcss-constainerLogo .nameHability,
+  .knowledgeContainer .knowledge__logos-container .css-constainerLogo .nameHability,
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .nameHability,
   .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .nameHability,
   .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .nameHability,
@@ -1208,6 +1245,9 @@ TINTS AND SHADES
   }
 }
 @media (max-width: 550px) {
+  .knowledgeContainer .knowledge__logos-container .mysql-constainerLogo .nameHability,
+  .knowledgeContainer .knowledge__logos-container .tailwindcss-constainerLogo .nameHability,
+  .knowledgeContainer .knowledge__logos-container .css-constainerLogo .nameHability,
   .knowledgeContainer .knowledge__logos-container .html-constainerLogo .nameHability,
   .knowledgeContainer .knowledge__logos-container .css_sass-constainerLogo .nameHability,
   .knowledgeContainer .knowledge__logos-container .javascript-constainerLogo .nameHability,
@@ -1449,7 +1489,7 @@ TINTS AND SHADES
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 90%;
   background-color: white;
   padding: 6rem;
   border-radius: 5px;
