@@ -307,8 +307,7 @@ iconUSA.addEventListener('click', function () {
   androidTitle.textContent = 'Android Project';
   androidSubtitle.textContent =
     'Landing page about that tells the story of Android';
-  emBreveTitle.textContent = 'Coming soon';
-  emBreveSubtitle.textContent = 'Soon a new project will be added';
+
   jogoDadoTitle.textContent = 'Pig (dice game)';
   jogoDadoSubtitle.textContent =
     'Throw the dice and collect points to be a winner';
@@ -455,8 +454,7 @@ iconBR.addEventListener('click', function () {
     'Landing page simulando uma empresa de comidas saudáveis';
   androidSubtitle.textContent =
     'Landing page sobre que conta a história do Android';
-  emBreveTitle.textContent = 'Em breve';
-  emBreveSubtitle.textContent = 'Em breve um novo projeto será adicionado';
+
   jogoDadoTitle.textContent = 'Jogo do Dado';
   jogoDadoSubtitle.textContent =
     'Jogue os dados e acumule pontos para ser um vencedor';
