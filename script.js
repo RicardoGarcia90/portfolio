@@ -18,7 +18,7 @@ window.addEventListener('click', function (event) {
     menuNave.classList.remove('menuNav--visible');
   }
 });
-
+//////////////////////////////////////////////////////////
 // SCROLL PARA AS SEÇÕES
 
 const menuItems = document.querySelectorAll('.menu__nav a');
@@ -97,14 +97,42 @@ const descriptionModal = document.querySelector('.descriptionModal');
 
 const btnCloseModal = document.querySelector('.close-modal');
 
-// LOTERIA
+var link = document.createElement('a');
+link.textContent = 'Visitar Site';
+link.target = '_blank';
+
+// LOTERIA - MODAL
 linkMaisLoteria.addEventListener('click', function (e) {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
 
+  // LOTERIA - DESCRICAO MODAL
   titleModal.textContent = 'Loteria';
   descriptionModal.textContent =
     "App que gera números aleatórios para serem apostados na loteria, você encontrará 3 jogos nesse App: 'Mega-Sena', 'Lotofácil', 'Lotomania'";
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://loterias.netlify.app/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-loteria2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
 });
 
 // FORKIFY
@@ -326,6 +354,8 @@ iconUSA.addEventListener('click', function () {
     titleModal.textContent = 'Loteria';
     descriptionModal.textContent =
       "An app that generates random numbers to be bet on the lottery, you will find 3 games in this app: 'Mega-Sena', 'Lotofácil', 'Lotomania'.";
+
+    link.textContent = 'Visit Website';
   });
 
   // FORKIFY MODAL ENGLISH
@@ -473,6 +503,8 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Loteria';
     descriptionModal.textContent =
       "App que gera números aleatórios para serem apostados na loteria, você encontrará 3 jogos nesse App: 'Mega-Sena', 'Lotofácil', 'Lotomania'";
+
+    link.textContent = 'Visitar Site';
   });
 
   // FORKIFY MODAL PORTUGUESE
