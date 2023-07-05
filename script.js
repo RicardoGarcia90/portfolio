@@ -79,6 +79,7 @@ tabsContainer.addEventListener('click', function (e) {
 ///////////////////////////////////////////////////////
 // MODAL
 
+const linkMaisAppClima = document.querySelector('.verMaisAppClima');
 const linkMaisLoteria = document.querySelector('.verMaisLoteria');
 const linkMaisForkify = document.querySelector('.verMaisForkify');
 const linkMaisMapty = document.querySelector('.verMaisMapty');
@@ -100,6 +101,40 @@ const btnCloseModal = document.querySelector('.close-modal');
 var link = document.createElement('a');
 link.textContent = 'Visitar Site';
 link.target = '_blank';
+
+// APP CLIMA- MODAL
+linkMaisAppClima.addEventListener('click', function (e) {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+
+  // LOTERIA - DESCRICAO MODAL
+  titleModal.textContent = 'E esse clima?';
+  descriptionModal.textContent =
+    'Aplicativo que exibe o clima da sua cidade. Basta digitar o nome de uma cidade e obterá informações sobre temperatura, umidade, velocidade do vento e condições climáticas atuais. Essa aplicação foi desenvolvida utilizando requisições Fetch na API da OpenWeather';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://aplicacao-clima.netlify.app/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-clima2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
+});
 
 // LOTERIA - MODAL
 linkMaisLoteria.addEventListener('click', function (e) {
@@ -143,6 +178,29 @@ linkMaisForkify.addEventListener('click', function (e) {
   titleModal.textContent = 'Forkify';
   descriptionModal.textContent =
     'App para pesquisar receitas, nesse app criado como projeto final do curso de JavaScript é possível pesquisar novas receitas, além de adicionar e editar as suas próprias.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://forkify-ricardogarcia.netlify.app/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-forkify2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
 });
 
 // MAPTY
@@ -153,6 +211,29 @@ linkMaisMapty.addEventListener('click', function (e) {
   titleModal.textContent = 'Mapty';
   descriptionModal.textContent =
     'App de registro de atividade física, nesse projeto é possível adicionar distância percorrida, tempo e tipo de atividade. Esse projeto foi realizado durante curso de JavaScript já concluído.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://ricardogarcia90.github.io/Mapty/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-mapty2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
 });
 
 // BANKIST
@@ -163,6 +244,29 @@ linkMaisBankist.addEventListener('click', function (e) {
   titleModal.textContent = 'Bankist';
   descriptionModal.textContent =
     'Projeto criado durante curso de JavaScript, este projeto simula um banco digital, nele é possível simular transferências e empréstimos. Para realizar login no site veja o README no GitHub clicando em "Ver Código".';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://ricardogarcia90.github.io/bankist/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-bankist2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
 });
 
 // OMNIFOOD
@@ -268,6 +372,7 @@ const appDesktop = document.getElementById('appWeb');
 const sites = document.getElementById('sites');
 const games = document.getElementById('games');
 
+const appClimaSubtitle = document.getElementById('appClima-p');
 const loteriaSubtitle = document.getElementById('loteria-p');
 const forkifySubtitle = document.getElementById('forkify-p');
 const maptySubtitle = document.getElementById('mapty_p');
@@ -325,8 +430,9 @@ iconUSA.addEventListener('click', function () {
   sites.textContent = 'Websites';
   games.textContent = 'Games';
 
+  appClimaSubtitle.textContent = 'App that shows the weather of your city';
   loteriaSubtitle.textContent =
-    'App that generates random numbers for Lottery games.';
+    'App that generates random numbers for Lottery games';
   forkifySubtitle.textContent = 'Recipe search app';
   maptySubtitle.textContent = 'App for recording physical activity';
   bankistSubtitle.textContent = 'App that simulates a digital bank';
@@ -345,6 +451,18 @@ iconUSA.addEventListener('click', function () {
   visitarSite.forEach(text => (text.textContent = 'Visit Website'));
   verCodigo.forEach(text => (text.textContent = 'View Code'));
   saberMais.forEach(text => (text.textContent = 'Read More'));
+
+  // APP CLIMA MODAL ENGLISH
+  linkMaisAppClima.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'E esse clima?';
+    descriptionModal.textContent =
+      'An app that displays the weather of your city. Enter the name of a city and receive information about temperature, humidity, wind speed, and current weather conditions. This app was developed using Fetch requests to the OpenWeather API.';
+
+    link.textContent = 'Visit Website';
+  });
 
   // LOTERIA MODAL ENGLISH
   linkMaisLoteria.addEventListener('click', function (e) {
@@ -366,6 +484,8 @@ iconUSA.addEventListener('click', function () {
     titleModal.textContent = 'Forkify';
     descriptionModal.textContent =
       'An app to search for recipes. This app was created as a final project for the JavaScript course. It allows you to search for new recipes and also to add and edit your own recipes.';
+
+    link.textContent = 'Visit Website';
   });
 
   // MAPTY
@@ -376,6 +496,8 @@ iconUSA.addEventListener('click', function () {
     titleModal.textContent = 'Mapty';
     descriptionModal.textContent =
       'An app for recording physical activity. In this project, it is possible to add the distance covered, time, and type of activity. This project was completed during a JavaScript course.';
+
+    link.textContent = 'Visit Website';
   });
 
   // BANKIST
@@ -386,6 +508,8 @@ iconUSA.addEventListener('click', function () {
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
       'A project created during a JavaScript course. This project simulates a digital bank where it is possible to simulate transfers and loans. To log in to the site, please see the README on GitHub by clicking on "View Code".';
+
+    link.textContent = 'Visit Website';
   });
 
   // OMNIFOOD
@@ -396,6 +520,8 @@ iconUSA.addEventListener('click', function () {
     titleModal.textContent = 'Omnifood';
     descriptionModal.textContent =
       'A project was created to simulate a delivery company that sells healthy meal plans. The main objective of this project was to practice the techniques and tools used during the course, such as HTML, CSS, and JavaScript.';
+
+    link.textContent = 'Visit Website';
   });
 
   // ANDROID
@@ -406,6 +532,8 @@ iconUSA.addEventListener('click', function () {
     titleModal.textContent = 'Android Project';
     descriptionModal.textContent =
       'A landing page was created as a final project for the first HTML and CSS course. This project utilized the initial learnings of Front-End development tools.';
+
+    link.textContent = 'Visit Website';
   });
 
   // JOGO DO DADO
@@ -416,6 +544,8 @@ iconUSA.addEventListener('click', function () {
     titleModal.textContent = 'Pig (dice game)';
     descriptionModal.textContent =
       'A game where the first person to reach the highest score wins. This game was developed during a JavaScript course. The game is very simple: each player rolls the dice, and if the value is different from 1, the player accumulates points. If the value is 1, the turn goes to the next player, and the accumulated points are lost. For more details, please read the README on GitHub by clicking on "View Code".';
+
+    link.textContent = 'Visit Website';
   });
 
   // JOGO ADIVINHAR NUMERO
@@ -426,6 +556,8 @@ iconUSA.addEventListener('click', function () {
     titleModal.textContent = 'Guessing game';
     descriptionModal.textContent =
       'A simple number guessing game is played by generating a random number between 1 and 20. The user types in a number they think was generated, and with each incorrect guess, the points decrease until the correct answer is given.';
+
+    link.textContent = 'Visit Website';
   });
 
   // CTA change language for EN
@@ -475,6 +607,7 @@ iconBR.addEventListener('click', function () {
   sites.textContent = 'Sites';
   games.textContent = 'Jogos';
 
+  appClimaSubtitle.textContent = 'App que mostra o clima de sua cidade';
   loteriaSubtitle.textContent =
     'App que gera números aleatórios para jogos de Loteria';
   forkifySubtitle.textContent = 'App para busca de receitas';
@@ -494,6 +627,18 @@ iconBR.addEventListener('click', function () {
   visitarSite.forEach(text => (text.textContent = 'Visitar Site'));
   verCodigo.forEach(text => (text.textContent = 'Ver Código'));
   saberMais.forEach(text => (text.textContent = 'Saber Mais'));
+
+  // APP CLIMA MODAL PORTUGUESE
+  linkMaisAppClima.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'E esse clima?';
+    descriptionModal.textContent =
+      'Aplicativo que exibe o clima da sua cidade. Basta digitar o nome de uma cidade e obterá informações sobre temperatura, umidade, velocidade do vento e condições climáticas atuais. Essa aplicação foi desenvolvida utilizando requisições Fetch na API da OpenWeather';
+
+    link.textContent = 'Visitar Site';
+  });
 
   // LOTERIA MODAL PORTUGUESE
   linkMaisLoteria.addEventListener('click', function (e) {
@@ -515,6 +660,8 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Forkify';
     descriptionModal.textContent =
       'App para pesquisar receitas, nesse app criado como projeto final do curso de JavaScript é possível pesquisar novas receitas, além de adicionar e editar as suas próprias.';
+
+    link.textContent = 'Visitar Site';
   });
 
   // MAPTY MODAL PORTUGUESE
@@ -525,6 +672,8 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Mapty';
     descriptionModal.textContent =
       'App de registro de atividade física, nesse projeto é possível adicionar distância percorrida, tempo e tipo de atividade. Esse projeto foi realizado durante curso de JavaScript já concluído.';
+
+    link.textContent = 'Visitar Site';
   });
 
   // BANKIST MODAL PORTUGUESE
@@ -535,6 +684,8 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
       'Projeto criado durante curso de JavaScript, este projeto simula um banco digital, nele é possível simular transferências e empréstimos. Para realizar login no site veja o README no GitHub clicando em "Ver Código".';
+
+    link.textContent = 'Visitar Site';
   });
 
   // OMNIFOOD MODAL PORTUGUESE
@@ -545,6 +696,8 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Omnifood';
     descriptionModal.textContent =
       'Projeto criado simulando uma empresa de Delivery que vende planos de refeiçoes saudáveis. Nesse projeto o principal objetivo foi a prática de técnicas e ferramentas utilizadas durante o curso realizado, como: HTML, CSS e JavaScript.';
+
+    link.textContent = 'Visitar Site';
   });
 
   // ANDROID MODAL PORTUGUESE
@@ -555,6 +708,8 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Projeto Android';
     descriptionModal.textContent =
       'Landing page criada como projeto final do primeiro curso realizado de HTML e CSS. Nesse projeto foram utilizados os primeiros aprendizados das ferrmantas de desenvolvimento Front-End.';
+
+    link.textContent = 'Visitar Site';
   });
 
   // JOGO DO DADO MODAL PORTUGUESE
@@ -565,6 +720,8 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Jogo do Dado';
     descriptionModal.textContent =
       'Jogo onde quem alcançar a maior pontuação primeiro vence. Esse jogo foi desenvolvido durante curso realizado de JavaScript, o jogo é bem simples, cada jogador rola o dado, sendo o valor diferente de 1 o jogador acumula os pontos, se o valor for 1 a jogada passa para o próximo jogador e você perde os pontos acumulados. Para saber mais detalhes leia o README no GitHub clicando em "Ver Código".';
+
+    link.textContent = 'Visitar Site';
   });
 
   // JOGO ADIVINHAR NUMERO MODAL PORTUGUESE
@@ -575,6 +732,8 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Jogo de Adivinhar o númrero sorteado';
     descriptionModal.textContent =
       'Jogo simples de adivinhação de números. É gerado um número aleatório entre 1 e 20, o usuário digita qual o número ele acha que foi gerado, a cada erro os pontos vão diminuindo até que o chute seja correto.';
+
+    link.textContent = 'Visitar Site';
   });
 
   // CTA change language for PT
