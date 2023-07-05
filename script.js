@@ -170,7 +170,7 @@ linkMaisLoteria.addEventListener('click', function (e) {
   imgModal.appendChild(image);
 });
 
-// FORKIFY
+// FORKIFY - MODAL
 linkMaisForkify.addEventListener('click', function (e) {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
@@ -203,7 +203,7 @@ linkMaisForkify.addEventListener('click', function (e) {
   imgModal.appendChild(image);
 });
 
-// MAPTY
+// MAPTY - MODAL
 linkMaisMapty.addEventListener('click', function (e) {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
@@ -236,7 +236,7 @@ linkMaisMapty.addEventListener('click', function (e) {
   imgModal.appendChild(image);
 });
 
-// BANKIST
+// BANKIST - MODAL
 linkMaisBankist.addEventListener('click', function (e) {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
@@ -269,7 +269,7 @@ linkMaisBankist.addEventListener('click', function (e) {
   imgModal.appendChild(image);
 });
 
-// OMNIFOOD
+// OMNIFOOD - MODAL
 linkMaisOmnifood.addEventListener('click', function (e) {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
@@ -277,9 +277,32 @@ linkMaisOmnifood.addEventListener('click', function (e) {
   titleModal.textContent = 'Omnifood';
   descriptionModal.textContent =
     'Projeto criado simulando uma empresa de Delivery que vende planos de refeiçoes saudáveis. Nesse projeto o principal objetivo foi a prática de técnicas e ferramentas utilizadas durante o curso realizado, como: HTML, CSS e JavaScript.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://omnifood-ricardogarcia.netlify.app/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-omnifood2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
 });
 
-// ANDROID
+// ANDROID - MODAL
 linkMaisAndroid.addEventListener('click', function (e) {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
@@ -287,9 +310,32 @@ linkMaisAndroid.addEventListener('click', function (e) {
   titleModal.textContent = 'Projeto Android';
   descriptionModal.textContent =
     'Landing page criada como projeto final do primeiro curso realizado de HTML e CSS. Nesse projeto foram utilizados os primeiros aprendizados das ferrmantas de desenvolvimento Front-End.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://ricardogarcia90.github.io/projeto-android/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-projeto-android2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
 });
 
-// JOGO DO DADO
+// JOGO DO DADO - MODAL
 linkMaisJogoDado.addEventListener('click', function (e) {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
@@ -297,9 +343,32 @@ linkMaisJogoDado.addEventListener('click', function (e) {
   titleModal.textContent = 'Jogo do Dado';
   descriptionModal.textContent =
     'Jogo onde quem alcançar a maior pontuação primeiro vence. Esse jogo foi desenvolvido durante curso realizado de JavaScript, o jogo é bem simples, cada jogador rola o dado, sendo o valor diferente de 1 o jogador acumula os pontos, se o valor for 1 a jogada passa para o próximo jogador e você perde os pontos acumulados. Para saber mais detalhes leia o README no GitHub clicando em "Ver Código".';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://ricardogarcia90.github.io/Pig-Game-JogoDoDado/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-jodoDado2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
 });
 
-// JOGO ADIVINHAR NUMERO
+// JOGO ADIVINHAR NUMERO - MODAL
 linkMaisAdivinharNumero.addEventListener('click', function (e) {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
@@ -307,6 +376,29 @@ linkMaisAdivinharNumero.addEventListener('click', function (e) {
   titleModal.textContent = 'Jogo de Adivinhar o númrero sorteado';
   descriptionModal.textContent =
     'Jogo simples de adivinhação de números. É gerado um número aleatório entre 1 e 20, o usuário digita qual o número ele acha que foi gerado, a cada erro os pontos vão diminuindo até que o chute seja correto.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://ricardogarcia90.github.io/jogoAdivinharNumero/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-adivinhe-o-numero2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
 });
 
 const closeModal = function () {

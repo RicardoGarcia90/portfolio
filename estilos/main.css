@@ -932,16 +932,58 @@ TINTS AND SHADES
   justify-content: space-around;
   gap: 2rem;
 }
+@media (max-width: 384px) {
+  .modal .content-modal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 512px) {
+  .modal .content-modal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 640px) {
+  .modal .content-modal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 896px) {
+  .modal .content-modal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+  .modal .content-modal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .modal .content-modal .text-content-modal {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 .modal .content-modal .text-content-modal #site-link-modal a {
   text-decoration: none;
   color: rgba(34, 34, 34, 0.7490196078);
   font-size: 1.8rem;
+}
+@media (max-width: 384px) {
+  .modal .content-modal .text-content-modal #site-link-modal a {
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }
 .modal .content-modal .text-content-modal #site-link-modal a:hover {
   color: #ff6100;
@@ -960,8 +1002,29 @@ TINTS AND SHADES
   color: #4c1d00;
   text-align: left;
 }
+@media (max-width: 320px) {
+  .modal .content-modal p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
 .modal .content-modal img {
   height: 40rem;
+}
+@media (max-width: 384px) {
+  .modal .content-modal img {
+    height: 15rem;
+  }
+}
+@media (max-width: 512px) {
+  .modal .content-modal img {
+    height: 20rem;
+  }
+}
+@media (max-width: 640px) {
+  .modal .content-modal img {
+    height: 30rem;
+  }
 }
 
 .overlay {
@@ -1528,16 +1591,58 @@ TINTS AND SHADES
   justify-content: space-around;
   gap: 2rem;
 }
+@media (max-width: 384px) {
+  .modal .content-modal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 512px) {
+  .modal .content-modal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 640px) {
+  .modal .content-modal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 896px) {
+  .modal .content-modal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+  .modal .content-modal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .modal .content-modal .text-content-modal {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 .modal .content-modal .text-content-modal #site-link-modal a {
   text-decoration: none;
   color: rgba(34, 34, 34, 0.7490196078);
   font-size: 1.8rem;
+}
+@media (max-width: 384px) {
+  .modal .content-modal .text-content-modal #site-link-modal a {
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }
 .modal .content-modal .text-content-modal #site-link-modal a:hover {
   color: #ff6100;
@@ -1556,8 +1661,29 @@ TINTS AND SHADES
   color: #4c1d00;
   text-align: left;
 }
+@media (max-width: 320px) {
+  .modal .content-modal p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
 .modal .content-modal img {
   height: 40rem;
+}
+@media (max-width: 384px) {
+  .modal .content-modal img {
+    height: 15rem;
+  }
+}
+@media (max-width: 512px) {
+  .modal .content-modal img {
+    height: 20rem;
+  }
+}
+@media (max-width: 640px) {
+  .modal .content-modal img {
+    height: 30rem;
+  }
 }
 
 .overlay {
