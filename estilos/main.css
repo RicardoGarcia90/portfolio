@@ -1093,19 +1093,34 @@ TINTS AND SHADES
     height: 420px;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 695px) {
+  .knowledgeContainer {
+    height: 500px;
+  }
+}
+@media (max-width: 650px) {
   .knowledgeContainer {
     height: 350px;
   }
 }
-@media (max-width: 550px) {
-  .knowledgeContainer {
-    height: 360px;
-  }
-}
-@media (max-width: 461px) {
+@media (max-width: 485px) {
   .knowledgeContainer {
     height: 450px;
+  }
+}
+@media (max-width: 430px) {
+  .knowledgeContainer {
+    height: 600px;
+  }
+}
+@media (max-width: 400px) {
+  .knowledgeContainer {
+    height: 450px;
+  }
+}
+@media (max-width: 340px) {
+  .knowledgeContainer {
+    height: 580px;
   }
 }
 .knowledgeContainer .titleKnowledge {
