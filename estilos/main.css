@@ -1009,22 +1009,7 @@ TINTS AND SHADES
   }
 }
 .modal .content-modal img {
-  height: 40rem;
-}
-@media (max-width: 384px) {
-  .modal .content-modal img {
-    height: 15rem;
-  }
-}
-@media (max-width: 512px) {
-  .modal .content-modal img {
-    height: 20rem;
-  }
-}
-@media (max-width: 640px) {
-  .modal .content-modal img {
-    height: 30rem;
-  }
+  width: 100%;
 }
 
 .overlay {
@@ -1668,22 +1653,7 @@ TINTS AND SHADES
   }
 }
 .modal .content-modal img {
-  height: 40rem;
-}
-@media (max-width: 384px) {
-  .modal .content-modal img {
-    height: 15rem;
-  }
-}
-@media (max-width: 512px) {
-  .modal .content-modal img {
-    height: 20rem;
-  }
-}
-@media (max-width: 640px) {
-  .modal .content-modal img {
-    height: 30rem;
-  }
+  width: 100%;
 }
 
 .overlay {

@@ -107,7 +107,7 @@ linkMaisAppClima.addEventListener('click', function (e) {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
 
-  // LOTERIA - DESCRICAO MODAL
+  // APP CLIMA - DESCRICAO MODAL
   titleModal.textContent = 'E esse clima?';
   descriptionModal.textContent =
     'Aplicativo que exibe o clima da sua cidade. Basta digitar o nome de uma cidade e obterá informações sobre temperatura, umidade, velocidade do vento e condições climáticas atuais. Essa aplicação foi desenvolvida utilizando requisições Fetch na API da OpenWeather';
@@ -144,7 +144,7 @@ linkMaisLoteria.addEventListener('click', function (e) {
   // LOTERIA - DESCRICAO MODAL
   titleModal.textContent = 'Loteria';
   descriptionModal.textContent =
-    "App que gera números aleatórios para serem apostados na loteria, você encontrará 3 jogos nesse App: 'Mega-Sena', 'Lotofácil', 'Lotomania'";
+    "Este aplicativo gera números aleatórios para serem utilizados em apostas na loteria. No aplicativo, você encontrará três jogos: 'Mega-Sena', 'Lotofácil' e 'Lotomania'.";
 
   // LINK PARA O SITE DENTRO DO MODAL
   link.href = 'https://loterias.netlify.app/';
@@ -177,7 +177,7 @@ linkMaisForkify.addEventListener('click', function (e) {
 
   titleModal.textContent = 'Forkify';
   descriptionModal.textContent =
-    'App para pesquisar receitas, nesse app criado como projeto final do curso de JavaScript é possível pesquisar novas receitas, além de adicionar e editar as suas próprias.';
+    'Este aplicativo permite pesquisar receitas. Criado como projeto final do curso de JavaScript, nele é possível buscar novas receitas, além de adicionar e editar as suas próprias.';
 
   // LINK PARA O SITE DENTRO DO MODAL
   link.href = 'https://forkify-ricardogarcia.netlify.app/';
@@ -210,7 +210,7 @@ linkMaisMapty.addEventListener('click', function (e) {
 
   titleModal.textContent = 'Mapty';
   descriptionModal.textContent =
-    'App de registro de atividade física, nesse projeto é possível adicionar distância percorrida, tempo e tipo de atividade. Esse projeto foi realizado durante curso de JavaScript já concluído.';
+    'Este aplicativo permite que você registre os dados de uma atividade física realizada. Ao clicar no mapa, sua localização será habilitada, e um formulário aparecerá para você registrar informações como: distância percorrida, tempo de duração da atividade e tipo de atividade realizada.';
 
   // LINK PARA O SITE DENTRO DO MODAL
   link.href = 'https://ricardogarcia90.github.io/Mapty/';
@@ -243,7 +243,7 @@ linkMaisBankist.addEventListener('click', function (e) {
 
   titleModal.textContent = 'Bankist';
   descriptionModal.textContent =
-    'Projeto criado durante curso de JavaScript, este projeto simula um banco digital, nele é possível simular transferências e empréstimos. Para realizar login no site veja o README no GitHub clicando em "Ver Código".';
+    'Este projeto foi criado durante um curso de JavaScript e tem como objetivo simular um banco digital. Nele, é possível realizar transferências e empréstimos. Para fazer login, preencha os campos da seguinte forma: (usuário: js, senha: 1111) ou (usuário: js, senha: 2222). Você pode transferir diferentes quantias entre contas.';
 
   // LINK PARA O SITE DENTRO DO MODAL
   link.href = 'https://ricardogarcia90.github.io/bankist/';
@@ -309,7 +309,7 @@ linkMaisAndroid.addEventListener('click', function (e) {
 
   titleModal.textContent = 'Projeto Android';
   descriptionModal.textContent =
-    'Landing page criada como projeto final do primeiro curso realizado de HTML e CSS. Nesse projeto foram utilizados os primeiros aprendizados das ferrmantas de desenvolvimento Front-End.';
+    'Landing page criada como projeto final do primeiro curso que realizei de HTML e CSS. Nesse projeto foram utilizados os primeiros aprendizados das ferrmantas de desenvolvimento Front-End.';
 
   // LINK PARA O SITE DENTRO DO MODAL
   link.href = 'https://ricardogarcia90.github.io/projeto-android/';
@@ -342,7 +342,7 @@ linkMaisJogoDado.addEventListener('click', function (e) {
 
   titleModal.textContent = 'Jogo do Dado';
   descriptionModal.textContent =
-    'Jogo onde quem alcançar a maior pontuação primeiro vence. Esse jogo foi desenvolvido durante curso realizado de JavaScript, o jogo é bem simples, cada jogador rola o dado, sendo o valor diferente de 1 o jogador acumula os pontos, se o valor for 1 a jogada passa para o próximo jogador e você perde os pontos acumulados. Para saber mais detalhes leia o README no GitHub clicando em "Ver Código".';
+    'Esse jogo foi desenvolvido durante um curso de JavaScript. O jogo é bastante simples: o jogador rola o dado e acumula pontos enquanto o valor do dado for diferente de 1. Os pontos acumulados são os próprios valores apresentados pelo dado. O jogador tem a opção de armazenar esses pontos ou passar a vez para seu adversário. Se o jogador optar por fazer mais uma jogada e o número apresentado pelo dado for igual a 1, a vez é passada para o adversário e o jogador perde todos os pontos que não foram armazenados. O vencedor é aquele que alcançar primeiro os 100 pontos.';
 
   // LINK PARA O SITE DENTRO DO MODAL
   link.href = 'https://ricardogarcia90.github.io/Pig-Game-JogoDoDado/';
@@ -563,7 +563,7 @@ iconUSA.addEventListener('click', function () {
 
     titleModal.textContent = 'Loteria';
     descriptionModal.textContent =
-      "An app that generates random numbers to be bet on the lottery, you will find 3 games in this app: 'Mega-Sena', 'Lotofácil', 'Lotomania'.";
+      "This application generates random numbers to be used for lottery bets. In the app, you will find three games: 'Mega-Sena,' 'Lotofácil,' and 'Lotomania'.";
 
     link.textContent = 'Visit Website';
   });
@@ -575,7 +575,7 @@ iconUSA.addEventListener('click', function () {
 
     titleModal.textContent = 'Forkify';
     descriptionModal.textContent =
-      'An app to search for recipes. This app was created as a final project for the JavaScript course. It allows you to search for new recipes and also to add and edit your own recipes.';
+      'This application is used to search for recipes. Created as the final project of the JavaScript course, it allows you to search for new recipes, as well as add and edit your own.';
 
     link.textContent = 'Visit Website';
   });
@@ -587,7 +587,7 @@ iconUSA.addEventListener('click', function () {
 
     titleModal.textContent = 'Mapty';
     descriptionModal.textContent =
-      'An app for recording physical activity. In this project, it is possible to add the distance covered, time, and type of activity. This project was completed during a JavaScript course.';
+      'This application allows you to record the data of a physical activity performed. By clicking on the map, your location will be enabled, and a form will appear for you to register information such as: distance covered, duration of the activity, and type of activity performed';
 
     link.textContent = 'Visit Website';
   });
@@ -599,7 +599,7 @@ iconUSA.addEventListener('click', function () {
 
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
-      'A project created during a JavaScript course. This project simulates a digital bank where it is possible to simulate transfers and loans. To log in to the site, please see the README on GitHub by clicking on "View Code".';
+      'This project was created during a JavaScript course and aims to simulate a digital bank. In this project, it is possible to simulate transfers and loans. To log in, fill in the fields as follows: (username: js, password: 1111) or (username: js, password: 2222). You can transfer different amounts between accounts.';
 
     link.textContent = 'Visit Website';
   });
@@ -623,7 +623,7 @@ iconUSA.addEventListener('click', function () {
 
     titleModal.textContent = 'Android Project';
     descriptionModal.textContent =
-      'A landing page was created as a final project for the first HTML and CSS course. This project utilized the initial learnings of Front-End development tools.';
+      'Landing page created as the final project of the first HTML and CSS course I completed. This project incorporated the initial learnings of Front-End development tools.';
 
     link.textContent = 'Visit Website';
   });
@@ -635,7 +635,7 @@ iconUSA.addEventListener('click', function () {
 
     titleModal.textContent = 'Pig (dice game)';
     descriptionModal.textContent =
-      'A game where the first person to reach the highest score wins. This game was developed during a JavaScript course. The game is very simple: each player rolls the dice, and if the value is different from 1, the player accumulates points. If the value is 1, the turn goes to the next player, and the accumulated points are lost. For more details, please read the README on GitHub by clicking on "View Code".';
+      'This game was developed during a JavaScript course. The game is quite simple: the player rolls the dice and accumulates points as long as the dice value is not 1. The accumulated points are the values shown on the dice. The player has the option to store these points or pass the turn to their opponent. If the player chooses to take another turn and the number shown on the dice is 1, the turn is passed to the opponent, and the player loses all the points that were not stored. The winner is the first player to reach 100 points.';
 
     link.textContent = 'Visit Website';
   });
@@ -739,7 +739,7 @@ iconBR.addEventListener('click', function () {
 
     titleModal.textContent = 'Loteria';
     descriptionModal.textContent =
-      "App que gera números aleatórios para serem apostados na loteria, você encontrará 3 jogos nesse App: 'Mega-Sena', 'Lotofácil', 'Lotomania'";
+      "Este aplicativo gera números aleatórios para serem utilizados em apostas na loteria. No aplicativo, você encontrará três jogos: 'Mega-Sena', 'Lotofácil' e 'Lotomania'.";
 
     link.textContent = 'Visitar Site';
   });
@@ -751,7 +751,7 @@ iconBR.addEventListener('click', function () {
 
     titleModal.textContent = 'Forkify';
     descriptionModal.textContent =
-      'App para pesquisar receitas, nesse app criado como projeto final do curso de JavaScript é possível pesquisar novas receitas, além de adicionar e editar as suas próprias.';
+      'Este aplicativo permite pesquisar receitas. Criado como projeto final do curso de JavaScript, nele é possível buscar novas receitas, além de adicionar e editar as suas próprias.';
 
     link.textContent = 'Visitar Site';
   });
@@ -763,7 +763,7 @@ iconBR.addEventListener('click', function () {
 
     titleModal.textContent = 'Mapty';
     descriptionModal.textContent =
-      'App de registro de atividade física, nesse projeto é possível adicionar distância percorrida, tempo e tipo de atividade. Esse projeto foi realizado durante curso de JavaScript já concluído.';
+      'Este aplicativo permite que você registre os dados de uma atividade física realizada. Ao clicar no mapa, sua localização será habilitada, e um formulário aparecerá para você registrar informações como: distância percorrida, tempo de duração da atividade e tipo de atividade realizada.';
 
     link.textContent = 'Visitar Site';
   });
@@ -775,7 +775,7 @@ iconBR.addEventListener('click', function () {
 
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
-      'Projeto criado durante curso de JavaScript, este projeto simula um banco digital, nele é possível simular transferências e empréstimos. Para realizar login no site veja o README no GitHub clicando em "Ver Código".';
+      'Este projeto foi criado durante um curso de JavaScript e tem como objetivo simular um banco digital. Nele, é possível realizar transferências e empréstimos. Para fazer login, preencha os campos da seguinte forma: (usuário: js, senha: 1111) ou (usuário: js, senha: 2222). Você pode transferir diferentes quantias entre contas.';
 
     link.textContent = 'Visitar Site';
   });
@@ -799,7 +799,7 @@ iconBR.addEventListener('click', function () {
 
     titleModal.textContent = 'Projeto Android';
     descriptionModal.textContent =
-      'Landing page criada como projeto final do primeiro curso realizado de HTML e CSS. Nesse projeto foram utilizados os primeiros aprendizados das ferrmantas de desenvolvimento Front-End.';
+      'Landing page criada como projeto final do primeiro curso que realizei de HTML e CSS. Nesse projeto foram utilizados os primeiros aprendizados das ferrmantas de desenvolvimento Front-End.';
 
     link.textContent = 'Visitar Site';
   });
@@ -811,7 +811,7 @@ iconBR.addEventListener('click', function () {
 
     titleModal.textContent = 'Jogo do Dado';
     descriptionModal.textContent =
-      'Jogo onde quem alcançar a maior pontuação primeiro vence. Esse jogo foi desenvolvido durante curso realizado de JavaScript, o jogo é bem simples, cada jogador rola o dado, sendo o valor diferente de 1 o jogador acumula os pontos, se o valor for 1 a jogada passa para o próximo jogador e você perde os pontos acumulados. Para saber mais detalhes leia o README no GitHub clicando em "Ver Código".';
+      'Esse jogo foi desenvolvido durante um curso de JavaScript. O jogo é bastante simples: o jogador rola o dado e acumula pontos enquanto o valor do dado for diferente de 1. Os pontos acumulados são os próprios valores apresentados pelo dado. O jogador tem a opção de armazenar esses pontos ou passar a vez para seu adversário. Se o jogador optar por fazer mais uma jogada e o número apresentado pelo dado for igual a 1, a vez é passada para o adversário e o jogador perde todos os pontos que não foram armazenados. O vencedor é aquele que alcançar primeiro os 100 pontos.';
 
     link.textContent = 'Visitar Site';
   });
