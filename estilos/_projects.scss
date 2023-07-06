@@ -242,6 +242,11 @@
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  overflow-y: scroll;
+
+  @media (max-width: 1024px) {
+    height: 90%;
+  }
 
   .content-modal {
     display: flex;
@@ -290,8 +295,8 @@
         color: $color9;
         font-size: 1.8rem;
 
-        @media (max-width: 384px) {
-          font-size: 1.6rem;
+        @media (max-width: 1024px) {
+          font-size: 1.4rem;
           text-align: center;
         }
       }
@@ -308,22 +313,30 @@
       margin-bottom: 1.2rem;
       color: $primary-color;
       text-align: center;
+
+      @media (max-width: 512px) {
+        font-size: 2rem;
+      }
     }
 
     p {
       font-family: inherit;
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: $color3;
       text-align: left;
 
-      @media (max-width: 320px) {
+      @media (max-width: 1024px) {
         font-size: 1.6rem;
-        text-align: center;
+        text-align: left;
+      }
+
+      @media (max-width: 512px) {
+        font-size: 1.4rem;
       }
     }
 
     img {
-      width: 100%;
+      width: 90%;
     }
   }
 }
@@ -348,6 +361,10 @@
   cursor: pointer;
   border: none;
   background: none;
+
+  @media (max-width: 512px) {
+    font-size: 3rem;
+  }
 }
 
 .hidden {

@@ -926,6 +926,12 @@ TINTS AND SHADES
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  overflow-y: scroll;
+}
+@media (max-width: 1024px) {
+  .modal {
+    height: 90%;
+  }
 }
 .modal .content-modal {
   display: flex;
@@ -979,9 +985,9 @@ TINTS AND SHADES
   color: rgba(34, 34, 34, 0.7490196078);
   font-size: 1.8rem;
 }
-@media (max-width: 384px) {
+@media (max-width: 1024px) {
   .modal .content-modal .text-content-modal #site-link-modal a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: center;
   }
 }
@@ -996,20 +1002,30 @@ TINTS AND SHADES
   color: #ff6100;
   text-align: center;
 }
+@media (max-width: 512px) {
+  .modal .content-modal h1 {
+    font-size: 2rem;
+  }
+}
 .modal .content-modal p {
   font-family: inherit;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #4c1d00;
   text-align: left;
 }
-@media (max-width: 320px) {
+@media (max-width: 1024px) {
   .modal .content-modal p {
     font-size: 1.6rem;
-    text-align: center;
+    text-align: left;
+  }
+}
+@media (max-width: 512px) {
+  .modal .content-modal p {
+    font-size: 1.4rem;
   }
 }
 .modal .content-modal img {
-  width: 100%;
+  width: 90%;
 }
 
 .overlay {
@@ -1033,6 +1049,11 @@ TINTS AND SHADES
   cursor: pointer;
   border: none;
   background: none;
+}
+@media (max-width: 512px) {
+  .close-modal {
+    font-size: 3rem;
+  }
 }
 
 .hidden {
@@ -1570,6 +1591,12 @@ TINTS AND SHADES
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  overflow-y: scroll;
+}
+@media (max-width: 1024px) {
+  .modal {
+    height: 90%;
+  }
 }
 .modal .content-modal {
   display: flex;
@@ -1623,9 +1650,9 @@ TINTS AND SHADES
   color: rgba(34, 34, 34, 0.7490196078);
   font-size: 1.8rem;
 }
-@media (max-width: 384px) {
+@media (max-width: 1024px) {
   .modal .content-modal .text-content-modal #site-link-modal a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: center;
   }
 }
@@ -1640,20 +1667,30 @@ TINTS AND SHADES
   color: #ff6100;
   text-align: center;
 }
+@media (max-width: 512px) {
+  .modal .content-modal h1 {
+    font-size: 2rem;
+  }
+}
 .modal .content-modal p {
   font-family: inherit;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #4c1d00;
   text-align: left;
 }
-@media (max-width: 320px) {
+@media (max-width: 1024px) {
   .modal .content-modal p {
     font-size: 1.6rem;
-    text-align: center;
+    text-align: left;
+  }
+}
+@media (max-width: 512px) {
+  .modal .content-modal p {
+    font-size: 1.4rem;
   }
 }
 .modal .content-modal img {
-  width: 100%;
+  width: 90%;
 }
 
 .overlay {
@@ -1677,6 +1714,11 @@ TINTS AND SHADES
   cursor: pointer;
   border: none;
   background: none;
+}
+@media (max-width: 512px) {
+  .close-modal {
+    font-size: 3rem;
+  }
 }
 
 .hidden {
