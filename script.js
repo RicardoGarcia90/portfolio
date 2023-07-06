@@ -79,6 +79,7 @@ tabsContainer.addEventListener('click', function (e) {
 ///////////////////////////////////////////////////////
 // MODAL
 
+const linkMaisMoveMaster = document.querySelector('.verMaisMoveMaster');
 const linkMaisAppClima = document.querySelector('.verMaisAppClima');
 const linkMaisLoteria = document.querySelector('.verMaisLoteria');
 const linkMaisForkify = document.querySelector('.verMaisForkify');
@@ -258,6 +259,39 @@ linkMaisBankist.addEventListener('click', function (e) {
   // IMAGEM MODAL
   var image = document.createElement('img');
   image.src = 'img/tela-bankist2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
+});
+
+// MOVEMASTER - MODAL
+linkMaisMoveMaster.addEventListener('click', function (e) {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+
+  titleModal.textContent = 'MoveMaster';
+  descriptionModal.textContent =
+    'Site criado para simular uma empresa do ramo fitness. Neste site, você encontrará serviços, dicas e notícias sobre o mundo fitness. O site foi desenvolvido utilizando ferramentas do WordPress.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://dev-movemaster.pantheonsite.io/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-moveMaster2.png';
 
   var imgModal = document.getElementById('img-modal-container');
 
@@ -464,6 +498,7 @@ const appDesktop = document.getElementById('appWeb');
 const sites = document.getElementById('sites');
 const games = document.getElementById('games');
 
+const moveMasterSubtitle = document.getElementById('moveMaster_p');
 const appClimaSubtitle = document.getElementById('appClima-p');
 const loteriaSubtitle = document.getElementById('loteria-p');
 const forkifySubtitle = document.getElementById('forkify-p');
@@ -522,6 +557,7 @@ iconUSA.addEventListener('click', function () {
   sites.textContent = 'Websites';
   games.textContent = 'Games';
 
+  moveMasterSubtitle.textContent = 'Fitness website with tips and services.';
   appClimaSubtitle.textContent = 'App that shows the weather of your city';
   loteriaSubtitle.textContent =
     'App that generates random numbers for Lottery games';
@@ -600,6 +636,18 @@ iconUSA.addEventListener('click', function () {
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
       'This project was created during a JavaScript course and aims to simulate a digital bank. In this project, it is possible to simulate transfers and loans. To log in, fill in the fields as follows: (username: js, password: 1111) or (username: js, password: 2222). You can transfer different amounts between accounts.';
+
+    link.textContent = 'Visit Website';
+  });
+
+  // MOVEMASTER MODAL ENGLISH
+  linkMaisMoveMaster.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'MoveMaster';
+    descriptionModal.textContent =
+      'Website created to simulate a fitness industry company. On this website, you will find services, tips, and news about the fitness world. The site was developed using WordPress tools.';
 
     link.textContent = 'Visit Website';
   });
@@ -699,6 +747,7 @@ iconBR.addEventListener('click', function () {
   sites.textContent = 'Sites';
   games.textContent = 'Jogos';
 
+  moveMasterSubtitle.textContent = 'Site fitness com dicas e serviços.';
   appClimaSubtitle.textContent = 'App que mostra o clima de sua cidade';
   loteriaSubtitle.textContent =
     'App que gera números aleatórios para jogos de Loteria';
@@ -719,6 +768,18 @@ iconBR.addEventListener('click', function () {
   visitarSite.forEach(text => (text.textContent = 'Visitar Site'));
   verCodigo.forEach(text => (text.textContent = 'Ver Código'));
   saberMais.forEach(text => (text.textContent = 'Saber Mais'));
+
+  // MOVEMASTER MODAL PORTUGUESE
+  linkMaisMoveMaster.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'MoveMaster';
+    descriptionModal.textContent =
+      'Site criado para simular uma empresa do ramo fitness. Neste site, você encontrará serviços, dicas e notícias sobre o mundo fitness. O site foi desenvolvido utilizando ferramentas do WordPress.';
+
+    link.textContent = 'Visitar Site';
+  });
 
   // APP CLIMA MODAL PORTUGUESE
   linkMaisAppClima.addEventListener('click', function (e) {
