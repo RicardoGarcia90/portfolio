@@ -79,6 +79,7 @@ tabsContainer.addEventListener('click', function (e) {
 ///////////////////////////////////////////////////////
 // MODAL
 
+const linkMaisTaskPlanner = document.querySelector('.verMaisTaskPlanner');
 const linkMaisMoveMaster = document.querySelector('.verMaisMoveMaster');
 const linkMaisAppClima = document.querySelector('.verMaisAppClima');
 const linkMaisLoteria = document.querySelector('.verMaisLoteria');
@@ -102,6 +103,40 @@ const btnCloseModal = document.querySelector('.close-modal');
 var link = document.createElement('a');
 link.textContent = 'Visitar Site';
 link.target = '_blank';
+
+// TASKPLANNER - MODAL
+linkMaisTaskPlanner.addEventListener('click', function (e) {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+
+  // TASKPLANNER - DESCRICAO MODAL
+  titleModal.textContent = 'TaskPlanner';
+  descriptionModal.textContent =
+    'Aplicativo em que você pode gerenciar suas atividades diárias, adicionando, concluindo, editando e excluindo tarefas.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://taskplannerlist.netlify.app/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-taskPlanner2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
+});
 
 // APP CLIMA- MODAL
 linkMaisAppClima.addEventListener('click', function (e) {
@@ -498,6 +533,7 @@ const appDesktop = document.getElementById('appWeb');
 const sites = document.getElementById('sites');
 const games = document.getElementById('games');
 
+const taskPlannerSubtitle = document.getElementById('taskPlanner-p');
 const moveMasterSubtitle = document.getElementById('moveMaster_p');
 const appClimaSubtitle = document.getElementById('appClima-p');
 const loteriaSubtitle = document.getElementById('loteria-p');
@@ -557,6 +593,7 @@ iconUSA.addEventListener('click', function () {
   sites.textContent = 'Websites';
   games.textContent = 'Games';
 
+  taskPlannerSubtitle.textContent = 'Task management application.';
   moveMasterSubtitle.textContent = 'Fitness website with tips and services.';
   appClimaSubtitle.textContent = 'App that shows the weather of your city';
   loteriaSubtitle.textContent =
@@ -579,6 +616,18 @@ iconUSA.addEventListener('click', function () {
   visitarSite.forEach(text => (text.textContent = 'Visit Website'));
   verCodigo.forEach(text => (text.textContent = 'View Code'));
   saberMais.forEach(text => (text.textContent = 'Read More'));
+
+  // TASKPLANNER MODAL ENGLISH
+  linkMaisTaskPlanner.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'TaskPlanner';
+    descriptionModal.textContent =
+      'An application where you can manage your daily activities by adding, completing, editing, and deleting tasks.';
+
+    link.textContent = 'Visit Website';
+  });
 
   // APP CLIMA MODAL ENGLISH
   linkMaisAppClima.addEventListener('click', function (e) {
@@ -747,6 +796,7 @@ iconBR.addEventListener('click', function () {
   sites.textContent = 'Sites';
   games.textContent = 'Jogos';
 
+  taskPlannerSubtitle.textContent = 'Aplicativo para gerenciar tarefas.';
   moveMasterSubtitle.textContent = 'Site fitness com dicas e serviços.';
   appClimaSubtitle.textContent = 'App que mostra o clima de sua cidade';
   loteriaSubtitle.textContent =
@@ -769,14 +819,14 @@ iconBR.addEventListener('click', function () {
   verCodigo.forEach(text => (text.textContent = 'Ver Código'));
   saberMais.forEach(text => (text.textContent = 'Saber Mais'));
 
-  // MOVEMASTER MODAL PORTUGUESE
-  linkMaisMoveMaster.addEventListener('click', function (e) {
+  // TASKPLANNER MODAL PORTUGUESE
+  linkMaisTaskPlanner.addEventListener('click', function (e) {
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
 
-    titleModal.textContent = 'MoveMaster';
+    titleModal.textContent = 'TaskPlanner';
     descriptionModal.textContent =
-      'Site criado para simular uma empresa do ramo fitness. Neste site, você encontrará serviços, dicas e notícias sobre o mundo fitness. O site foi desenvolvido utilizando ferramentas do WordPress.';
+      'Aplicativo em que você pode gerenciar suas atividades diárias, adicionando, concluindo, editando e excluindo tarefas.';
 
     link.textContent = 'Visitar Site';
   });
@@ -837,6 +887,18 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
       'Este projeto foi criado durante um curso de JavaScript e tem como objetivo simular um banco digital. Nele, é possível realizar transferências e empréstimos. Para fazer login, preencha os campos da seguinte forma: (usuário: js, senha: 1111) ou (usuário: js, senha: 2222). Você pode transferir diferentes quantias entre contas.';
+
+    link.textContent = 'Visitar Site';
+  });
+
+  // MOVEMASTER MODAL PORTUGUESE
+  linkMaisMoveMaster.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'MoveMaster';
+    descriptionModal.textContent =
+      'Site criado para simular uma empresa do ramo fitness. Neste site, você encontrará serviços, dicas e notícias sobre o mundo fitness. O site foi desenvolvido utilizando ferramentas do WordPress.';
 
     link.textContent = 'Visitar Site';
   });
