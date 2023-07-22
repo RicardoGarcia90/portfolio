@@ -79,6 +79,9 @@ tabsContainer.addEventListener('click', function (e) {
 ///////////////////////////////////////////////////////
 // MODAL
 
+const linkMaisTrilhandoRiquezas = document.querySelector(
+  '.verMaisTrilhandoRiquezas'
+);
 const linkMaisTaskPlanner = document.querySelector('.verMaisTaskPlanner');
 const linkMaisMoveMaster = document.querySelector('.verMaisMoveMaster');
 const linkMaisAppClima = document.querySelector('.verMaisAppClima');
@@ -294,6 +297,39 @@ linkMaisBankist.addEventListener('click', function (e) {
   // IMAGEM MODAL
   var image = document.createElement('img');
   image.src = 'img/tela-bankist2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
+});
+
+// TRILHANDO RIQUEZAS - MODAL
+linkMaisTrilhandoRiquezas.addEventListener('click', function (e) {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+
+  titleModal.textContent = 'Trilhando Riquezas';
+  descriptionModal.textContent =
+    'Blog de finanças onde é possível encontrar dicas e informações, oferecer serviços personalizados, funcionando também como uma landing Page para captação de leads.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'http://trilhandoriquezas.free.nf/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-trilhandoRiquezas2.png';
 
   var imgModal = document.getElementById('img-modal-container');
 
@@ -533,6 +569,9 @@ const appDesktop = document.getElementById('appWeb');
 const sites = document.getElementById('sites');
 const games = document.getElementById('games');
 
+const trilhandoRiquezasSubtitle = document.getElementById(
+  'trilhandoRiquezas_p'
+);
 const taskPlannerSubtitle = document.getElementById('taskPlanner-p');
 const moveMasterSubtitle = document.getElementById('moveMaster_p');
 const appClimaSubtitle = document.getElementById('appClima-p');
@@ -593,6 +632,7 @@ iconUSA.addEventListener('click', function () {
   sites.textContent = 'Websites';
   games.textContent = 'Games';
 
+  trilhandoRiquezasSubtitle.textContent = 'Finance blog.';
   taskPlannerSubtitle.textContent = 'Task management application.';
   moveMasterSubtitle.textContent = 'Fitness website with tips and services.';
   appClimaSubtitle.textContent = 'App that shows the weather of your city';
@@ -685,6 +725,18 @@ iconUSA.addEventListener('click', function () {
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
       'This project was created during a JavaScript course and aims to simulate a digital bank. In this project, it is possible to simulate transfers and loans. To log in, fill in the fields as follows: (username: js, password: 1111) or (username: js, password: 2222). You can transfer different amounts between accounts.';
+
+    link.textContent = 'Visit Website';
+  });
+
+  // TRILHANDO RIQUEZAS MODAL ENGLISH
+  linkMaisTrilhandoRiquezas.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Trilhando Riquezas';
+    descriptionModal.textContent =
+      'Finance blog where you can find tips and information, offer personalized services, also functioning as a landing page for lead generation.';
 
     link.textContent = 'Visit Website';
   });
@@ -796,8 +848,9 @@ iconBR.addEventListener('click', function () {
   sites.textContent = 'Sites';
   games.textContent = 'Jogos';
 
-  taskPlannerSubtitle.textContent = 'Aplicativo para gerenciar tarefas.';
-  moveMasterSubtitle.textContent = 'Site fitness com dicas e serviços.';
+  trilhandoRiquezasSubtitle.textContent = 'Blog de finanças';
+  taskPlannerSubtitle.textContent = 'Aplicativo para gerenciar tarefas';
+  moveMasterSubtitle.textContent = 'Site fitness com dicas e serviços';
   appClimaSubtitle.textContent = 'App que mostra o clima de sua cidade';
   loteriaSubtitle.textContent =
     'App que gera números aleatórios para jogos de Loteria';
@@ -887,6 +940,18 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
       'Este projeto foi criado durante um curso de JavaScript e tem como objetivo simular um banco digital. Nele, é possível realizar transferências e empréstimos. Para fazer login, preencha os campos da seguinte forma: (usuário: js, senha: 1111) ou (usuário: js, senha: 2222). Você pode transferir diferentes quantias entre contas.';
+
+    link.textContent = 'Visitar Site';
+  });
+
+  // TRILHANDO RIQUEZAS MODAL PORTUGUESE
+  linkMaisTrilhandoRiquezas.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Trilhando Riquezas';
+    descriptionModal.textContent =
+      'Blog de finanças onde é possível encontrar dicas e informações, oferecer serviços personalizados, funcionando também como uma landing Page para captação de leads.';
 
     link.textContent = 'Visitar Site';
   });
