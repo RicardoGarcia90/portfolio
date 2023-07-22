@@ -633,8 +633,8 @@ iconUSA.addEventListener('click', function () {
   games.textContent = 'Games';
 
   trilhandoRiquezasSubtitle.textContent = 'Finance blog.';
-  taskPlannerSubtitle.textContent = 'Task management application.';
-  moveMasterSubtitle.textContent = 'Fitness website with tips and services.';
+  taskPlannerSubtitle.textContent = 'Task management application';
+  moveMasterSubtitle.textContent = 'Fitness website with tips and services';
   appClimaSubtitle.textContent = 'App that shows the weather of your city';
   loteriaSubtitle.textContent =
     'App that generates random numbers for Lottery games';
