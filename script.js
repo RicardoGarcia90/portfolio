@@ -79,6 +79,7 @@ tabsContainer.addEventListener('click', function (e) {
 ///////////////////////////////////////////////////////
 // MODAL
 
+const linkMaisInfoSphere = document.querySelector('.verMaisInfoSphere');
 const linkMaisTrilhandoRiquezas = document.querySelector(
   '.verMaisTrilhandoRiquezas'
 );
@@ -297,6 +298,39 @@ linkMaisBankist.addEventListener('click', function (e) {
   // IMAGEM MODAL
   var image = document.createElement('img');
   image.src = 'img/tela-bankist2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
+});
+
+// INFOSPHERE - MODAL
+linkMaisInfoSphere.addEventListener('click', function (e) {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+
+  titleModal.textContent = 'Info Sphere';
+  descriptionModal.textContent =
+    'Portal de notícias que abrange as principais notícias do mundo. No portal, é possível navegar em diferentes categorias de notícias, tais como: saúde, entretenimento, esportes, viagens, etc.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://dev-jornal-digital.pantheonsite.io/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-infoSphere2.png';
 
   var imgModal = document.getElementById('img-modal-container');
 
@@ -569,6 +603,7 @@ const appDesktop = document.getElementById('appWeb');
 const sites = document.getElementById('sites');
 const games = document.getElementById('games');
 
+const infoSphereSubtitle = document.getElementById('infoSphere_p');
 const trilhandoRiquezasSubtitle = document.getElementById(
   'trilhandoRiquezas_p'
 );
@@ -632,7 +667,8 @@ iconUSA.addEventListener('click', function () {
   sites.textContent = 'Websites';
   games.textContent = 'Games';
 
-  trilhandoRiquezasSubtitle.textContent = 'Finance blog.';
+  infoSphereSubtitle.textContent = 'News portal';
+  trilhandoRiquezasSubtitle.textContent = 'Finance blog';
   taskPlannerSubtitle.textContent = 'Task management application';
   moveMasterSubtitle.textContent = 'Fitness website with tips and services';
   appClimaSubtitle.textContent = 'App that shows the weather of your city';
@@ -725,6 +761,18 @@ iconUSA.addEventListener('click', function () {
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
       'This project was created during a JavaScript course and aims to simulate a digital bank. In this project, it is possible to simulate transfers and loans. To log in, fill in the fields as follows: (username: js, password: 1111) or (username: js, password: 2222). You can transfer different amounts between accounts.';
+
+    link.textContent = 'Visit Website';
+  });
+
+  // INFO SPHERE MODAL ENGLISH
+  linkMaisInfoSphere.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Info Sphere';
+    descriptionModal.textContent =
+      "News portal that encompasses the world's main news. On the portal, it's possible to navigate through different news categories, such as health, entertainment, sports, travel, etc.";
 
     link.textContent = 'Visit Website';
   });
@@ -848,6 +896,7 @@ iconBR.addEventListener('click', function () {
   sites.textContent = 'Sites';
   games.textContent = 'Jogos';
 
+  infoSphereSubtitle.textContent = 'Portal de notícias';
   trilhandoRiquezasSubtitle.textContent = 'Blog de finanças';
   taskPlannerSubtitle.textContent = 'Aplicativo para gerenciar tarefas';
   moveMasterSubtitle.textContent = 'Site fitness com dicas e serviços';
@@ -940,6 +989,18 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
       'Este projeto foi criado durante um curso de JavaScript e tem como objetivo simular um banco digital. Nele, é possível realizar transferências e empréstimos. Para fazer login, preencha os campos da seguinte forma: (usuário: js, senha: 1111) ou (usuário: js, senha: 2222). Você pode transferir diferentes quantias entre contas.';
+
+    link.textContent = 'Visitar Site';
+  });
+
+  // INFO SPHERE MODAL PORTUGUESE
+  linkMaisInfoSphere.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Info Sphere';
+    descriptionModal.textContent =
+      'Portal de notícias que abrange as principais notícias do mundo. No portal, é possível navegar em diferentes categorias de notícias, tais como: saúde, entretenimento, esportes, viagens, etc.';
 
     link.textContent = 'Visitar Site';
   });
