@@ -79,6 +79,7 @@ tabsContainer.addEventListener('click', function (e) {
 ///////////////////////////////////////////////////////
 // MODAL
 
+const linkMaisStyleVista = document.querySelector('.verMaisStyleVista');
 const linkMaisInfoSphere = document.querySelector('.verMaisInfoSphere');
 const linkMaisTrilhandoRiquezas = document.querySelector(
   '.verMaisTrilhandoRiquezas'
@@ -298,6 +299,39 @@ linkMaisBankist.addEventListener('click', function (e) {
   // IMAGEM MODAL
   var image = document.createElement('img');
   image.src = 'img/tela-bankist2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
+});
+
+// STYLEVISTA - MODAL
+linkMaisStyleVista.addEventListener('click', function (e) {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+
+  titleModal.textContent = 'Style Vista';
+  descriptionModal.textContent =
+    'Site do ramo da moda que traz notícias, dicas e eventos relacionados ao setor. Este site foi criado utilizando o WordPress e alguns plugins que auxiliam em tarefas específicas realizadas por ele.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'http://stylevista.rf.gd/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-styleVista2.png';
 
   var imgModal = document.getElementById('img-modal-container');
 
@@ -603,6 +637,7 @@ const appDesktop = document.getElementById('appWeb');
 const sites = document.getElementById('sites');
 const games = document.getElementById('games');
 
+const styleVistaSubtitle = document.getElementById('styleVista_p');
 const infoSphereSubtitle = document.getElementById('infoSphere_p');
 const trilhandoRiquezasSubtitle = document.getElementById(
   'trilhandoRiquezas_p'
@@ -667,6 +702,7 @@ iconUSA.addEventListener('click', function () {
   sites.textContent = 'Websites';
   games.textContent = 'Games';
 
+  styleVistaSubtitle.textContent = 'Fashion industry website';
   infoSphereSubtitle.textContent = 'News portal';
   trilhandoRiquezasSubtitle.textContent = 'Finance blog';
   taskPlannerSubtitle.textContent = 'Task management application';
@@ -761,6 +797,18 @@ iconUSA.addEventListener('click', function () {
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
       'This project was created during a JavaScript course and aims to simulate a digital bank. In this project, it is possible to simulate transfers and loans. To log in, fill in the fields as follows: (username: js, password: 1111) or (username: js, password: 2222). You can transfer different amounts between accounts.';
+
+    link.textContent = 'Visit Website';
+  });
+
+  // STYLE VISTA MODAL ENGLISH
+  linkMaisStyleVista.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Style Vista';
+    descriptionModal.textContent =
+      'Website in the fashion industry that brings news, tips, and events related to the sector. This site was created using WordPress and some plugins that assist in specific tasks performed by it.';
 
     link.textContent = 'Visit Website';
   });
@@ -896,6 +944,7 @@ iconBR.addEventListener('click', function () {
   sites.textContent = 'Sites';
   games.textContent = 'Jogos';
 
+  styleVistaSubtitle.textContent = 'Site do ramo da moda';
   infoSphereSubtitle.textContent = 'Portal de notícias';
   trilhandoRiquezasSubtitle.textContent = 'Blog de finanças';
   taskPlannerSubtitle.textContent = 'Aplicativo para gerenciar tarefas';
@@ -989,6 +1038,18 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
       'Este projeto foi criado durante um curso de JavaScript e tem como objetivo simular um banco digital. Nele, é possível realizar transferências e empréstimos. Para fazer login, preencha os campos da seguinte forma: (usuário: js, senha: 1111) ou (usuário: js, senha: 2222). Você pode transferir diferentes quantias entre contas.';
+
+    link.textContent = 'Visitar Site';
+  });
+
+  // STYLE VISTA MODAL PORTUGUESE
+  linkMaisStyleVista.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Style Vista';
+    descriptionModal.textContent =
+      'Site do ramo da moda que traz notícias, dicas e eventos relacionados ao setor. Este site foi criado utilizando o WordPress e alguns plugins que auxiliam em tarefas específicas realizadas por ele.';
 
     link.textContent = 'Visitar Site';
   });
