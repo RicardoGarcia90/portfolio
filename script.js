@@ -79,6 +79,8 @@ tabsContainer.addEventListener('click', function (e) {
 ///////////////////////////////////////////////////////
 // MODAL
 
+const linkMais321Buy = document.querySelector('.verMais321Buy');
+const linkMaisChezBistro = document.querySelector('.verMaisChezBistro');
 const linkMaisStyleVista = document.querySelector('.verMaisStyleVista');
 const linkMaisInfoSphere = document.querySelector('.verMaisInfoSphere');
 const linkMaisTrilhandoRiquezas = document.querySelector(
@@ -299,6 +301,72 @@ linkMaisBankist.addEventListener('click', function (e) {
   // IMAGEM MODAL
   var image = document.createElement('img');
   image.src = 'img/tela-bankist2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
+});
+
+// 321BUY - MODAL
+linkMais321Buy.addEventListener('click', function (e) {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+
+  titleModal.textContent = '3,2,1Buy';
+  descriptionModal.textContent =
+    'Simulação de e-commerce com produtos diversos. Neste site desenvolvido em Wordpress, com auxílio do WooCommerce e demais plugins, você encontra uma loja virtual com produtos diversos, sendo eles eletrodomésticos, vestuário, smartphones, etc. No site, você pode navegar por categorias, adicionar produtos ao carrinho, calcular o frete de entrega, tudo o que um e-commerce pode oferecer nos dias de hoje.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://dev-321buy.pantheonsite.io/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-321Buy2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
+});
+
+// CHEZ BISTRO - MODAL
+linkMaisChezBistro.addEventListener('click', function (e) {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+
+  titleModal.textContent = 'Chez Bistrô';
+  descriptionModal.textContent =
+    'Site para restaurante criado com a utilização do Wordpress e alguns plugins que auxiliam no desenvolvimento. No site, é possível realizar reservas, verificar o cardápio, conferir a galeria de fotos, ler depoimentos e acessar um blog com as últimas novidades.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'http://chezbistro.ezzeblog.com/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-chezBistro2.png';
 
   var imgModal = document.getElementById('img-modal-container');
 
@@ -637,6 +705,8 @@ const appDesktop = document.getElementById('appWeb');
 const sites = document.getElementById('sites');
 const games = document.getElementById('games');
 
+const subtitle321Buy = document.getElementById('321Buy_p');
+const chezBistroSubtitle = document.getElementById('chezBistro_p');
 const styleVistaSubtitle = document.getElementById('styleVista_p');
 const infoSphereSubtitle = document.getElementById('infoSphere_p');
 const trilhandoRiquezasSubtitle = document.getElementById(
@@ -693,15 +763,17 @@ iconUSA.addEventListener('click', function () {
   // ABOUT ME change language for EN
   titleSectionAboutMe.textContent = languageEN.sobre;
   titleTextAboutMe.textContent =
-    'I am passionate about technology and the ability it offers us to create and innovate.';
+    'Finding ways to create and develop solutions using technology is a journey I love to embark on!';
   textAboutMe.textContent =
-    'Although I have worked in other areas, it was in technology that I found my true professional passion, building websites and applications using technologies such as Javascript, React.js, HTML and CSS/Sass. Currently, I dedicate my time to improving my knowledge in development, putting them into practice and challenging myself in new projects. In my spare time I like to play the guitar, play with my dog and walk in the park with my family.';
+    'Although I have worked in other fields, it was in technology that I found my true professional passion, building websites and applications using languages and tools such as JavaScript, React.JS, Node.JS, HTML/CSS, and WordPress. I am in search of new opportunities that allow me to contribute significantly and grow professionally.';
 
   // PROJECTS change language for EN
   appDesktop.textContent = 'Web Applications';
   sites.textContent = 'Websites';
   games.textContent = 'Games';
 
+  subtitle321Buy.textContent = 'E-commerce for diverse products';
+  chezBistroSubtitle.textContent = 'Restaurant website';
   styleVistaSubtitle.textContent = 'Fashion industry website';
   infoSphereSubtitle.textContent = 'News portal';
   trilhandoRiquezasSubtitle.textContent = 'Finance blog';
@@ -797,6 +869,30 @@ iconUSA.addEventListener('click', function () {
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
       'This project was created during a JavaScript course and aims to simulate a digital bank. In this project, it is possible to simulate transfers and loans. To log in, fill in the fields as follows: (username: js, password: 1111) or (username: js, password: 2222). You can transfer different amounts between accounts.';
+
+    link.textContent = 'Visit Website';
+  });
+
+  // 3,2,1BUY MODAL ENGLISH
+  linkMais321Buy.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = '3,2,1Buy';
+    descriptionModal.textContent =
+      "E-commerce simulation with diverse products. On this website developed in WordPress, with the assistance of WooCommerce and other plugins, you'll find a virtual store with various products, including household appliances, clothing, smartphones, etc. On the site, you can browse through categories, add products to the cart, calculate shipping fees, everything that an e-commerce can offer in today's times.";
+
+    link.textContent = 'Visit Website';
+  });
+
+  // CHEZ BISTRO MODAL ENGLISH
+  linkMaisChezBistro.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Chez Bistrô';
+    descriptionModal.textContent =
+      "Restaurant website created using Wordpress and some plugins that assist in development. On the website, it's possible to make reservations, check the menu, browse through a photo gallery, read testimonials, and access a blog with the latest news.";
 
     link.textContent = 'Visit Website';
   });
@@ -935,15 +1031,17 @@ iconBR.addEventListener('click', function () {
   // ABOUT ME change language for PT
   titleSectionAboutMe.textContent = languagePT.about;
   titleTextAboutMe.textContent =
-    'Sou apaixonado por tecnologia e pela capacidade que ela nos oferece de criar e inovar.';
+    'Encontrar maneiras de criar e desenvolver soluções utilizando a tecnologia é uma jornada que eu adoro embarcar!';
   textAboutMe.textContent =
-    'Embora tenha trabalhado em outras áreas, foi na tecnologia que encontrei minha verdadeira paixão profissional, construindo sites e aplicações utilizando tecnologias como Javascript, React.js, HTML e CSS/Sass. Atualmente, dedico meu tempo a aprimorar meus conhecimentos em desenvolvimento, colocando-os em prática e me desafiando em novos projetos. Nas horas vagas, gosto de tocar guitarra, brincar com meu cachorro e caminhar no parque com minha família.';
+    'Embora tenha trabalhado em outras áreas, foi na tecnologia que encontrei minha verdadeira paixão profissional, construindo sites e aplicações com o uso de linguagens e ferramentas como JavaScript, React.JS, Node.JS, HTML/CSS e WordPress. Estou em busca de novas oportunidades que me permitam contribuir de forma significativa e evoluir profissionalmente.';
 
   // PROJECTS change language for PT
   appDesktop.textContent = 'Aplicações Web';
   sites.textContent = 'Sites';
   games.textContent = 'Jogos';
 
+  subtitle321Buy.textContent = 'E-commerce para produtos diversos';
+  chezBistroSubtitle.textContent = 'Site para restaurante';
   styleVistaSubtitle.textContent = 'Site do ramo da moda';
   infoSphereSubtitle.textContent = 'Portal de notícias';
   trilhandoRiquezasSubtitle.textContent = 'Blog de finanças';
@@ -1038,6 +1136,30 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Bankist';
     descriptionModal.textContent =
       'Este projeto foi criado durante um curso de JavaScript e tem como objetivo simular um banco digital. Nele, é possível realizar transferências e empréstimos. Para fazer login, preencha os campos da seguinte forma: (usuário: js, senha: 1111) ou (usuário: js, senha: 2222). Você pode transferir diferentes quantias entre contas.';
+
+    link.textContent = 'Visitar Site';
+  });
+
+  // 3,2,1BUY MODAL PORTUGUESE
+  linkMais321Buy.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = '3,2,1Buy';
+    descriptionModal.textContent =
+      'Simulação de e-commerce com produtos diversos. Neste site desenvolvido em Wordpress, com auxílio do WooCommerce e demais plugins, você encontra uma loja virtual com produtos diversos, sendo eles eletrodomésticos, vestuário, smartphones, etc. No site, você pode navegar por categorias, adicionar produtos ao carrinho, calcular o frete de entrega, tudo o que um e-commerce pode oferecer nos dias de hoje.';
+
+    link.textContent = 'Visitar Site';
+  });
+
+  // CHEZ BISTRO MODAL PORTUGUESE
+  linkMaisChezBistro.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Chez Bistrô';
+    descriptionModal.textContent =
+      'Site para restaurante criado com a utilização do Wordpress e alguns plugins que auxiliam no desenvolvimento. No site, é possível realizar reservas, verificar o cardápio, conferir a galeria de fotos, ler depoimentos e acessar um blog com as últimas novidades.';
 
     link.textContent = 'Visitar Site';
   });

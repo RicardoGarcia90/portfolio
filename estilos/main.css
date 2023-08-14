@@ -1012,6 +1012,7 @@ TINTS AND SHADES
   font-size: 1.8rem;
   color: #4c1d00;
   text-align: left;
+  line-height: 1.3;
 }
 @media (max-width: 1024px) {
   .modal .content-modal p {
@@ -1692,6 +1693,7 @@ TINTS AND SHADES
   font-size: 1.8rem;
   color: #4c1d00;
   text-align: left;
+  line-height: 1.3;
 }
 @media (max-width: 1024px) {
   .modal .content-modal p {
