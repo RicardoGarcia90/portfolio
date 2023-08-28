@@ -79,6 +79,7 @@ tabsContainer.addEventListener('click', function (e) {
 ///////////////////////////////////////////////////////
 // MODAL
 
+const linkMaisCalculadora = document.querySelector('.verMaisCalculadora');
 const linkMais321Buy = document.querySelector('.verMais321Buy');
 const linkMaisChezBistro = document.querySelector('.verMaisChezBistro');
 const linkMaisStyleVista = document.querySelector('.verMaisStyleVista');
@@ -110,6 +111,40 @@ const btnCloseModal = document.querySelector('.close-modal');
 var link = document.createElement('a');
 link.textContent = 'Visitar Site';
 link.target = '_blank';
+
+// CALCULADORA - MODAL
+linkMaisCalculadora.addEventListener('click', function (e) {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+
+  // TASKPLANNER - DESCRICAO MODAL
+  titleModal.textContent = 'Calculadora';
+  descriptionModal.textContent =
+    'Calculadora criada com foco em praticar o gerenciamento de estados e componentes mais estruturados, que necessitam de várias transições diferentes. Este projeto foi desenvolvido usando React e CSS, com ênfase na utilização do hook useReducer.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://ricardo-calculadora.netlify.app/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-calculadora2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
+});
 
 // TASKPLANNER - MODAL
 linkMaisTaskPlanner.addEventListener('click', function (e) {
@@ -705,6 +740,7 @@ const appDesktop = document.getElementById('appWeb');
 const sites = document.getElementById('sites');
 const games = document.getElementById('games');
 
+const calculadoraSubtitle = document.getElementById('calculadora_p');
 const subtitle321Buy = document.getElementById('321Buy_p');
 const chezBistroSubtitle = document.getElementById('chezBistro_p');
 const styleVistaSubtitle = document.getElementById('styleVista_p');
@@ -772,6 +808,7 @@ iconUSA.addEventListener('click', function () {
   sites.textContent = 'Websites';
   games.textContent = 'Games';
 
+  calculadoraSubtitle.textContent = 'Calculator with simple operations';
   subtitle321Buy.textContent = 'E-commerce for diverse products';
   chezBistroSubtitle.textContent = 'Restaurant website';
   styleVistaSubtitle.textContent = 'Fashion industry website';
@@ -800,6 +837,18 @@ iconUSA.addEventListener('click', function () {
   visitarSite.forEach(text => (text.textContent = 'Visit Website'));
   verCodigo.forEach(text => (text.textContent = 'View Code'));
   saberMais.forEach(text => (text.textContent = 'Read More'));
+
+  // CALCULADORA MODAL ENGLISH
+  linkMaisCalculadora.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Calculadora';
+    descriptionModal.textContent =
+      'Calculator created with a focus on practicing structured state management and components that require various different transitions. This project was developed using React and CSS, with an emphasis on the use of the useReducer hook.';
+
+    link.textContent = 'Visit Website';
+  });
 
   // TASKPLANNER MODAL ENGLISH
   linkMaisTaskPlanner.addEventListener('click', function (e) {
@@ -1040,6 +1089,7 @@ iconBR.addEventListener('click', function () {
   sites.textContent = 'Sites';
   games.textContent = 'Jogos';
 
+  calculadoraSubtitle.textContent = 'Calculadora com operações simples';
   subtitle321Buy.textContent = 'E-commerce para produtos diversos';
   chezBistroSubtitle.textContent = 'Site para restaurante';
   styleVistaSubtitle.textContent = 'Site do ramo da moda';
@@ -1067,6 +1117,18 @@ iconBR.addEventListener('click', function () {
   visitarSite.forEach(text => (text.textContent = 'Visitar Site'));
   verCodigo.forEach(text => (text.textContent = 'Ver Código'));
   saberMais.forEach(text => (text.textContent = 'Saber Mais'));
+
+  // CALCULADORA MODAL PORTUGUESE
+  linkMaisCalculadora.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Calculadora';
+    descriptionModal.textContent =
+      'Calculadora criada com foco em praticar o gerenciamento de estados e componentes mais estruturados, que necessitam de várias transições diferentes. Este projeto foi desenvolvido usando React e CSS, com ênfase na utilização do hook useReducer.';
+
+    link.textContent = 'Visitar Site';
+  });
 
   // TASKPLANNER MODAL PORTUGUESE
   linkMaisTaskPlanner.addEventListener('click', function (e) {
