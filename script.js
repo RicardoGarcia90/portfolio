@@ -79,6 +79,9 @@ tabsContainer.addEventListener('click', function (e) {
 ///////////////////////////////////////////////////////
 // MODAL
 
+const linkMaisOrangePortfolio = document.querySelector(
+  '.verMaisOrangePortfolio'
+);
 const linkMaisCalculadora = document.querySelector('.verMaisCalculadora');
 const linkMais321Buy = document.querySelector('.verMais321Buy');
 const linkMaisChezBistro = document.querySelector('.verMaisChezBistro');
@@ -112,12 +115,46 @@ var link = document.createElement('a');
 link.textContent = 'Visitar Site';
 link.target = '_blank';
 
+// ORANGE PORTFOLIO - MODAL
+linkMaisOrangePortfolio.addEventListener('click', function (e) {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+
+  // ORANGE PORTFOLIO - DESCRICAO MODAL
+  titleModal.textContent = 'Orange Portfolio';
+  descriptionModal.textContent =
+    'Este projeto foi desenvolvido em um hackathon, cujo objetivo era criar uma aplicação navegável e responsiva denominada Orange Portfólio, a qual permite aos usuários cadastrar e exibir projetos desenvolvidos.';
+
+  // LINK PARA O SITE DENTRO DO MODAL
+  link.href = 'https://orange-portfolio-squad-6.vercel.app/';
+
+  var linkModalSite = document.getElementById('site-link-modal');
+  if (linkModalSite.hasChildNodes()) {
+    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
+  }
+
+  linkModalSite.appendChild(link);
+
+  // IMAGEM MODAL
+  var image = document.createElement('img');
+  image.src = 'img/tela-orangePortfolio2.png';
+
+  var imgModal = document.getElementById('img-modal-container');
+
+  // Verifica se já existe uma imagem presente
+  if (imgModal.hasChildNodes()) {
+    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
+  }
+
+  imgModal.appendChild(image);
+});
+
 // CALCULADORA - MODAL
 linkMaisCalculadora.addEventListener('click', function (e) {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
 
-  // TASKPLANNER - DESCRICAO MODAL
+  // CALCULADORA - DESCRICAO MODAL
   titleModal.textContent = 'Calculadora';
   descriptionModal.textContent =
     'Calculadora criada com foco em praticar o gerenciamento de estados e componentes mais estruturados, que necessitam de várias transições diferentes. Este projeto foi desenvolvido usando React e CSS, com ênfase na utilização do hook useReducer.';
@@ -740,6 +777,7 @@ const appDesktop = document.getElementById('appWeb');
 const sites = document.getElementById('sites');
 const games = document.getElementById('games');
 
+const orangePortfolioSubtitle = document.getElementById('orangePortfolio_p');
 const calculadoraSubtitle = document.getElementById('calculadora_p');
 const subtitle321Buy = document.getElementById('321Buy_p');
 const chezBistroSubtitle = document.getElementById('chezBistro_p');
@@ -808,6 +846,8 @@ iconUSA.addEventListener('click', function () {
   sites.textContent = 'Websites';
   games.textContent = 'Games';
 
+  orangePortfolioSubtitle.textContent =
+    'App for users to register and display their developed projects.';
   calculadoraSubtitle.textContent = 'Calculator with simple operations';
   subtitle321Buy.textContent = 'E-commerce for diverse products';
   chezBistroSubtitle.textContent = 'Restaurant website';
@@ -837,6 +877,17 @@ iconUSA.addEventListener('click', function () {
   visitarSite.forEach(text => (text.textContent = 'Visit Website'));
   verCodigo.forEach(text => (text.textContent = 'View Code'));
   saberMais.forEach(text => (text.textContent = 'Read More'));
+
+  // ORANGE PORTFOLIO MODAL ENGLISH
+  linkMaisOrangePortfolio.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Orange Portfolio';
+    descriptionModal.textContent =
+      'This project was developed in a hackathon where the goal was to create a navigable and responsive application called Orange Portfolio, which will allow users to register and display developed projects.';
+    link.textContent = 'Visit Website';
+  });
 
   // CALCULADORA MODAL ENGLISH
   linkMaisCalculadora.addEventListener('click', function (e) {
@@ -1089,6 +1140,8 @@ iconBR.addEventListener('click', function () {
   sites.textContent = 'Sites';
   games.textContent = 'Jogos';
 
+  orangePortfolioSubtitle.textContent =
+    'App para usuários cadastrarem e exibirem seus projetos desenvolvidos';
   calculadoraSubtitle.textContent = 'Calculadora com operações simples';
   subtitle321Buy.textContent = 'E-commerce para produtos diversos';
   chezBistroSubtitle.textContent = 'Site para restaurante';
@@ -1117,6 +1170,17 @@ iconBR.addEventListener('click', function () {
   visitarSite.forEach(text => (text.textContent = 'Visitar Site'));
   verCodigo.forEach(text => (text.textContent = 'Ver Código'));
   saberMais.forEach(text => (text.textContent = 'Saber Mais'));
+
+  // ORANGE PORTFOLIO MODAL PORTUGUESE
+  linkMaisOrangePortfolio.addEventListener('click', function (e) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    titleModal.textContent = 'Orange Portfolio';
+    descriptionModal.textContent =
+      'Este projeto foi desenvolvido em um hackathon, cujo objetivo era criar uma aplicação navegável e responsiva denominada Orange Portfólio, a qual permitirá aos usuários cadastrar e exibir projetos desenvolvidos.';
+    link.textContent = 'Visitar Site';
+  });
 
   // CALCULADORA MODAL PORTUGUESE
   linkMaisCalculadora.addEventListener('click', function (e) {
