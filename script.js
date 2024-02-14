@@ -85,7 +85,6 @@ const linkMaisOrangePortfolio = document.querySelector(
 const linkMaisCalculadora = document.querySelector('.verMaisCalculadora');
 const linkMais321Buy = document.querySelector('.verMais321Buy');
 const linkMaisChezBistro = document.querySelector('.verMaisChezBistro');
-const linkMaisStyleVista = document.querySelector('.verMaisStyleVista');
 const linkMaisInfoSphere = document.querySelector('.verMaisInfoSphere');
 const linkMaisTrilhandoRiquezas = document.querySelector(
   '.verMaisTrilhandoRiquezas'
@@ -450,39 +449,6 @@ linkMaisChezBistro.addEventListener('click', function (e) {
   imgModal.appendChild(image);
 });
 
-// STYLEVISTA - MODAL
-linkMaisStyleVista.addEventListener('click', function (e) {
-  modal.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-
-  titleModal.textContent = 'Style Vista';
-  descriptionModal.textContent =
-    'Site do ramo da moda que traz notícias, dicas e eventos relacionados ao setor. Este site foi criado utilizando o WordPress e alguns plugins que auxiliam em tarefas específicas realizadas por ele.';
-
-  // LINK PARA O SITE DENTRO DO MODAL
-  link.href = 'http://stylevista.rf.gd/';
-
-  var linkModalSite = document.getElementById('site-link-modal');
-  if (linkModalSite.hasChildNodes()) {
-    linkModalSite.removeChild(linkModalSite.firstChild); // Remove o link existente
-  }
-
-  linkModalSite.appendChild(link);
-
-  // IMAGEM MODAL
-  var image = document.createElement('img');
-  image.src = 'img/tela-styleVista2.png';
-
-  var imgModal = document.getElementById('img-modal-container');
-
-  // Verifica se já existe uma imagem presente
-  if (imgModal.hasChildNodes()) {
-    imgModal.removeChild(imgModal.firstChild); // Remove a imagem existente
-  }
-
-  imgModal.appendChild(image);
-});
-
 // INFOSPHERE - MODAL
 linkMaisInfoSphere.addEventListener('click', function (e) {
   modal.classList.remove('hidden');
@@ -781,7 +747,6 @@ const orangePortfolioSubtitle = document.getElementById('orangePortfolio_p');
 const calculadoraSubtitle = document.getElementById('calculadora_p');
 const subtitle321Buy = document.getElementById('321Buy_p');
 const chezBistroSubtitle = document.getElementById('chezBistro_p');
-const styleVistaSubtitle = document.getElementById('styleVista_p');
 const infoSphereSubtitle = document.getElementById('infoSphere_p');
 const trilhandoRiquezasSubtitle = document.getElementById(
   'trilhandoRiquezas_p'
@@ -851,7 +816,6 @@ iconUSA.addEventListener('click', function () {
   calculadoraSubtitle.textContent = 'Calculator with simple operations';
   subtitle321Buy.textContent = 'E-commerce for diverse products';
   chezBistroSubtitle.textContent = 'Restaurant website';
-  styleVistaSubtitle.textContent = 'Fashion industry website';
   infoSphereSubtitle.textContent = 'News portal';
   trilhandoRiquezasSubtitle.textContent = 'Finance blog';
   taskPlannerSubtitle.textContent = 'Task management application';
@@ -997,18 +961,6 @@ iconUSA.addEventListener('click', function () {
     link.textContent = 'Visit Website';
   });
 
-  // STYLE VISTA MODAL ENGLISH
-  linkMaisStyleVista.addEventListener('click', function (e) {
-    modal.classList.remove('hidden');
-    overlay.classList.remove('hidden');
-
-    titleModal.textContent = 'Style Vista';
-    descriptionModal.textContent =
-      'Website in the fashion industry that brings news, tips, and events related to the sector. This site was created using WordPress and some plugins that assist in specific tasks performed by it.';
-
-    link.textContent = 'Visit Website';
-  });
-
   // INFO SPHERE MODAL ENGLISH
   linkMaisInfoSphere.addEventListener('click', function (e) {
     modal.classList.remove('hidden');
@@ -1145,7 +1097,6 @@ iconBR.addEventListener('click', function () {
   calculadoraSubtitle.textContent = 'Calculadora com operações simples';
   subtitle321Buy.textContent = 'E-commerce para produtos diversos';
   chezBistroSubtitle.textContent = 'Site para restaurante';
-  styleVistaSubtitle.textContent = 'Site do ramo da moda';
   infoSphereSubtitle.textContent = 'Portal de notícias';
   trilhandoRiquezasSubtitle.textContent = 'Blog de finanças';
   taskPlannerSubtitle.textContent = 'Aplicativo para gerenciar tarefas';
@@ -1286,18 +1237,6 @@ iconBR.addEventListener('click', function () {
     titleModal.textContent = 'Chez Bistrô';
     descriptionModal.textContent =
       'Site para restaurante criado com a utilização do Wordpress e alguns plugins que auxiliam no desenvolvimento. No site, é possível realizar reservas, verificar o cardápio, conferir a galeria de fotos, ler depoimentos e acessar um blog com as últimas novidades.';
-
-    link.textContent = 'Visitar Site';
-  });
-
-  // STYLE VISTA MODAL PORTUGUESE
-  linkMaisStyleVista.addEventListener('click', function (e) {
-    modal.classList.remove('hidden');
-    overlay.classList.remove('hidden');
-
-    titleModal.textContent = 'Style Vista';
-    descriptionModal.textContent =
-      'Site do ramo da moda que traz notícias, dicas e eventos relacionados ao setor. Este site foi criado utilizando o WordPress e alguns plugins que auxiliam em tarefas específicas realizadas por ele.';
 
     link.textContent = 'Visitar Site';
   });
